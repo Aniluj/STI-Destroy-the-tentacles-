@@ -222,6 +222,7 @@ GameObject:
   - component: {fileID: 1189987816}
   - component: {fileID: 1189987815}
   - component: {fileID: 1189987814}
+  - component: {fileID: 1189987819}
   m_Layer: 0
   m_Name: Spaceship
   m_TagString: Untagged
@@ -240,7 +241,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ea30a106bc5ce44299e3ac2d2de4cf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 3
+  velocity: 100
+  objectToRotateAround: {fileID: 1868892490}
 --- !u!61 &1189987815
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -341,6 +343,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.57101}
+--- !u!114 &1189987819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1189987813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 536821999abda6b43a409f518093e34e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToRotateAround: {fileID: 1868892490}
+  cooldown: 2
+  specialVelocity: 600
+  limitOfTimeInMovement: 0.1
 --- !u!1 &1575760305
 GameObject:
   m_ObjectHideFlags: 0
