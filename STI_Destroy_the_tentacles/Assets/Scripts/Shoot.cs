@@ -26,7 +26,6 @@ public class Shoot : MonoBehaviour {
 			firstShoot = false;
 			for(int i = 0; i < 10; i++){
 				if (bullet [i].activeInHierarchy == false) {
-					Debug.Log ("asd");
 					bullet [i].transform.SetPositionAndRotation (shootingPoint.position, shootingPoint.rotation);
 					bullet [i].SetActive (true);
 					break;
