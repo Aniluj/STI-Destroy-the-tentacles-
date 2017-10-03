@@ -2363,7 +2363,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 126534487}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -2652,6 +2652,7 @@ GameObject:
   - component: {fileID: 1575760307}
   - component: {fileID: 1575760306}
   - component: {fileID: 1575760309}
+  - component: {fileID: 1575760310}
   m_Layer: 0
   m_Name: Contention shield
   m_TagString: Shield
@@ -2848,6 +2849,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1575760310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1575760305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb69b0a23795634985b9ed768bfb794, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shieldHealthBar: {fileID: 1454074615}
+  damageReceived: 25
 --- !u!1 &1614672200
 GameObject:
   m_ObjectHideFlags: 0
