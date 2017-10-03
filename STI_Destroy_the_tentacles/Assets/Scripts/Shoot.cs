@@ -21,12 +21,11 @@ public class Shoot : MonoBehaviour {
 	void Update () {
 		timer += Time.deltaTime;
 
-		if (Input.GetKeyDown (KeyCode.Space) && (firstShoot || timer > cooldown)) {
+		if (Input.GetButtonDown("Fire") && (firstShoot || timer > cooldown)) {
 			timer = 0;
 			firstShoot = false;
 			for(int i = 0; i < 10; i++){
 				if (bullet [i].activeInHierarchy == false) {
-					Debug.Log ("asd");
 					bullet [i].transform.SetPositionAndRotation (shootingPoint.position, shootingPoint.rotation);
 					bullet [i].SetActive (true);
 					break;
@@ -34,9 +33,5 @@ public class Shoot : MonoBehaviour {
 			}
 			//Instantiate (bullet, shootingPoint.position, shootingPoint.rotation);
 		}
-	}
-
-	void FixedUpdate (){
-		
 	}
 }

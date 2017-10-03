@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 22f9e7962209e7647bcfcc1928d2fac4
+  - enabled: 1
+    path: Assets/Scenes/STI_Destroy_The_Tentacles.unity
+    guid: e260776cacef2cf40a668fa2fcd88a37

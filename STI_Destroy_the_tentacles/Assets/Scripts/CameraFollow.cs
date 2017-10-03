@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour {
 
+	public float maxMovementInY;
 	public Transform target;
 	private Vector3 posDiff = Vector3.zero;
 
@@ -11,7 +12,10 @@ public class CameraFollow : MonoBehaviour {
 		posDiff = transform.position - target.position;	
 	}
 
-	void LateUpdate () {
+	void Update () {
 		transform.position = target.position + posDiff;
+		if (transform.position.y <= maxMovementInY) {
+			transform.position = new Vector3 (target.position.x + posDiff.x,-3.472773f,target.position.z + posDiff.z);
+		}
 	}
 }

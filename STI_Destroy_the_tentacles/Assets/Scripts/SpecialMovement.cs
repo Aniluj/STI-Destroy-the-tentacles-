@@ -12,6 +12,7 @@ public class SpecialMovement : MonoBehaviour {
 	private Rigidbody2D spaceship;
 	private float horizontalAxis;
 	private float timeInMovement;
+	private Health healthSystem;
 	public Transform objectToRotateAround;
 	public float cooldown;
 	public float specialVelocity;
@@ -21,6 +22,7 @@ public class SpecialMovement : MonoBehaviour {
 	void Awake (){
 		spaceship = GetComponent<Rigidbody2D> ();
 		normalMovement = GetComponent<SpaceshipMovement> ();
+		healthSystem = GetComponent<Health> ();
 	}
 
 	void Start () {
@@ -39,9 +41,11 @@ public class SpecialMovement : MonoBehaviour {
 		if (specialMovementActivated && timeInMovement < limitOfTimeInMovement) {
 			normalMovement.enabled = false;
 			timeInMovement += Time.deltaTime;
+			healthSystem.damage = healthSystem.damageWhenSpecialMovementIsActive;
 			SpaceshipMovement.RotateAround (objectToRotateAround.position, specialVelocity * horizontalAxis * Time.deltaTime, spaceship);
 		} else {
 			normalMovement.enabled = true;
+			healthSystem.damage = healthSystem.damageReceived;
 		}
 
 		if (shiftEnabled && Input.GetKeyDown (KeyCode.LeftShift)) {
