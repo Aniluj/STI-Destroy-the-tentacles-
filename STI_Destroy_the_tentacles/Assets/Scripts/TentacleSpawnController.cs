@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class TentacleSpawnController : MonoBehaviour {
 
-	public GameObject[] easyTentacleSpawnPoints;
+	//public GameObject[] easyTentacleSpawnPoints;
 	public GameObject[] tentacles;
 	public float cooldownOfEasyTentacleSpawn;
+
+	List<Transform> availableEasySpawnPoints = new List<Transform> ();
+	List<Transform> unavailableEasySpawnPoints = new List<Transform> ();
+
 	private int numberOfEasySpawnToSpawnATentacle;
 	private float timer;
 	private bool activateEasySpawn = false;
@@ -23,6 +27,14 @@ public class TentacleSpawnController : MonoBehaviour {
 			tentacleSpriteMask.backSortingOrder = i;
 			tentacleRenderer.sortingOrder = i + 1;
 		}
+
+		Transform parent = GameObject.FindGameObjectWithTag ("Spawn");
+		availableEasySpawnPoints.Clear ();
+		foreach (Transform child in parent) {
+			availableEasySpawnPoints.Add (child);
+		}
+
+
 	}
 
 	void Update () {
