@@ -3407,7 +3407,8 @@ MonoBehaviour:
   - {fileID: 720671022}
   - {fileID: 45412012}
   - {fileID: 611981201}
-  cooldownOfEasyTentacleSpawn: 3
+  areEasySpawnPointsActive: 
+  cooldownOfEasyTentacleSpawn: 2
 --- !u!58 &1868892493
 CircleCollider2D:
   m_ObjectHideFlags: 0
