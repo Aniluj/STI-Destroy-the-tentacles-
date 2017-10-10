@@ -8,6 +8,7 @@ TagManager:
   - Vortex
   - Shield
   - Bullet
+  - Spawn
   layers:
   - Default
   - TransparentFX

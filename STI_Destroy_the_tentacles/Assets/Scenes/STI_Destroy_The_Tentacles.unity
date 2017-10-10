@@ -436,7 +436,7 @@ GameObject:
   - component: {fileID: 171511517}
   m_Layer: 0
   m_Name: Easy Spawn Point (3)
-  m_TagString: Untagged
+  m_TagString: Spawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -763,7 +763,7 @@ GameObject:
   - component: {fileID: 368738031}
   m_Layer: 0
   m_Name: Easy Spawn Point (7)
-  m_TagString: Untagged
+  m_TagString: Spawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1815,7 +1815,7 @@ GameObject:
   - component: {fileID: 1189987821}
   m_Layer: 0
   m_Name: Spaceship
-  m_TagString: Vortex
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2096,7 +2096,7 @@ GameObject:
   - component: {fileID: 1290933411}
   m_Layer: 0
   m_Name: Easy Spawn Point (4)
-  m_TagString: Untagged
+  m_TagString: Spawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2872,7 +2872,7 @@ GameObject:
   - component: {fileID: 1614672201}
   m_Layer: 0
   m_Name: Easy Spawn Point (5)
-  m_TagString: Untagged
+  m_TagString: Spawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2968,7 +2968,7 @@ GameObject:
   - component: {fileID: 1701074419}
   m_Layer: 0
   m_Name: Easy Spawn Point (1)
-  m_TagString: Untagged
+  m_TagString: Spawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3126,7 +3126,7 @@ GameObject:
   - component: {fileID: 1767976080}
   m_Layer: 0
   m_Name: Easy Spawn Point (6)
-  m_TagString: Untagged
+  m_TagString: Spawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3204,7 +3204,7 @@ GameObject:
   - component: {fileID: 1784438337}
   m_Layer: 0
   m_Name: Easy Spawn Point (2)
-  m_TagString: Untagged
+  m_TagString: Spawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3407,7 +3407,8 @@ MonoBehaviour:
   - {fileID: 720671022}
   - {fileID: 45412012}
   - {fileID: 611981201}
-  cooldownOfEasyTentacleSpawn: 3
+  areEasySpawnPointsActive: 
+  cooldownOfEasyTentacleSpawn: 2
 --- !u!58 &1868892493
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3433,7 +3434,7 @@ GameObject:
   - component: {fileID: 1920126531}
   m_Layer: 0
   m_Name: Easy Spawn Point
-  m_TagString: Untagged
+  m_TagString: Spawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
