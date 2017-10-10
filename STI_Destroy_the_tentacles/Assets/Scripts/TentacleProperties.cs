@@ -18,7 +18,6 @@ public class TentacleProperties : MonoBehaviour {
 	void OnCollisionEnter2D (Collision2D coll){
 		if (coll.gameObject.tag == "Shield" || coll.gameObject.tag == "Bullet" || coll.gameObject.name == "Spaceship") {
 			tentacleSpawnController.areEasySpawnPointsActive[numberOfSpawnWhereIsTheTentacle] = true;
-			Debug.Log (numberOfSpawnWhereIsTheTentacle);
 			transform.parent.gameObject.SetActive (false);
 		}
 	}

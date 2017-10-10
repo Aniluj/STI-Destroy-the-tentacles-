@@ -42,6 +42,7 @@ public class TentacleSpawnController : MonoBehaviour {
 			numberOfEasySpawnToSpawnATentacle = Random.Range (0, easyTentacleSpawnPoints.Length);
 			if (areEasySpawnPointsActive [numberOfEasySpawnToSpawnATentacle]) {
 				for (int i = 0; i < tentacles.Length; i++) {
+					Debug.Log ("entró");
 					if (tentacles [i].activeInHierarchy == false) {
 						areEasySpawnPointsActive[numberOfEasySpawnToSpawnATentacle] = false;
 						activateEasySpawn = false;
@@ -50,7 +51,6 @@ public class TentacleSpawnController : MonoBehaviour {
 						tentacles [i].transform.rotation = easyTentacleSpawnPoints [numberOfEasySpawnToSpawnATentacle].transform.localRotation;
 						tentacles [i].SetActive (true);
 						individualTentacleProperties[i].numberOfSpawnWhereIsTheTentacle = numberOfEasySpawnToSpawnATentacle;
-						Debug.Log (individualTentacleProperties[i].numberOfSpawnWhereIsTheTentacle);
 						break;
 					}
 				}

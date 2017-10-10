@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 212123490763402954}
   m_Layer: 0
   m_Name: Tentacle
-  m_TagString: Untagged
+  m_TagString: Tentacle's father
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -179,6 +179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberOfSpawnWhereIsTheTentacle: 0
   tentacleSpawnController: {fileID: 0}
+  activated: 1
 --- !u!212 &212106294665178202
 SpriteRenderer:
   m_ObjectHideFlags: 1

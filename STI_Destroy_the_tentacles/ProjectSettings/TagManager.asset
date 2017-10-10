@@ -9,6 +9,7 @@ TagManager:
   - Shield
   - Bullet
   - Spawn
+  - Tentacle's father
   layers:
   - Default
   - TransparentFX
