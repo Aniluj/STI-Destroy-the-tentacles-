@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 61670108523409958}
   - component: {fileID: 114658744870053594}
   - component: {fileID: 50958817492624004}
+  - component: {fileID: 111827571250844134}
   m_Layer: 0
   m_Name: Tentacles_0
   m_TagString: Tentacle
@@ -70,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1040462204651414}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.05834958, y: -31.55, z: 0}
+  m_LocalPosition: {x: 0.05834958, y: -15.08, z: 0}
   m_LocalScale: {x: 1.0412397, y: 18.862064, z: 3.0726984}
   m_Children: []
   m_Father: {fileID: 4704107522824788}
@@ -96,7 +97,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1186244070163126}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.8863025, y: 1.3897517, z: 10}
+  m_LocalPosition: {x: -13.27, y: 2.81, z: 0}
   m_LocalScale: {x: 0.17136842, y: 0.18459322, z: 0.17136842}
   m_Children:
   - {fileID: 4267696430470476}
@@ -166,6 +167,22 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!111 &111827571250844134
+Animation:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1040462204651414}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: a366b70efba856d419beea732a4508dc, type: 2}
+  - {fileID: 7400000, guid: 0607174cfd6fcf24d995b4dbc3e09b7a, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &114658744870053594
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -302,6 +319,6 @@ SpriteMask:
   m_BackSortingLayerID: 0
   m_FrontSortingLayer: 0
   m_BackSortingLayer: 0
-  m_FrontSortingOrder: 0
+  m_FrontSortingOrder: 1
   m_BackSortingOrder: 0
-  m_IsCustomRangeActive: 0
+  m_IsCustomRangeActive: 1

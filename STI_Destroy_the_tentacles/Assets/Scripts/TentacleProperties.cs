@@ -7,6 +7,11 @@ public class TentacleProperties : MonoBehaviour {
 	public int numberOfSpawnWhereIsTheTentacle;
 	public TentacleSpawnController tentacleSpawnController;
 	public bool activated = true;
+	//public Animation movementAnimation;
+
+	void Awake(){
+		//movementAnimation = GetComponent<Animation> ();
+	}
 
 	void Start () {
 		tentacleSpawnController = GameObject.FindGameObjectWithTag ("Vortex").GetComponent<TentacleSpawnController>();
