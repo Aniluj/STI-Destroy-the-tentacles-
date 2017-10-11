@@ -24,7 +24,6 @@ GameObject:
   - component: {fileID: 61670108523409958}
   - component: {fileID: 114658744870053594}
   - component: {fileID: 50958817492624004}
-  - component: {fileID: 111827571250844134}
   m_Layer: 0
   m_Name: Tentacles_0
   m_TagString: Tentacle
@@ -167,22 +166,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!111 &111827571250844134
-Animation:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1040462204651414}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations:
-  - {fileID: 7400000, guid: a366b70efba856d419beea732a4508dc, type: 2}
-  - {fileID: 7400000, guid: 0607174cfd6fcf24d995b4dbc3e09b7a, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!114 &114658744870053594
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -197,6 +180,7 @@ MonoBehaviour:
   numberOfSpawnWhereIsTheTentacle: 0
   tentacleSpawnController: {fileID: 0}
   activated: 1
+  movementAnimation: {fileID: 0}
 --- !u!212 &212106294665178202
 SpriteRenderer:
   m_ObjectHideFlags: 1

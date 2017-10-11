@@ -7,10 +7,10 @@ public class TentacleProperties : MonoBehaviour {
 	public int numberOfSpawnWhereIsTheTentacle;
 	public TentacleSpawnController tentacleSpawnController;
 	public bool activated = true;
-	//public Animation movementAnimation;
+	public Animator movementAnimation;
 
 	void Awake(){
-		//movementAnimation = GetComponent<Animation> ();
+		movementAnimation = GetComponent<Animator> ();
 	}
 
 	void Start () {
