@@ -21,7 +21,7 @@ public class Shoot : MonoBehaviour {
 	void Update () {
 		timer += Time.deltaTime;
 
-		if (Input.GetButtonDown("Fire") && (firstShoot || timer > cooldown)) {
+		if (Input.GetButton("Fire") && (firstShoot || timer > cooldown)) {
 			timer = 0;
 			firstShoot = false;
 			for(int i = 0; i < 10; i++){
@@ -31,7 +31,6 @@ public class Shoot : MonoBehaviour {
 					break;
 				}
 			}
-			//Instantiate (bullet, shootingPoint.position, shootingPoint.rotation);
 		}
 	}
 }

@@ -493,6 +493,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 331361894139357946, guid: 0eafbd01f85769847b59a6a6b3438507,
+        type: 2}
+      propertyPath: m_FrontSortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212106294665178202, guid: 0eafbd01f85769847b59a6a6b3438507,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0eafbd01f85769847b59a6a6b3438507, type: 2}
   m_IsPrefabParent: 0
@@ -1880,6 +1890,7 @@ GameObject:
   - component: {fileID: 1189987819}
   - component: {fileID: 1189987820}
   - component: {fileID: 1189987821}
+  - component: {fileID: 1189987822}
   m_Layer: 0
   m_Name: Spaceship
   m_TagString: Untagged
@@ -1998,6 +2009,7 @@ Transform:
   m_LocalScale: {x: 0.27336907, y: 0.27336907, z: 0.27336907}
   m_Children:
   - {fileID: 2137712451}
+  - {fileID: 1932721959}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.57101}
@@ -2027,7 +2039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccd2a836ae0eac74ebd53831f124a4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldown: 0.5
+  cooldown: 0.3
   bullet:
   - {fileID: 305751694}
   - {fileID: 844426731}
@@ -2055,6 +2067,30 @@ MonoBehaviour:
   damageReceived: 20
   damageWhenSpecialMovementIsActive: 0
   damage: 0
+--- !u!114 &1189987822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1189987813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccd2a836ae0eac74ebd53831f124a4fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldown: 0.3
+  bullet:
+  - {fileID: 305751694}
+  - {fileID: 844426731}
+  - {fileID: 104774184}
+  - {fileID: 1118870198}
+  - {fileID: 1359886447}
+  - {fileID: 123101453}
+  - {fileID: 962568890}
+  - {fileID: 4357613}
+  - {fileID: 1475362767}
+  - {fileID: 2129136623}
+  shootingPoint: {fileID: 1932721959}
 --- !u!1 &1198198198
 GameObject:
   m_ObjectHideFlags: 0
@@ -3633,6 +3669,34 @@ Transform:
   m_Father: {fileID: 46756579}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1932721958
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1932721959}
+  m_Layer: 0
+  m_Name: Shooting point (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1932721959
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1932721958}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.79, y: 0.9, z: 0}
+  m_LocalScale: {x: 1.0000039, y: 1.0000039, z: 1.0000033}
+  m_Children: []
+  m_Father: {fileID: 1189987818}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2012863396
 Prefab:
   m_ObjectHideFlags: 0
@@ -3981,7 +4045,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2137712450}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.79, y: 0, z: 0}
+  m_LocalPosition: {x: 2.79, y: -0.83, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1189987818}

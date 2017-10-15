@@ -181,6 +181,7 @@ MonoBehaviour:
   tentacleSpawnController: {fileID: 0}
   activated: 1
   movementAnimation: {fileID: 0}
+  quantityOfHitsToDie: 4
 --- !u!212 &212106294665178202
 SpriteRenderer:
   m_ObjectHideFlags: 1
