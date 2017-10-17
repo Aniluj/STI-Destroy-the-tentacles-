@@ -11,16 +11,16 @@ public class PowerUpsController : MonoBehaviour {
 
 		
 	void Update () {
-		//if (slowdownPowerUp.isClicked) {
-		//	slowdownPowerUp.isClicked = false;
-		//	tentaclesOnScreen = GameObject.FindGameObjectsWithTag("Tentacle's father");
-		//	for (int i = 0; i < tentaclesOnScreen.Length; i++) {
-		//		propertiesOfTheTentacle = tentaclesOnScreen [i].transform.GetChild (0).GetComponent<TentacleProperties> ();
-		//		propertiesOfTheTentacle.movementAnimation.GetClip ("Tentacle_Movement").frameRate = 5;
-		//	}
-		//}
+		if (slowdownPowerUp.isClicked) {
+			slowdownPowerUp.isClicked = false;
+			tentaclesOnScreen = GameObject.FindGameObjectsWithTag("Tentacle's father");
+			for (int i = 0; i < tentaclesOnScreen.Length; i++) {
+				propertiesOfTheTentacle = tentaclesOnScreen [i].transform.GetChild (0).GetComponent<TentacleProperties> ();
+				propertiesOfTheTentacle.movementAnimation.SetFloat ("runMultiplier", 0.1f);
+		}
 
 		if (explosionPowerUp.isClicked) {
+			Debug.Log ("entré");
 			explosionPowerUp.isClicked = false;
 			tentaclesOnScreen = GameObject.FindGameObjectsWithTag("Tentacle's father");
 			for (int i = 0; i < tentaclesOnScreen.Length; i++) {
@@ -28,6 +28,7 @@ public class PowerUpsController : MonoBehaviour {
 				propertiesOfTheTentacle = tentaclesOnScreen [i].transform.GetChild (0).GetComponent<TentacleProperties> ();
 				propertiesOfTheTentacle.tentacleSpawnController.areEasySpawnPointsActive [propertiesOfTheTentacle.numberOfSpawnWhereIsTheTentacle] = true;
 			}
-		}
-	}
+		 }
+	  }
+   }
 }
