@@ -21,7 +21,7 @@ public class TentacleProperties : MonoBehaviour {
 	}
 
 	void Update () {
-		if (timesHitByBullets == quantityOfHitsToDie) {
+		if (timesHitByBullets >= quantityOfHitsToDie) {
 			timesHitByBullets = 0;
 			tentacleSpawnController.areEasySpawnPointsActive[numberOfSpawnWhereIsTheTentacle] = true;
 			transform.parent.gameObject.SetActive (false);
