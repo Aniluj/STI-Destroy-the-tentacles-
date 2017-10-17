@@ -13,10 +13,11 @@ public class PowerUpsController : MonoBehaviour {
 	void Update () {
 		if (slowdownPowerUp.isClicked) {
 			slowdownPowerUp.isClicked = false;
-			tentaclesOnScreen = GameObject.FindGameObjectsWithTag("Tentacle's father");
+			tentaclesOnScreen = GameObject.FindGameObjectsWithTag ("Tentacle's father");
 			for (int i = 0; i < tentaclesOnScreen.Length; i++) {
 				propertiesOfTheTentacle = tentaclesOnScreen [i].transform.GetChild (0).GetComponent<TentacleProperties> ();
 				propertiesOfTheTentacle.movementAnimation.SetFloat ("runMultiplier", 0.1f);
+			}
 		}
 
 		if (explosionPowerUp.isClicked) {
@@ -31,4 +32,3 @@ public class PowerUpsController : MonoBehaviour {
 		 }
 	  }
    }
-}
