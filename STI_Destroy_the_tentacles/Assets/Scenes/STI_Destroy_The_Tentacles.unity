@@ -273,7 +273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 46756579}
   m_Layer: 0
-  m_Name: Easy Spawn Points
+  m_Name: Easy spawn points
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -286,7 +286,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 46756578}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.24, y: 0.61, z: 1}
+  m_LocalPosition: {x: -2.86, y: 2.84, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1920126531}
@@ -503,7 +503,7 @@ GameObject:
   m_Component:
   - component: {fileID: 118215680}
   m_Layer: 0
-  m_Name: GameObject (3)
+  m_Name: Power Up spawn point 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -515,13 +515,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 118215679}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.04, y: -8.97, z: 0}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 17.62, y: -11.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 1869396884}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &123101453 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1460314529972278, guid: ba87b68fb34ab42458da16cb2a9bc07f,
@@ -711,15 +711,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 331361894139357946, guid: 0eafbd01f85769847b59a6a6b3438507,
-        type: 2}
-      propertyPath: m_FrontSortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212106294665178202, guid: 0eafbd01f85769847b59a6a6b3438507,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 1
+    - target: {fileID: 1186244070163126, guid: 0eafbd01f85769847b59a6a6b3438507, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0eafbd01f85769847b59a6a6b3438507, type: 2}
@@ -1088,9 +1082,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.026859034, y: -0.0000002113312}
+  m_Offset: {x: -0.069245204, y: -0.0000002113312}
   serializedVersion: 2
-  m_Radius: 1.6508292
+  m_Radius: 2.131349
 --- !u!212 &365563442
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1144,7 +1138,7 @@ Transform:
   m_LocalScale: {x: 0.28204376, y: 0.28204376, z: 0.28204376}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &365563444
 MonoBehaviour:
@@ -1434,7 +1428,7 @@ RectTransform:
   m_Father: {fileID: 1052400343}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.791, y: 0.89542013}
+  m_AnchorMin: {x: 0.8396748, y: 0.93100005}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
@@ -1723,7 +1717,7 @@ GameObject:
   m_Component:
   - component: {fileID: 654902660}
   m_Layer: 0
-  m_Name: GameObject (2)
+  m_Name: Power Up spawn point 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1735,12 +1729,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 654902659}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.01, y: -8.95, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -15.35, y: -11.49, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 1869396884}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &691359583
 GameObject:
@@ -1951,7 +1945,7 @@ GameObject:
   m_Component:
   - component: {fileID: 857686811}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Power Up spawn point 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1963,12 +1957,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 857686810}
-  m_LocalRotation: {x: -1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: -9.01, y: 7.42, z: 0}
+  m_LocalRotation: {x: -1, y: -0, z: -0, w: 0}
+  m_LocalPosition: {x: -14.65, y: 8.965688, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 1869396884}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -180, y: 0, z: 0}
 --- !u!1 &859384531
 GameObject:
@@ -1979,7 +1973,7 @@ GameObject:
   m_Component:
   - component: {fileID: 859384532}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: Power Up spawn point 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1991,13 +1985,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 859384531}
-  m_LocalRotation: {x: -1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: 9.02, y: 7.49, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalPosition: {x: 17.06, y: 9.035687, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 0}
+  m_Father: {fileID: 1869396884}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -180, y: 180, z: 0}
 --- !u!1001 &926508289
 Prefab:
   m_ObjectHideFlags: 0
@@ -2279,7 +2273,7 @@ Camera:
   far clip plane: 1000
   field of view: 42.1
   orthographic: 1
-  orthographic size: 4.5172706
+  orthographic size: 7.9937606
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2302,7 +2296,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 994352437}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.61, z: -10}
+  m_LocalPosition: {x: -1.52, y: 7.91, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2770,7 +2764,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1189987813}
   m_LocalRotation: {x: -0, y: -0, z: -0.7106245, w: 0.70357156}
-  m_LocalPosition: {x: 0.03, y: 4.86, z: 0}
+  m_LocalPosition: {x: -2.49, y: 9.14, z: 0}
   m_LocalScale: {x: 0.27336907, y: 0.27336907, z: 0.27336907}
   m_Children:
   - {fileID: 2137712451}
@@ -2908,7 +2902,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1198198198}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: -7.26, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 286345247}
@@ -2992,7 +2986,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1288499354
 GameObject:
@@ -3024,9 +3018,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.036610194, y: 0}
+  m_Offset: {x: -0.1301799, y: -0.07485535}
   serializedVersion: 2
-  m_Radius: 1.4871223
+  m_Radius: 1.9549701
 --- !u!212 &1288499357
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3080,7 +3074,7 @@ Transform:
   m_LocalScale: {x: 0.28968257, y: 0.28968257, z: 0.28968257}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1288499359
 MonoBehaviour:
@@ -3992,8 +3986,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1575760305}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.507309, y: 5.507309, z: 5.507309}
+  m_LocalPosition: {x: -2.55, y: 2.714, z: 0}
+  m_LocalScale: {x: 7.4321775, y: 7.4321775, z: 7.4321775}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -4624,8 +4618,8 @@ GameObject:
   - component: {fileID: 1868892489}
   - component: {fileID: 1868892491}
   - component: {fileID: 1868892492}
-  - component: {fileID: 1868892493}
   - component: {fileID: 1868892494}
+  - component: {fileID: 1868892493}
   m_Layer: 0
   m_Name: Vortex
   m_TagString: Vortex
@@ -4682,8 +4676,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1868892488}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.6882914, y: 1.6882914, z: 1.6882914}
+  m_LocalPosition: {x: -2.55, y: 2.714, z: 0}
+  m_LocalScale: {x: 2.278369, y: 2.278369, z: 2.278369}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -4775,8 +4769,41 @@ MonoBehaviour:
   - {fileID: 859384532}
   - {fileID: 654902660}
   - {fileID: 118215680}
-  timeToSpawnAPowerUp: 5
+  timeToSpawnAPowerUp: 10
   velocity: 5
+  maxTimeInMovement: 7
+--- !u!1 &1869396883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1869396884}
+  m_Layer: 0
+  m_Name: Power Up spawn points
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1869396884
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1869396883}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.5, y: 4.01, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 857686811}
+  - {fileID: 859384532}
+  - {fileID: 654902660}
+  - {fileID: 118215680}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1878160522
 GameObject:
   m_ObjectHideFlags: 0
@@ -4820,7 +4847,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.020158738, y: 0.020159006}
+  m_Offset: {x: 0.009164274, y: 0.053141832}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4831,7 +4858,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7984128, y: 1.7984121}
+  m_Size: {x: 2.2601829, y: 2.1722255}
   m_EdgeRadius: 0
 --- !u!212 &1878160525
 SpriteRenderer:
@@ -4886,7 +4913,7 @@ Transform:
   m_LocalScale: {x: 0.4930735, y: 0.4930735, z: 0.4930735}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1878939405
 GameObject:
@@ -5079,7 +5106,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000011920929, y: 0.0000023841858}
+  m_Offset: {x: 0.025491714, y: -0.07647014}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5090,7 +5117,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.7485826, y: 3.8540797}
+  m_Size: {x: 4.819215, y: 4.6188216}
   m_EdgeRadius: 0
 --- !u!212 &2030208614
 SpriteRenderer:
@@ -5145,7 +5172,7 @@ Transform:
   m_LocalScale: {x: 0.2126652, y: 0.2126652, z: 0.2126652}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2030653834
 GameObject:
@@ -5325,8 +5352,8 @@ RectTransform:
   m_Father: {fileID: 1052400343}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.89542013}
-  m_AnchorMax: {x: 0.22247562, y: 1}
+  m_AnchorMin: {x: 0, y: 0.93100005}
+  m_AnchorMax: {x: 0.15728016, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

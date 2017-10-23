@@ -9,7 +9,7 @@ public class TentacleProperties : MonoBehaviour {
 	public bool activated = true;
 	public Animator movementAnimation;
 	public int quantityOfHitsToDie;
-	private int timesHitByBullets;
+	private int timesHitByBullets = 0;
 
 	void Awake(){
 		movementAnimation = GetComponent<Animator> ();
@@ -17,7 +17,6 @@ public class TentacleProperties : MonoBehaviour {
 
 	void Start () {
 		tentacleSpawnController = GameObject.FindGameObjectWithTag ("Vortex").GetComponent<TentacleSpawnController>();
-		timesHitByBullets = 0;
 	}
 
 	void Update () {
@@ -31,10 +30,12 @@ public class TentacleProperties : MonoBehaviour {
 	void OnCollisionEnter2D (Collision2D coll){
 		if (coll.gameObject.tag == "Shield" || coll.gameObject.name == "Spaceship") {
 			tentacleSpawnController.areEasySpawnPointsActive[numberOfSpawnWhereIsTheTentacle] = true;
+			timesHitByBullets = 0;
 			transform.parent.gameObject.SetActive (false);
 		}
 		if (coll.gameObject.tag == "Bullet") {
 			timesHitByBullets += 1;
+
 		}
 	}
 }
