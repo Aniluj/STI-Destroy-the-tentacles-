@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/STI_Destroy_The_Tentacles.unity
     guid: e260776cacef2cf40a668fa2fcd88a37
+  - enabled: 1
+    path: Assets/Scenes/Market.unity
+    guid: 003dece5cf0362340b3228cfe012a49d
