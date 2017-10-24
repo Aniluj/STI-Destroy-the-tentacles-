@@ -4863,6 +4863,7 @@ MonoBehaviour:
   pointsObtainedByTime: 1
   scoreText: {fileID: 1181661834}
   health: {fileID: 1189987821}
+  shieldHealth: {fileID: 1575760310}
 --- !u!1 &1869396883
 GameObject:
   m_ObjectHideFlags: 0
