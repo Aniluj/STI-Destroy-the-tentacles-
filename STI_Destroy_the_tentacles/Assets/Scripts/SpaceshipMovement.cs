@@ -22,7 +22,6 @@ public class SpaceshipMovement : MonoBehaviour {
 
 	void FixedUpdate(){
 		RotateAround (objectToRotateAround.position, velocity * horizontalAxis * Time.deltaTime, spaceship);
-		//spaceship.MovePosition (transform.position + transform.up * horizontalAxis * Time.fixedDeltaTime * velocity);
 	}
 
 	public static void RotateAround(Vector3 planetPosition, float velocity, Rigidbody2D spaceship){
