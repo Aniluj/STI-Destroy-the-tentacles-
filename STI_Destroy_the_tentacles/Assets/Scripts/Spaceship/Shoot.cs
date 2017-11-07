@@ -26,7 +26,7 @@ public class Shoot : MonoBehaviour {
 		if (Input.GetButton ("Fire") && (firstShoot || timer > cooldown) && isOverHeated == false) {
 			timer = 0;
 			firstShoot = false;
-			for (int i = 0; i < 10; i++) {
+			for (int i = 0; i < 20; i++) {
 				if (bullet [i].activeInHierarchy == false) {
 					bullet [i].transform.SetPositionAndRotation (shootingPoint.position, shootingPoint.rotation);
 					bullet [i].SetActive (true);

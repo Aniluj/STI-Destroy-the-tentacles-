@@ -9,6 +9,7 @@ public class TentacleProperties : MonoBehaviour {
 	public bool activated = true;
 	public Animator movementAnimation;
 	public int quantityOfHitsToDie;
+	public string typeOfSpawnWhereIsTheTentacle;
 	private int timesHitByBullets = 0;
 
 	void Awake(){
@@ -22,14 +23,30 @@ public class TentacleProperties : MonoBehaviour {
 	void Update () {
 		if (timesHitByBullets >= quantityOfHitsToDie) {
 			timesHitByBullets = 0;
-			tentacleSpawnController.areEasySpawnPointsActive[numberOfSpawnWhereIsTheTentacle] = true;
+			if (typeOfSpawnWhereIsTheTentacle == "easy") {
+				tentacleSpawnController.areEasySpawnPointsActive [numberOfSpawnWhereIsTheTentacle] = true;
+			}
+			if (typeOfSpawnWhereIsTheTentacle == "medium") {
+				tentacleSpawnController.areMediumSpawnPointsActive [numberOfSpawnWhereIsTheTentacle] = true;
+			}
+			if (typeOfSpawnWhereIsTheTentacle == "hard") {
+				tentacleSpawnController.areHardSpawnPointsActive [numberOfSpawnWhereIsTheTentacle] = true;
+			}
 			transform.parent.gameObject.SetActive (false);
 		}
 	}
 
 	void OnCollisionEnter2D (Collision2D coll){
 		if (coll.gameObject.tag == "Shield" || coll.gameObject.name == "Spaceship") {
-			tentacleSpawnController.areEasySpawnPointsActive[numberOfSpawnWhereIsTheTentacle] = true;
+			if (typeOfSpawnWhereIsTheTentacle == "easy") {
+				tentacleSpawnController.areEasySpawnPointsActive [numberOfSpawnWhereIsTheTentacle] = true;
+			}
+			if (typeOfSpawnWhereIsTheTentacle == "medium") {
+				tentacleSpawnController.areMediumSpawnPointsActive [numberOfSpawnWhereIsTheTentacle] = true;
+			}
+			if (typeOfSpawnWhereIsTheTentacle == "hard") {
+				tentacleSpawnController.areHardSpawnPointsActive [numberOfSpawnWhereIsTheTentacle] = true;
+			}
 			timesHitByBullets = 0;
 			transform.parent.gameObject.SetActive (false);
 		}
