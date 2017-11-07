@@ -9,9 +9,18 @@ public class ShieldHealth : MonoBehaviour {
 	public Slider shieldHealthBar;
 	public int damageReceived;
 	private int initialLife;
+	private int upgradeHealthIsActive;
+	private string upgradeOfShieldHealthKey = "upgradeOfShieldHealth";
 
 	void Start () {
-		initialLife = 100;
+		upgradeHealthIsActive = PlayerPrefs.GetInt (upgradeOfShieldHealthKey);
+		Debug.Log (upgradeHealthIsActive);
+		if (upgradeHealthIsActive == 0) {
+			initialLife = 175;
+		} else if (upgradeHealthIsActive == 1) {
+			initialLife = 100;
+		}
+		shieldHealthBar.maxValue = initialLife;
 		shieldHealthBar.value = initialLife;
 	}
 	

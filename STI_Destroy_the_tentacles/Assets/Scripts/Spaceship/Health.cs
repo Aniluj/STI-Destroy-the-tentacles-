@@ -11,10 +11,18 @@ public class Health : MonoBehaviour {
 	public int damageWhenSpecialMovementIsActive;
 	public int damage;
 	private float initialLife;
+	private int upgradeOfHealthIsActive;
+	private string upgradeOfHealthKey = "upgradeOfHealth";
 
 	void Start () {
-		initialLife = 100f;
+		upgradeOfHealthIsActive = PlayerPrefs.GetInt (upgradeOfHealthKey);
+		if (upgradeOfHealthIsActive == 0) {
+			initialLife = 175f;
+		} else {
+			initialLife = 100f;
+		}
 		damageWhenSpecialMovementIsActive = 0;
+		healthBar.maxValue = initialLife;
 		healthBar.value = initialLife;
 	}
 	
