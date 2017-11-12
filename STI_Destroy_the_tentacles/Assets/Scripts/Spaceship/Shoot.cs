@@ -6,10 +6,13 @@ public class Shoot : MonoBehaviour {
 
 	private bool firstShoot;
 	private float timer;
+	private string upgradeOfShotKey = "upgradeOfShot";
+	private int upgradeOfShotIsActive;
 	public bool isOverHeated;
 	public float cooldown;
 	public GameObject[] bullet;
 	public Transform shootingPoint;
+	public Transform shootingPointOfTheUpgrade;
 	public bool shooting;
 
 
@@ -18,6 +21,10 @@ public class Shoot : MonoBehaviour {
 		firstShoot = true;
 		shooting = false;
 		isOverHeated = false;
+		upgradeOfShotIsActive = PlayerPrefs.GetInt (upgradeOfShotKey);
+		if (upgradeOfShotIsActive == 0) {
+			shootingPoint = shootingPointOfTheUpgrade;
+		}
 	}
 
 	void Update () {

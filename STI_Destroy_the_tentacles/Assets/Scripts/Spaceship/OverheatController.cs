@@ -29,9 +29,11 @@ public class OverheatController : MonoBehaviour {
 		if (overheatSlider.value >= overheatSlider.maxValue) {
 			shooting [0].isOverHeated = true;
 			shooting [1].isOverHeated = true;
+			shooting [2].isOverHeated = true;
 		} else if(overheatSlider.value <= overheatSlider.maxValue - 1){
 			shooting [0].isOverHeated = false;
 			shooting [1].isOverHeated = false;
+			shooting [2].isOverHeated = false;
 		}
 	}
 }

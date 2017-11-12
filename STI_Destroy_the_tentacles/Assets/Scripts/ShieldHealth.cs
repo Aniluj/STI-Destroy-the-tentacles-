@@ -26,7 +26,7 @@ public class ShieldHealth : MonoBehaviour {
 	
 	void Update(){
 		if (shieldHealthBar.value <= 0) {
-			SceneManager.LoadScene ("Menu");
+			SceneManager.LoadScene ("Market");
 		}
 	}
 

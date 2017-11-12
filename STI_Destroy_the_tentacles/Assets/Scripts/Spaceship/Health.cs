@@ -28,7 +28,7 @@ public class Health : MonoBehaviour {
 	
 	void Update(){
 		if (healthBar.value <= 0) {
-			SceneManager.LoadScene ("Menu");
+			SceneManager.LoadScene ("Market");
 		}
 	}
 
