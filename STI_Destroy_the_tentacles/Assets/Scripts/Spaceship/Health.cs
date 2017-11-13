@@ -16,7 +16,7 @@ public class Health : MonoBehaviour {
 
 	void Start () {
 		upgradeOfHealthIsActive = PlayerPrefs.GetInt (upgradeOfHealthKey);
-		if (upgradeOfHealthIsActive == 0) {
+		if (upgradeOfHealthIsActive == 1) {
 			initialLife = 175f;
 		} else {
 			initialLife = 100f;

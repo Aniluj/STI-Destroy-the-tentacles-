@@ -89,19 +89,16 @@ public class TentacleSpawnController : MonoBehaviour {
 			timerForEasySpawns = 0;
 			spawnTentacles (tentacles, easyTentacleSpawnPoints, areEasySpawnPointsActive, individualTentacleProperties, numberOfEasySpawnToSpawnATentacle, idForEasySpawns);
 			activateEasySpawn = false;
-			Debug.Log ("spawnCall");
 		}
 		if(activateMediumSpawn){
 			timerForMediumSpawns = 0;
 			spawnTentacles(tentacles, mediumTentacleSpawnPoints, areMediumSpawnPointsActive, individualTentacleProperties, numberOfMediumSpawnToSpawnATentacle, idForMediumSpawns);
 			activateMediumSpawn = false;
-			Debug.Log ("spawnCall 2");
 		}
 		if(activateHardSpawn){
 			timerForHardSpawns = 0;
 			spawnTentacles(tentacles, hardTentacleSpawnPoints, areHardSpawnPointsActive, individualTentacleProperties, numberOfHardSpawnToSpawnATentacle, idForHardSpawns);
 			activateHardSpawn = false;
-			Debug.Log ("spawnCall 3");
 		}
 	}
 
@@ -124,7 +121,6 @@ public class TentacleSpawnController : MonoBehaviour {
 					tentacles [i].SetActive (true);
 					individualTentacleProperties [i].typeOfSpawnWhereIsTheTentacle = idForSpawns;
 					individualTentacleProperties[i].numberOfSpawnWhereIsTheTentacle = numberOfSpawnToSpawnATentacle;
-					Debug.Log ("spawning");
 					break;
 				}
 			}

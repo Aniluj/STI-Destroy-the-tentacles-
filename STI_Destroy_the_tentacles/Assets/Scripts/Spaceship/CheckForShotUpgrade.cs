@@ -11,15 +11,10 @@ public class CheckForShotUpgrade : MonoBehaviour {
 	void Start () {
 		shootScriptsInSpaceship = GetComponents<Shoot> ();
 		upgradeOfShotIsActive = PlayerPrefs.GetInt (upgradeOfShotKey);
-		if (upgradeOfShotIsActive == 0) {
+		if (upgradeOfShotIsActive == 1) {
 			for (int i = 0; i < shootScriptsInSpaceship.Length; i++) {
 				shootScriptsInSpaceship [i].enabled = true;
 			}
 		}
-	}
-	
-
-	void Update () {
-		
 	}
 }

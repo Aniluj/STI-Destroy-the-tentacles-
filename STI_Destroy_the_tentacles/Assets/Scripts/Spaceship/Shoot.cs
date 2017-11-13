@@ -22,7 +22,7 @@ public class Shoot : MonoBehaviour {
 		shooting = false;
 		isOverHeated = false;
 		upgradeOfShotIsActive = PlayerPrefs.GetInt (upgradeOfShotKey);
-		if (upgradeOfShotIsActive == 0) {
+		if (upgradeOfShotIsActive == 1) {
 			shootingPoint = shootingPointOfTheUpgrade;
 		}
 	}

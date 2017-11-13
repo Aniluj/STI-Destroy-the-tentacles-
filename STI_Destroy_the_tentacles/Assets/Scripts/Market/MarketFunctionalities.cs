@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class MarketFunctionalities : MonoBehaviour {
 
 	public int priceOfTheUpgrade;
+	public GameObject[] panels;
 	private Text priceText;
 	private string accumulatedPointsKey = "accumulatedPoints";
 	private int totalAccumulatedScore;
@@ -19,7 +20,9 @@ public class MarketFunctionalities : MonoBehaviour {
 	}
 
 	void Start () {
-		priceText.text = priceOfTheUpgrade.ToString ();
+		if (gameObject.tag == "Price") {
+			priceText.text = priceOfTheUpgrade.ToString ();
+		}
 		totalAccumulatedScore = PlayerPrefs.GetInt (accumulatedPointsKey);
 	}
 
@@ -27,15 +30,24 @@ public class MarketFunctionalities : MonoBehaviour {
 		if (PlayerPrefs.GetInt (accumulatedPointsKey) >= priceOfTheUpgrade) {
 			PlayerPrefs.SetInt (accumulatedPointsKey, totalAccumulatedScore - priceOfTheUpgrade);
 			if (transform.parent.name == "Upgrade of health") {
-				PlayerPrefs.SetInt (upgradeOfHealthKey, 0);
+				PlayerPrefs.SetInt (upgradeOfHealthKey, 1);
 			}
 			if (transform.parent.name == "Upgrade of shield health") {
-				PlayerPrefs.SetInt (upgradeOfShieldHealthKey, 0);
+				PlayerPrefs.SetInt (upgradeOfShieldHealthKey, 1);
 			}
 			if (transform.parent.name == "Upgrade of shot") {
-				PlayerPrefs.SetInt (upgradeOfShotKey, 0);
+				PlayerPrefs.SetInt (upgradeOfShotKey, 1);
 			}
 			transform.parent.gameObject.SetActive (false);
+		}
+	}
+
+	public void resetPlayerprefs(){
+		Debug.Log( PlayerPrefs.GetInt (upgradeOfShotKey));
+		PlayerPrefs.DeleteAll ();
+		Debug.Log( PlayerPrefs.GetInt (upgradeOfShotKey));
+		for (int i = 0; i < panels.Length; i++) {
+			panels [i].SetActive (true);
 		}
 	}
 }

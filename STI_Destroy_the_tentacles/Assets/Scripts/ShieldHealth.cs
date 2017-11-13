@@ -15,9 +15,9 @@ public class ShieldHealth : MonoBehaviour {
 	void Start () {
 		upgradeHealthIsActive = PlayerPrefs.GetInt (upgradeOfShieldHealthKey);
 		Debug.Log (upgradeHealthIsActive);
-		if (upgradeHealthIsActive == 0) {
+		if (upgradeHealthIsActive == 1) {
 			initialLife = 175;
-		} else if (upgradeHealthIsActive == 1) {
+		} else{
 			initialLife = 100;
 		}
 		shieldHealthBar.maxValue = initialLife;
