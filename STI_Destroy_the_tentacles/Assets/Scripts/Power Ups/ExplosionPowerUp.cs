@@ -6,6 +6,13 @@ public class ExplosionPowerUp : MonoBehaviour {
 
 	private GameObject[] tentaclesOnScreen;
 	private TentacleProperties propertiesOfTheTentacle;
+	public string[] keycodes;
+
+	void Start(){
+		for (int i = 0; i < keycodes.Length; i++) {
+			
+		}
+	}
 
 	void OnMouseDown(){
 		tentaclesOnScreen = GameObject.FindGameObjectsWithTag("Tentacle's father");
