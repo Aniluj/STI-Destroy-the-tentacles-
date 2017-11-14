@@ -3,21 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class ShieldHealth : MonoBehaviour {
 
 	public Slider shieldHealthBar;
 	public int damageReceived;
-	private int initialLife;
+	public int initialLife;
 	private int upgradeHealthIsActive;
 	private string upgradeOfShieldHealthKey = "upgradeOfShieldHealth";
 
 	void Start () {
 		upgradeHealthIsActive = PlayerPrefs.GetInt (upgradeOfShieldHealthKey);
 		Debug.Log (upgradeHealthIsActive);
-		if (upgradeHealthIsActive == 0) {
+		if (upgradeHealthIsActive == 1) {
 			initialLife = 175;
-		} else if (upgradeHealthIsActive == 1) {
+		} else{
 			initialLife = 100;
 		}
 		shieldHealthBar.maxValue = initialLife;
@@ -26,7 +27,7 @@ public class ShieldHealth : MonoBehaviour {
 	
 	void Update(){
 		if (shieldHealthBar.value <= 0) {
-			SceneManager.LoadScene ("Menu");
+			SceneManager.LoadScene ("Market");
 		}
 	}
 

@@ -10,6 +10,7 @@ TagManager:
   - Bullet
   - Spawn
   - Tentacle's father
+  - Price
   layers:
   - Default
   - TransparentFX

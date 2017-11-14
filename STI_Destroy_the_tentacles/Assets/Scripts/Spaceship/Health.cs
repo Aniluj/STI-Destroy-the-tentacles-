@@ -10,13 +10,13 @@ public class Health : MonoBehaviour {
 	public int damageReceived;
 	public int damageWhenSpecialMovementIsActive;
 	public int damage;
-	private float initialLife;
+	public float initialLife;
 	private int upgradeOfHealthIsActive;
 	private string upgradeOfHealthKey = "upgradeOfHealth";
 
 	void Start () {
 		upgradeOfHealthIsActive = PlayerPrefs.GetInt (upgradeOfHealthKey);
-		if (upgradeOfHealthIsActive == 0) {
+		if (upgradeOfHealthIsActive == 1) {
 			initialLife = 175f;
 		} else {
 			initialLife = 100f;
@@ -28,7 +28,7 @@ public class Health : MonoBehaviour {
 	
 	void Update(){
 		if (healthBar.value <= 0) {
-			SceneManager.LoadScene ("Menu");
+			SceneManager.LoadScene ("Market");
 		}
 	}
 
