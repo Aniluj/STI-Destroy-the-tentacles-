@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class ShieldHealth : MonoBehaviour {
 
 	public Slider shieldHealthBar;
 	public int damageReceived;
-	private int initialLife;
+	public int initialLife;
 	private int upgradeHealthIsActive;
 	private string upgradeOfShieldHealthKey = "upgradeOfShieldHealth";
 

@@ -10,7 +10,7 @@ public class Health : MonoBehaviour {
 	public int damageReceived;
 	public int damageWhenSpecialMovementIsActive;
 	public int damage;
-	private float initialLife;
+	public float initialLife;
 	private int upgradeOfHealthIsActive;
 	private string upgradeOfHealthKey = "upgradeOfHealth";
 
