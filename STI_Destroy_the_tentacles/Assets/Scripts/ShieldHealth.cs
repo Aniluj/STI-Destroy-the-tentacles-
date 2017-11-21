@@ -12,6 +12,11 @@ public class ShieldHealth : MonoBehaviour {
 	public int initialLife;
 	private int upgradeHealthIsActive;
 	private string upgradeOfShieldHealthKey = "upgradeOfShieldHealth";
+	private SpriteRenderer spriteRendererOfTheShield;
+
+	void Awake(){
+		spriteRendererOfTheShield = GetComponent<SpriteRenderer> ();
+	}
 
 	void Start () {
 		upgradeHealthIsActive = PlayerPrefs.GetInt (upgradeOfShieldHealthKey);
@@ -28,6 +33,12 @@ public class ShieldHealth : MonoBehaviour {
 	void Update(){
 		if (shieldHealthBar.value <= 0) {
 			SceneManager.LoadScene ("Market");
+		}
+		if (shieldHealthBar.value >= 0 && shieldHealthBar.value <= initialLife/2) {
+			spriteRendererOfTheShield.color = Color.red;
+		}
+		if(shieldHealthBar.value <= initialLife && shieldHealthBar.value > initialLife/2){
+			spriteRendererOfTheShield.color = Color.white;
 		}
 	}
 
