@@ -8,12 +8,14 @@ public class TentacleProperties : MonoBehaviour {
 	public TentacleSpawnController tentacleSpawnController;
 	public bool activated = true;
 	public Animator movementAnimation;
+	public SpriteRenderer spriteRenderOfTheTentacle;
 	public int quantityOfHitsToDie;
 	public string typeOfSpawnWhereIsTheTentacle;
 	private int timesHitByBullets = 0;
 
 	void Awake(){
 		movementAnimation = GetComponent<Animator> ();
+		spriteRenderOfTheTentacle = GetComponent<SpriteRenderer> ();
 	}
 
 	void Start () {
@@ -32,6 +34,7 @@ public class TentacleProperties : MonoBehaviour {
 			if (typeOfSpawnWhereIsTheTentacle == "hard") {
 				tentacleSpawnController.areHardSpawnPointsActive [numberOfSpawnWhereIsTheTentacle] = true;
 			}
+			spriteRenderOfTheTentacle.color = Color.white;
 			transform.parent.gameObject.SetActive (false);
 		}
 	}
@@ -48,6 +51,7 @@ public class TentacleProperties : MonoBehaviour {
 				tentacleSpawnController.areHardSpawnPointsActive [numberOfSpawnWhereIsTheTentacle] = true;
 			}
 			timesHitByBullets = 0;
+			spriteRenderOfTheTentacle.color = Color.white;
 			transform.parent.gameObject.SetActive (false);
 		}
 		if (coll.gameObject.tag == "Bullet") {

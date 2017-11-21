@@ -16,7 +16,6 @@ public class ExplosionPowerUp : MonoBehaviour {
 				tentaclesOnScreen [i].SetActive (false);
 				propertiesOfTheTentacle = tentaclesOnScreen [i].transform.GetChild (0).GetComponent<TentacleProperties> ();
 				propertiesOfTheTentacle.tentacleSpawnController.areEasySpawnPointsActive [propertiesOfTheTentacle.numberOfSpawnWhereIsTheTentacle] = true;
-				Debug.Log(propertiesOfTheTentacle.numberOfSpawnWhereIsTheTentacle);
 				if (propertiesOfTheTentacle.typeOfSpawnWhereIsTheTentacle == "medium") {
 					propertiesOfTheTentacle.tentacleSpawnController.areMediumSpawnPointsActive [propertiesOfTheTentacle.numberOfSpawnWhereIsTheTentacle] = true;
 				}
