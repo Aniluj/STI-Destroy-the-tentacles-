@@ -13,6 +13,11 @@ public class Health : MonoBehaviour {
 	public float initialLife;
 	private int upgradeOfHealthIsActive;
 	private string upgradeOfHealthKey = "upgradeOfHealth";
+	private SpriteRenderer spriteRendererOfTheSpaceship;
+
+	void Awake(){
+		spriteRendererOfTheSpaceship = GetComponent<SpriteRenderer> ();
+	}
 
 	void Start () {
 		upgradeOfHealthIsActive = PlayerPrefs.GetInt (upgradeOfHealthKey);
@@ -29,6 +34,12 @@ public class Health : MonoBehaviour {
 	void Update(){
 		if (healthBar.value <= 0) {
 			SceneManager.LoadScene ("Market");
+		}
+		if (healthBar.value >= 0 && healthBar.value <= initialLife/2) {
+			spriteRendererOfTheSpaceship.color = Color.red;
+		}
+		if(healthBar.value <= initialLife && healthBar.value > initialLife/2){
+			spriteRendererOfTheSpaceship.color = Color.white;
 		}
 	}
 

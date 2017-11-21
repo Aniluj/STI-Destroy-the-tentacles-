@@ -7,9 +7,13 @@ public class RecoverHealthPowerUp : MonoBehaviour {
 
 	public Slider healthBar;
 	public float healthToIncrement;
+	public bool isActive = false;
 
-	void OnMouseDown(){
-		healthBar.value += healthToIncrement;
-		gameObject.SetActive (false);
+	void Update(){
+		if (isActive) {
+			healthBar.value += healthToIncrement;
+			isActive = false;
+			gameObject.SetActive (false);
+		}
 	}
 }
