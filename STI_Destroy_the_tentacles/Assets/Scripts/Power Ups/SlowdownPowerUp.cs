@@ -6,13 +6,17 @@ public class SlowdownPowerUp : MonoBehaviour {
 
 	private GameObject[] tentaclesOnScreen;
 	private TentacleProperties propertiesOfTheTentacle;
+	public bool isActive = false;
 
-	void OnMouseDown(){
-		tentaclesOnScreen = GameObject.FindGameObjectsWithTag ("Tentacle's father");
-		for (int i = 0; i < tentaclesOnScreen.Length; i++) {
-			propertiesOfTheTentacle = tentaclesOnScreen [i].transform.GetChild (0).GetComponent<TentacleProperties> ();
-			propertiesOfTheTentacle.movementAnimation.SetFloat ("runMultiplier", 0.1f);
+	void Update(){
+		if (isActive) {
+			tentaclesOnScreen = GameObject.FindGameObjectsWithTag ("Tentacle's father");
+			for (int i = 0; i < tentaclesOnScreen.Length; i++) {
+				propertiesOfTheTentacle = tentaclesOnScreen [i].transform.GetChild (0).GetComponent<TentacleProperties> ();
+				propertiesOfTheTentacle.movementAnimation.SetFloat ("runMultiplier", 0.1f);
+			}
+			isActive = false;
+			gameObject.SetActive (false);
 		}
-		gameObject.SetActive (false);
 	}
 }
