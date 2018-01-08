@@ -10,6 +10,7 @@ public class GeneralFunctionalitiesForScenes : MonoBehaviour {
 	public GameObject tutorialPanel;
 
 	public void Change(){
+		Time.timeScale = 1;
 		SceneManager.LoadScene (sceneName);
 	}
 

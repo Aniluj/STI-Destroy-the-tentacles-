@@ -43,9 +43,7 @@ public class MarketFunctionalities : MonoBehaviour {
 	}
 
 	public void resetPlayerprefs(){
-		Debug.Log( PlayerPrefs.GetInt (upgradeOfShotKey));
 		PlayerPrefs.DeleteAll ();
-		Debug.Log( PlayerPrefs.GetInt (upgradeOfShotKey));
 		for (int i = 0; i < panels.Length; i++) {
 			panels [i].SetActive (true);
 		}

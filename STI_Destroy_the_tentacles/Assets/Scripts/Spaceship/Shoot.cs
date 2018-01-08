@@ -33,7 +33,7 @@ public class Shoot : MonoBehaviour {
 	void Update () {
 		timer += Time.deltaTime;
 
-		if (Input.GetButton ("Fire") && (firstShot || timer > cooldown) && isOverHeated == false) {
+		if (Input.GetButton ("Fire") && (firstShot || timer > cooldown) && isOverHeated == false && Time.timeScale == 1) {
 			timer = 0;
 			firstShot = false;
 			for (int j = 0; j < 3; j++) {

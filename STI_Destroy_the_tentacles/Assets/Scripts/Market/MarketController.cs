@@ -30,6 +30,7 @@ public class MarketController : MonoBehaviour {
 		upgradeOfShotIsActive = PlayerPrefs.GetInt (upgradeOfShotKey);
 		upgradeOfShieldHealthIsActive = PlayerPrefs.GetInt (upgradeOfShieldHealthKey);
 
+
 		if (upgradeOfHealthIsActive == 1){
 			upgradeOfHealth.SetActive (false);
 		} else{
