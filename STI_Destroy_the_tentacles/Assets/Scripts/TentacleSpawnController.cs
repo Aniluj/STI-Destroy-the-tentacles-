@@ -117,7 +117,7 @@ public class TentacleSpawnController : MonoBehaviour {
 				if (tentacles [i].activeInHierarchy == false) {
 					areSpawnPointsActive[numberOfSpawnToSpawnATentacle] = false;
 					tentacles [i].transform.position = new Vector3 (tentacleSpawnPoints [numberOfSpawnToSpawnATentacle].transform.position.x, tentacleSpawnPoints [numberOfSpawnToSpawnATentacle].transform.position.y, 0.5f);
-					tentacles [i].transform.rotation = tentacleSpawnPoints [numberOfSpawnToSpawnATentacle].transform.localRotation;
+					tentacles [i].transform.rotation = tentacleSpawnPoints [numberOfSpawnToSpawnATentacle].transform.rotation;
 					tentacles [i].SetActive (true);
 					individualTentacleProperties [i].typeOfSpawnWhereIsTheTentacle = idForSpawns;
 					individualTentacleProperties[i].numberOfSpawnWhereIsTheTentacle = numberOfSpawnToSpawnATentacle;

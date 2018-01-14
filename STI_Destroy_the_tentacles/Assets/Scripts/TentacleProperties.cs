@@ -11,7 +11,9 @@ public class TentacleProperties : MonoBehaviour {
 	public SpriteRenderer spriteRenderOfTheTentacle;
 	public int quantityOfHitsToDie;
 	public string typeOfSpawnWhereIsTheTentacle;
+	public bool slowdownActivated = false;
 	private int timesHitByBullets = 0;
+	private Color obscureBlue = new Color(0.25f,0.25f,1f,1f);
 	private Color colorWhileIsHitted;
 	private Color baseColor;
 	private float durationOfTheChangeOfColorWhenIsHitted;
@@ -32,14 +34,22 @@ public class TentacleProperties : MonoBehaviour {
 	}
 
 	void Update () {
-		if (hitted ) {
+		if (hitted) {
 			timer += Time.deltaTime;
 			//spriteRenderOfTheTentacle.color = colorWhileIsHitted;
-			spriteRenderOfTheTentacle.color = Color.grey;
+			if (!slowdownActivated) {
+				spriteRenderOfTheTentacle.color = Color.grey;
+			} else {
+				spriteRenderOfTheTentacle.color = obscureBlue;
+			}
 		}
-		if (timer > durationOfTheChangeOfColorWhenIsHitted) {
+		if (!slowdownActivated && timer > durationOfTheChangeOfColorWhenIsHitted) {
 			timer = 0;
 			spriteRenderOfTheTentacle.color = baseColor;
+			hitted = false;
+		} else if (slowdownActivated && timer > durationOfTheChangeOfColorWhenIsHitted) {
+			timer = 0;
+			spriteRenderOfTheTentacle.color = Color.blue;
 			hitted = false;
 		}
 		if (timesHitByBullets >= quantityOfHitsToDie) {
@@ -53,6 +63,7 @@ public class TentacleProperties : MonoBehaviour {
 			if (typeOfSpawnWhereIsTheTentacle == "hard") {
 				tentacleSpawnController.areHardSpawnPointsActive [numberOfSpawnWhereIsTheTentacle] = true;
 			}
+			slowdownActivated = false;
 			transform.parent.gameObject.SetActive (false);
 		}
 	}
@@ -70,6 +81,7 @@ public class TentacleProperties : MonoBehaviour {
 				tentacleSpawnController.areHardSpawnPointsActive [numberOfSpawnWhereIsTheTentacle] = true;
 			}
 			timesHitByBullets = 0;
+			slowdownActivated = false;
 			transform.parent.gameObject.SetActive (false);
 		}
 		if (coll.gameObject.tag == "Bullet") {

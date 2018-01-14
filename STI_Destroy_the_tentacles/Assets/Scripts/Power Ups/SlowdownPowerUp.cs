@@ -15,6 +15,7 @@ public class SlowdownPowerUp : MonoBehaviour {
 				propertiesOfTheTentacle = tentaclesOnScreen [i].transform.GetChild (0).GetComponent<TentacleProperties> ();
 				propertiesOfTheTentacle.movementAnimation.SetFloat ("runMultiplier", 0.1f);
 				propertiesOfTheTentacle.spriteRenderOfTheTentacle.color = Color.blue;
+				propertiesOfTheTentacle.slowdownActivated = true;
 			}
 			isActive = false;
 			gameObject.SetActive (false);
