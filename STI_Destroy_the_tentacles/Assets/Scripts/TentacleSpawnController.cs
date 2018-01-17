@@ -32,6 +32,7 @@ public class TentacleSpawnController : MonoBehaviour {
 	private bool activateHardSpawn = false;
 	private SpriteMask tentacleSpriteMask;
 	private SpriteRenderer tentacleRenderer;
+	private SpriteRenderer frontMiniVortexRenderer;
 
 
 	void Start () {
@@ -39,9 +40,11 @@ public class TentacleSpawnController : MonoBehaviour {
 		areMediumSpawnPointsActive = new bool[mediumTentacleSpawnPoints.Length];
 		areHardSpawnPointsActive = new bool[hardTentacleSpawnPoints.Length];
 		individualTentacleProperties = new TentacleProperties[tentacles.Length];
+
 		for (int i = 0; i < tentacles.Length; i++) {
 			tentacleSpriteMask = tentacles [i].transform.GetChild (1).GetComponent<SpriteMask> ();
 			tentacleRenderer = tentacles [i].transform.GetChild (0).GetComponent<SpriteRenderer> ();
+			frontMiniVortexRenderer = tentacles [i].GetComponent<SpriteRenderer> ();
 			individualTentacleProperties [i] = tentacles [i].transform.GetChild (0).GetComponent<TentacleProperties> ();
 			if (areEasySpawnPointsActive.Length>i) {
 				areEasySpawnPointsActive [i] = true;
@@ -56,6 +59,7 @@ public class TentacleSpawnController : MonoBehaviour {
 			tentacleSpriteMask.frontSortingOrder = i + 1;
 			tentacleSpriteMask.backSortingOrder = i;
 			tentacleRenderer.sortingOrder = i + 1;
+			frontMiniVortexRenderer.sortingOrder = tentacleRenderer.sortingOrder + 1;
 		}
 	}
 

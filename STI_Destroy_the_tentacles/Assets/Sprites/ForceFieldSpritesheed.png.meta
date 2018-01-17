@@ -1,19 +1,12 @@
 fileFormatVersion: 2
-guid: 2b68d4ccdfc6ca74685cd263223e91c5
-timeCreated: 1515783925
+guid: 0942fc9745a70894e8d5de3caa1af261
+timeCreated: 1516077974
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: MiniVortexAdelanteSpritesheet_0
-    21300002: MiniVortexAdelanteSpritesheet_1
-    21300004: MiniVortexAdelanteSpritesheet_2
-    21300006: MiniVortexAdelanteSpritesheet_3
-    21300008: MiniVortexAdelanteSpritesheet_4
-    21300010: MiniVortexAdelanteSpritesheet_5
-    21300012: MiniVortexAdelanteSpritesheet_6
-    21300014: MiniVortexAdelanteSpritesheet_7
-    21300016: MiniVortexAdelanteSpritesheet_8
-    21300018: MiniVortexAdelanteSpritesheet_9
+    21300000: ForceFieldSpritesheed_0
+    21300002: ForceFieldSpritesheed_1
+    21300004: ForceFieldSpritesheed_2
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -151,13 +144,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MiniVortexAdelanteSpritesheet_8
+      name: ForceFieldSpritesheed_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 4
-        width: 68
-        height: 44
+        x: 47
+        y: 28
+        width: 745
+        height: 744
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,13 +158,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: MiniVortexAdelanteSpritesheet_9
+      name: ForceFieldSpritesheed_1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 4
-        width: 68
-        height: 44
+        x: 828
+        y: 26
+        width: 752
+        height: 747
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ForceFieldSpritesheed_2
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 28
+        width: 746
+        height: 744
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -1,11 +1,15 @@
 fileFormatVersion: 2
-guid: 1cf7ebd0951469a4da8c6ac384d094d0
-timeCreated: 1515783456
+guid: 15fff66b05ac00d41a22c13f7aaaa476
+timeCreated: 1516045265
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: "MiniVortexAtra\xECsSpritesheet_0"
-    21300002: "MiniVortexAtra\xECsSpritesheet_1"
+    21300000: "MiniVortexAnimacio\u011Bn_1"
+    21300002: "MiniVortexAnimacio\u011Bn_4"
+    21300004: "MiniVortexAnimacio\u011Bn_5"
+    21300006: "MiniVortexAnimacio\u011Bn_6"
+    21300008: "MiniVortexAnimacio\u011Bn_15"
+    21300010: "MiniVortexAnimacio\u011Bn_16"
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -143,11 +147,39 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "MiniVortexAtra\xECsSpritesheet_0"
+      name: "MiniVortexAnimacio\u011Bn_1"
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 184
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "MiniVortexAnimacio\u011Bn_4"
       rect:
         serializedVersion: 2
         x: 12
-        y: 12
+        y: 132
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "MiniVortexAnimacio\u011Bn_5"
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 68
         width: 48
         height: 36
       alignment: 0
@@ -157,13 +189,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: "MiniVortexAtra\xECsSpritesheet_1"
+      name: "MiniVortexAnimacio\u011Bn_6"
       rect:
         serializedVersion: 2
         x: 92
-        y: 12
+        y: 68
         width: 48
         height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "MiniVortexAnimacio\u011Bn_15"
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 12
+        width: 68
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "MiniVortexAnimacio\u011Bn_16"
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 12
+        width: 68
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -1,9 +1,17 @@
 fileFormatVersion: 2
-guid: 0493c3b40a32435419971e5efbcaf8c4
-timeCreated: 1505715609
+guid: 00ca9832b48dafd4ca7359bbb6685b98
+timeCreated: 1516092285
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: VortexChicoSpritesheet_0
+    21300002: VortexChicoSpritesheet_2
+    21300004: VortexChicoSpritesheet_3
+    21300006: VortexChicoSpritesheet_4
+    21300008: VortexChicoSpritesheet_7
+    21300010: VortexChicoSpritesheet_11
+    21300012: VortexChicoSpritesheet_12
+    21300014: VortexChicoSpritesheet_13
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -31,7 +39,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -1
     wrapU: 1
@@ -40,13 +48,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -139,7 +147,119 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: VortexChicoSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 420
+        width: 344
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: VortexChicoSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 432
+        width: 321
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: VortexChicoSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 432
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: VortexChicoSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 432
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: VortexChicoSpritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 64
+        width: 336
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: VortexChicoSpritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 72
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: VortexChicoSpritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 64
+        width: 336
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: VortexChicoSpritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 60
+        width: 344
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 
