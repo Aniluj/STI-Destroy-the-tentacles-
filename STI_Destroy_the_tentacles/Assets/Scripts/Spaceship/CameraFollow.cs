@@ -5,8 +5,6 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour {
 
 	public float maxMovementInY;
-	public float maxMovementInXToTheRight;
-	public float maxMovementInXToTheLeft;
 	public Transform target;
 	private Vector3 posDiff = Vector3.zero;
 

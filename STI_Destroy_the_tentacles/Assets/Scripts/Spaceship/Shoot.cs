@@ -46,7 +46,7 @@ public class Shoot : MonoBehaviour {
 								break;
 							}
 							if (j == 1) {
-								bullet [i].transform.SetPositionAndRotation (shootingPoint2.position, shootingPoint.rotation);
+								bullet [i].transform.SetPositionAndRotation (shootingPoint2.position, shootingPoint2.rotation);
 								bullet [i].SetActive (true);
 								break;
 							}
