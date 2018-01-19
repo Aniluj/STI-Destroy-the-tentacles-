@@ -1,12 +1,18 @@
 fileFormatVersion: 2
-guid: 0942fc9745a70894e8d5de3caa1af261
-timeCreated: 1516077974
+guid: 4cc2a7341e9fe7d4da3f796f8f0de286
+timeCreated: 1516230059
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: ForceFieldSpritesheed_0
-    21300002: ForceFieldSpritesheed_1
-    21300004: ForceFieldSpritesheed_2
+    21300000: ForceFieldHPSpritesheed_0
+    21300002: ForceFieldHPSpritesheed_1
+    21300004: ForceFieldHPSpritesheed_2
+    21300006: ForceFieldHPSpritesheed_3
+    21300008: ForceFieldHPSpritesheed_4
+    21300010: ForceFieldHPSpritesheed_5
+    21300012: ForceFieldHPSpritesheed_6
+    21300014: ForceFieldHPSpritesheed_7
+    21300016: ForceFieldHPSpritesheed_8
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -144,43 +150,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ForceFieldSpritesheed_0
+      name: ForceFieldHPSpritesheed_0
       rect:
         serializedVersion: 2
         x: 47
-        y: 28
-        width: 745
-        height: 744
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: ForceFieldSpritesheed_1
-      rect:
-        serializedVersion: 2
-        x: 828
-        y: 26
-        width: 752
-        height: 747
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: ForceFieldSpritesheed_2
-      rect:
-        serializedVersion: 2
-        x: 1610
-        y: 28
+        y: 1607
         width: 746
-        height: 744
+        height: 746
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ForceFieldHPSpritesheed_1
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 1607
+        width: 746
+        height: 746
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ForceFieldHPSpritesheed_2
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 1607
+        width: 746
+        height: 746
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ForceFieldHPSpritesheed_3
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 811
+        width: 746
+        height: 746
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ForceFieldHPSpritesheed_4
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 811
+        width: 746
+        height: 746
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ForceFieldHPSpritesheed_5
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 811
+        width: 746
+        height: 746
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ForceFieldHPSpritesheed_6
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 23
+        width: 746
+        height: 746
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ForceFieldHPSpritesheed_7
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 23
+        width: 746
+        height: 746
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ForceFieldHPSpritesheed_8
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 23
+        width: 746
+        height: 746
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

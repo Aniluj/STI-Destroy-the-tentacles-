@@ -4,10 +4,12 @@ public class SpaceshipMovement : MonoBehaviour {
 
 	private float horizontalAxis;
 	private Rigidbody2D spaceship;
+	private Animator spaceshipAnimator;
 	public float velocity;
 	public Transform objectToRotateAround;
 
 	void Awake (){
+		spaceshipAnimator = GetComponent<Animator> ();
 		spaceship = GetComponent<Rigidbody2D> ();
 	}
 
@@ -17,7 +19,12 @@ public class SpaceshipMovement : MonoBehaviour {
 
 	void Update () {
 		horizontalAxis = Input.GetAxisRaw ("Horizontal") * -1f;
-
+		spaceshipAnimator.SetFloat ("LeftOrRight", horizontalAxis);
+		if (horizontalAxis == 0f) {
+			spaceshipAnimator.SetInteger ("Idle", 0);
+		} else {
+			spaceshipAnimator.SetInteger ("Idle", 1);
+		}
 	}
 
 	void FixedUpdate(){
@@ -30,7 +37,7 @@ public class SpaceshipMovement : MonoBehaviour {
 	
 		direction = rotation * direction;
 		Vector2 newPosition = planetPosition + direction;
-		spaceship.transform.right = direction * -1;
+		spaceship.transform.up = direction * 1;
 		spaceship.MovePosition (newPosition);
 	}
 }

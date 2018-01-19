@@ -13,9 +13,11 @@ public class ShieldHealth : MonoBehaviour {
 	private int upgradeHealthIsActive;
 	private string upgradeOfShieldHealthKey = "upgradeOfShieldHealth";
 	private SpriteRenderer spriteRendererOfTheShield;
+	private Animator shieldAnimator;
 
 	void Awake(){
-		spriteRendererOfTheShield = GetComponent<SpriteRenderer> ();
+		shieldAnimator = GetComponent<Animator> ();
+		//spriteRendererOfTheShield = GetComponent<SpriteRenderer> ();
 	}
 
 	void Start () {
@@ -34,11 +36,23 @@ public class ShieldHealth : MonoBehaviour {
 		if (shieldHealthBar.value <= 0) {
 			SceneManager.LoadScene ("Market");
 		}
-		if (shieldHealthBar.value >= 0 && shieldHealthBar.value <= initialLife/2) {
-			spriteRendererOfTheShield.color = Color.red;
+		if (shieldHealthBar.value > 0 && shieldHealthBar.value <= initialLife/4) {
+			//spriteRendererOfTheShield.color = Color.red;
+			shieldAnimator.SetBool("FullHealth", false);
+			shieldAnimator.SetBool ("HalfHealth", false);
+			shieldAnimator.SetBool ("LowHealth", true);
+		}
+		if (shieldHealthBar.value > initialLife/4 && shieldHealthBar.value <= initialLife/2) {
+			//spriteRendererOfTheShield.color = Color.red;
+			shieldAnimator.SetBool("FullHealth", false);
+			shieldAnimator.SetBool ("LowHealth", false);
+			shieldAnimator.SetBool ("HalfHealth", true);
 		}
 		if(shieldHealthBar.value <= initialLife && shieldHealthBar.value > initialLife/2){
-			spriteRendererOfTheShield.color = Color.white;
+			//spriteRendererOfTheShield.color = Color.white;
+			shieldAnimator.SetBool ("LowHealth", false);
+			shieldAnimator.SetBool ("HalfHealth", false);
+			shieldAnimator.SetBool("FullHealth", true);
 		}
 	}
 
