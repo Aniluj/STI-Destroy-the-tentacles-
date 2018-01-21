@@ -4828,6 +4828,7 @@ GameObject:
   - component: {fileID: 994352443}
   - component: {fileID: 994352444}
   - component: {fileID: 994352445}
+  - component: {fileID: 994352446}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5009,6 +5010,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TexturePixelsPerWorldUnit: 16
+--- !u!114 &994352446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 994352437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5da4ddd7c6fe6194482910da73235502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeTimer: 0
+  shakeAmount: 0
+  shakePos: {x: 0, y: 0}
+  cameraShakeActivated: 0
 --- !u!1001 &999156276
 Prefab:
   m_ObjectHideFlags: 0
@@ -5764,8 +5780,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.25, y: 3.75}
-    newSize: {x: 3.97, y: 2.62}
+    oldSize: {x: 9.75, y: 7.5625}
+    newSize: {x: 9.25, y: 7}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -5826,16 +5842,16 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c63bde12c3ba64a448f911315172cad6, type: 3}
+  m_SortingOrder: 4
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.97, y: 2.62}
+  m_Size: {x: 9.25, y: 7}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!4 &1189987818
 Transform:
@@ -5933,13 +5949,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 2030653836}
+  overheatSlider: {fileID: 1161439082}
   damageReceived: 20
   damageWhenSpecialMovementIsActive: 0
   damage: 0
   initialHealth: 0
-  fullHealth: {fileID: 21300000, guid: c63bde12c3ba64a448f911315172cad6, type: 3}
-  halfHealth: {fileID: 21300002, guid: c63bde12c3ba64a448f911315172cad6, type: 3}
-  lowHealth: {fileID: 21300004, guid: c63bde12c3ba64a448f911315172cad6, type: 3}
+  inGameMenu: {fileID: 828209381}
+  cameraShakeScript: {fileID: 994352446}
 --- !u!95 &1189987822
 Animator:
   serializedVersion: 3
@@ -7963,7 +7979,7 @@ SpriteRenderer:
   m_Size: {x: 46.625, y: 46.625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!4 &1575760308
 Transform:

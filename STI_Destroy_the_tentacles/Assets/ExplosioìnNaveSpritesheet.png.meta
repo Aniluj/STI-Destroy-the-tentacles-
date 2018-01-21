@@ -1,18 +1,17 @@
 fileFormatVersion: 2
-guid: 4cc2a7341e9fe7d4da3f796f8f0de286
-timeCreated: 1516230059
+guid: b28d2a477207ab640a97c8575460d8fe
+timeCreated: 1516498312
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: ForceFieldHPSpritesheed_0
-    21300002: ForceFieldHPSpritesheed_1
-    21300004: ForceFieldHPSpritesheed_2
-    21300006: ForceFieldHPSpritesheed_3
-    21300008: ForceFieldHPSpritesheed_4
-    21300010: ForceFieldHPSpritesheed_5
-    21300012: ForceFieldHPSpritesheed_6
-    21300014: ForceFieldHPSpritesheed_7
-    21300016: ForceFieldHPSpritesheed_8
+    21300000: "Explosio\xECnNaveSpritesheet_3"
+    21300002: "Explosio\xECnNaveSpritesheet_11"
+    21300004: "Explosio\xECnNaveSpritesheet_17"
+    21300006: "Explosio\xECnNaveSpritesheet_18"
+    21300008: "Explosio\xECnNaveSpritesheet_22"
+    21300010: "Explosio\xECnNaveSpritesheet_23"
+    21300012: "Explosio\xECnNaveSpritesheet_34"
+    21300014: "Explosio\xECnNaveSpritesheet_43"
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -150,13 +149,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ForceFieldHPSpritesheed_0
+      name: "Explosio\xECnNaveSpritesheet_3"
       rect:
         serializedVersion: 2
-        x: 47
-        y: 1607
-        width: 746
-        height: 746
+        x: 252
+        y: 76
+        width: 148
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,13 +163,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ForceFieldHPSpritesheed_1
+      name: "Explosio\xECnNaveSpritesheet_11"
       rect:
         serializedVersion: 2
-        x: 831
-        y: 1607
-        width: 746
-        height: 746
+        x: 996
+        y: 68
+        width: 148
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,13 +177,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ForceFieldHPSpritesheed_2
+      name: "Explosio\xECnNaveSpritesheet_17"
       rect:
         serializedVersion: 2
-        x: 1611
-        y: 1607
-        width: 746
-        height: 746
+        x: 420
+        y: 71
+        width: 164
+        height: 109
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,13 +191,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ForceFieldHPSpritesheed_3
+      name: "Explosio\xECnNaveSpritesheet_18"
       rect:
         serializedVersion: 2
-        x: 47
-        y: 811
-        width: 746
-        height: 746
+        x: 600
+        y: 68
+        width: 179
+        height: 121
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,13 +205,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ForceFieldHPSpritesheed_4
+      name: "Explosio\xECnNaveSpritesheet_22"
       rect:
         serializedVersion: 2
-        x: 831
-        y: 811
-        width: 746
-        height: 746
+        x: 56
+        y: 80
+        width: 72
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,13 +219,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ForceFieldHPSpritesheed_5
+      name: "Explosio\xECnNaveSpritesheet_23"
       rect:
         serializedVersion: 2
-        x: 1611
-        y: 811
-        width: 746
-        height: 746
+        x: 156
+        y: 80
+        width: 72
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,13 +233,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ForceFieldHPSpritesheed_6
+      name: "Explosio\xECnNaveSpritesheet_34"
       rect:
         serializedVersion: 2
-        x: 47
-        y: 23
-        width: 746
-        height: 746
+        x: 1160
+        y: 64
+        width: 156
+        height: 121
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,27 +247,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ForceFieldHPSpritesheed_7
+      name: "Explosio\xECnNaveSpritesheet_43"
       rect:
         serializedVersion: 2
-        x: 831
-        y: 23
-        width: 746
-        height: 746
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: ForceFieldHPSpritesheed_8
-      rect:
-        serializedVersion: 2
-        x: 1611
-        y: 23
-        width: 746
-        height: 746
+        x: 800
+        y: 63
+        width: 188
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
