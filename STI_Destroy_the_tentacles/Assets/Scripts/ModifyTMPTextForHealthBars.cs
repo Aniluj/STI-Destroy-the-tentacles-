@@ -19,7 +19,7 @@ public class ModifyTMPTextForHealthBars : MonoBehaviour {
 		if (shieldHealth != null) {
 			actualLife.text = healthBar.value + "/" + shieldHealth.initialLife;
 		} else if (health != null) {
-			actualLife.text = healthBar.value + "/" + health.initialLife;
+			actualLife.text = healthBar.value + "/" + health.initialHealth;
 		}
 	}
 }

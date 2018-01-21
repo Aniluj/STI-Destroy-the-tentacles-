@@ -4,6 +4,7 @@ public class SpaceshipMovement : MonoBehaviour {
 
 	private float horizontalAxis;
 	private Rigidbody2D spaceship;
+	private float timer;
 	private Animator spaceshipAnimator;
 	public float velocity;
 	public Transform objectToRotateAround;

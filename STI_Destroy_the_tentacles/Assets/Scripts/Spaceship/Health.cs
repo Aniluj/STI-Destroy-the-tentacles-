@@ -10,7 +10,10 @@ public class Health : MonoBehaviour {
 	public int damageReceived;
 	public int damageWhenSpecialMovementIsActive;
 	public int damage;
-	public float initialLife;
+	public float initialHealth;
+	public Sprite fullHealth;
+	public Sprite halfHealth;
+	public Sprite lowHealth;
 	private int upgradeOfHealthIsActive;
 	private string upgradeOfHealthKey = "upgradeOfHealth";
 	private SpriteRenderer spriteRendererOfTheSpaceship;
@@ -22,24 +25,28 @@ public class Health : MonoBehaviour {
 	void Start () {
 		upgradeOfHealthIsActive = PlayerPrefs.GetInt (upgradeOfHealthKey);
 		if (upgradeOfHealthIsActive == 1) {
-			initialLife = 175f;
+			initialHealth = 175f;
 		} else {
-			initialLife = 100f;
+			initialHealth = 100f;
 		}
 		damageWhenSpecialMovementIsActive = 0;
-		healthBar.maxValue = initialLife;
-		healthBar.value = initialLife;
+		healthBar.maxValue = initialHealth;
+		healthBar.value = initialHealth;
+		spriteRendererOfTheSpaceship.sprite = fullHealth;
 	}
 	
 	void Update(){
 		if (healthBar.value <= 0) {
 			SceneManager.LoadScene ("Market");
 		}
-		if (healthBar.value >= 0 && healthBar.value <= initialLife/2) {
-			spriteRendererOfTheSpaceship.color = Color.red;
+		if (healthBar.value > 0 && initialHealth <= initialHealth / 4) {
+			spriteRendererOfTheSpaceship.sprite = lowHealth;
 		}
-		if(healthBar.value <= initialLife && healthBar.value > initialLife/2){
-			spriteRendererOfTheSpaceship.color = Color.white;
+		if (healthBar.value > initialHealth/4 && healthBar.value <= initialHealth/2) {
+			spriteRendererOfTheSpaceship.sprite = halfHealth;
+		}
+		if(healthBar.value <= initialHealth && healthBar.value > initialHealth/2){
+			spriteRendererOfTheSpaceship.sprite = fullHealth;
 		}
 	}
 
