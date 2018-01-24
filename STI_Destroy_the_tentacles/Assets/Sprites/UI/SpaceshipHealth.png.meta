@@ -1,17 +1,24 @@
 fileFormatVersion: 2
-guid: 00ca9832b48dafd4ca7359bbb6685b98
-timeCreated: 1516092285
+guid: ff69006ff10aa7b4494642ef19c62755
+timeCreated: 1516737496
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: VortexChicoSpritesheet_0
-    21300002: VortexChicoSpritesheet_2
-    21300004: VortexChicoSpritesheet_3
-    21300006: VortexChicoSpritesheet_4
-    21300008: VortexChicoSpritesheet_7
-    21300010: VortexChicoSpritesheet_11
-    21300012: VortexChicoSpritesheet_12
-    21300014: VortexChicoSpritesheet_13
+    21300000: SpaceshipHealth_0
+    21300002: SpaceshipHealth_1
+    21300004: SpaceshipHealth_2
+    21300006: SpaceshipHealth_3
+    21300008: SpaceshipHealth_4
+    21300010: SpaceshipHealth_5
+    21300012: SpaceshipHealth_6
+    21300014: SpaceshipHealth_7
+    21300016: SpaceshipHealth_8
+    21300018: SpaceshipHealth_9
+    21300020: SpaceshipHealth_10
+    21300022: SpaceshipHealth_11
+    21300024: SpaceshipHealth_12
+    21300026: SpaceshipHealth_13
+    21300028: SpaceshipHealth_14
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -149,113 +156,211 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: VortexChicoSpritesheet_0
+      name: SpaceshipHealth_0
       rect:
         serializedVersion: 2
-        x: 72
-        y: 420
-        width: 344
-        height: 344
+        x: 24
+        y: 520
+        width: 68
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: VortexChicoSpritesheet_2
+      name: SpaceshipHealth_1
       rect:
         serializedVersion: 2
-        x: 443
-        y: 432
-        width: 321
-        height: 320
+        x: 108
+        y: 520
+        width: 68
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: VortexChicoSpritesheet_3
+      name: SpaceshipHealth_2
       rect:
         serializedVersion: 2
-        x: 804
-        y: 432
-        width: 320
-        height: 320
+        x: 192
+        y: 520
+        width: 68
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: VortexChicoSpritesheet_4
+      name: SpaceshipHealth_3
       rect:
         serializedVersion: 2
-        x: 1168
-        y: 432
-        width: 320
-        height: 320
+        x: 24
+        y: 440
+        width: 68
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: VortexChicoSpritesheet_7
+      name: SpaceshipHealth_4
       rect:
         serializedVersion: 2
-        x: 436
-        y: 64
-        width: 336
-        height: 336
+        x: 108
+        y: 440
+        width: 68
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: VortexChicoSpritesheet_11
+      name: SpaceshipHealth_5
       rect:
         serializedVersion: 2
-        x: 84
-        y: 72
-        width: 320
-        height: 320
+        x: 192
+        y: 440
+        width: 68
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: VortexChicoSpritesheet_12
+      name: SpaceshipHealth_6
       rect:
         serializedVersion: 2
-        x: 796
-        y: 64
-        width: 336
-        height: 335
+        x: 24
+        y: 360
+        width: 68
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: VortexChicoSpritesheet_13
+      name: SpaceshipHealth_7
       rect:
         serializedVersion: 2
-        x: 1156
-        y: 60
-        width: 344
-        height: 344
+        x: 108
+        y: 360
+        width: 68
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpaceshipHealth_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 360
+        width: 68
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpaceshipHealth_9
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 304
+        width: 340
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpaceshipHealth_10
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 244
+        width: 340
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpaceshipHealth_11
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 188
+        width: 340
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpaceshipHealth_12
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 132
+        width: 340
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpaceshipHealth_13
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 76
+        width: 340
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpaceshipHealth_14
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 20
+        width: 340
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

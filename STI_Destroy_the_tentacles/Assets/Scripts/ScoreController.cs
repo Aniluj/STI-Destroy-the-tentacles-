@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ScoreController : MonoBehaviour {
 
 	public float necessaryTimeToObtainPoints;
 	public int pointsObtainedByTime;
-	public Text scoreText;
+	//public Text scoreText;
 	public Health health;
 	public ShieldHealth shieldHealth;
+	public TextMeshProUGUI scoretext;
 	private string accumulatedPointsKey = "accumulatedPoints";
 	private int totalAccumulatedScore;
 	private int score = 0;
@@ -22,13 +24,13 @@ public class ScoreController : MonoBehaviour {
 
 	void Update () {
 		timer += Time.deltaTime;
-		scoreText.text = score.ToString();
+		scoretext.text = score.ToString();
 
 		if (timer >= necessaryTimeToObtainPoints) {
 			timer = 0;
 			score += pointsObtainedByTime;
 		}
-		if (health.healthBar.value <= 0 || shieldHealth.shieldHealthBar.value <= 0) {
+		if (health.health <= 0 || shieldHealth.shieldHealthBar.value <= 0) {
 			PlayerPrefs.SetInt (accumulatedPointsKey, totalAccumulatedScore + score);
 		}
 	}

@@ -1,17 +1,24 @@
 fileFormatVersion: 2
-guid: 00ca9832b48dafd4ca7359bbb6685b98
-timeCreated: 1516092285
+guid: 2843e9d85e4b50e4aa92e926620d0345
+timeCreated: 1516688022
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: VortexChicoSpritesheet_0
-    21300002: VortexChicoSpritesheet_2
-    21300004: VortexChicoSpritesheet_3
-    21300006: VortexChicoSpritesheet_4
-    21300008: VortexChicoSpritesheet_7
-    21300010: VortexChicoSpritesheet_11
-    21300012: VortexChicoSpritesheet_12
-    21300014: VortexChicoSpritesheet_13
+    21300000: HealthContentionShield_0
+    21300002: HealthContentionShield_1
+    21300004: HealthContentionShield_2
+    21300006: HealthContentionShield_3
+    21300008: HealthContentionShield_4
+    21300010: HealthContentionShield_5
+    21300012: HealthContentionShield_6
+    21300014: HealthContentionShield_7
+    21300016: HealthContentionShield_8
+    21300018: HealthContentionShield_9
+    21300020: HealthContentionShield_10
+    21300022: HealthContentionShield_11
+    21300024: HealthContentionShield_12
+    21300026: HealthContentionShield_13
+    21300028: HealthContentionShield_14
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -149,13 +156,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: VortexChicoSpritesheet_0
+      name: HealthContentionShield_0
       rect:
         serializedVersion: 2
-        x: 72
-        y: 420
-        width: 344
-        height: 344
+        x: 32
+        y: 521
+        width: 68
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,13 +170,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: VortexChicoSpritesheet_2
+      name: HealthContentionShield_1
       rect:
         serializedVersion: 2
-        x: 443
-        y: 432
-        width: 321
-        height: 320
+        x: 124
+        y: 521
+        width: 68
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,13 +184,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: VortexChicoSpritesheet_3
+      name: HealthContentionShield_2
       rect:
         serializedVersion: 2
-        x: 804
-        y: 432
-        width: 320
-        height: 320
+        x: 216
+        y: 521
+        width: 68
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,13 +198,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: VortexChicoSpritesheet_4
+      name: HealthContentionShield_3
       rect:
         serializedVersion: 2
-        x: 1168
-        y: 432
-        width: 320
-        height: 320
+        x: 32
+        y: 439
+        width: 68
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,13 +212,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: VortexChicoSpritesheet_7
+      name: HealthContentionShield_4
       rect:
         serializedVersion: 2
-        x: 436
-        y: 64
-        width: 336
-        height: 336
+        x: 124
+        y: 439
+        width: 68
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,13 +226,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: VortexChicoSpritesheet_11
+      name: HealthContentionShield_5
       rect:
         serializedVersion: 2
-        x: 84
-        y: 72
-        width: 320
-        height: 320
+        x: 216
+        y: 439
+        width: 68
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,13 +240,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: VortexChicoSpritesheet_12
+      name: HealthContentionShield_6
       rect:
         serializedVersion: 2
-        x: 796
-        y: 64
-        width: 336
-        height: 335
+        x: 32
+        y: 357
+        width: 68
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,13 +254,111 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: VortexChicoSpritesheet_13
+      name: HealthContentionShield_7
       rect:
         serializedVersion: 2
-        x: 1156
-        y: 60
-        width: 344
-        height: 344
+        x: 124
+        y: 357
+        width: 68
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HealthContentionShield_8
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 357
+        width: 68
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HealthContentionShield_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 297
+        width: 340
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HealthContentionShield_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 237
+        width: 340
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HealthContentionShield_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 181
+        width: 340
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HealthContentionShield_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 125
+        width: 340
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HealthContentionShield_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 69
+        width: 340
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HealthContentionShield_14
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 13
+        width: 340
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

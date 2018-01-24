@@ -10,6 +10,9 @@ public class ShieldHealth : MonoBehaviour {
 	public Slider shieldHealthBar;
 	public int damageReceived;
 	public int initialLife;
+	public GameObject contentionShieldHitted;
+	private bool contentionShieldIsHitted;
+	private float timerForWhenIsHitted;
 	private int upgradeHealthIsActive;
 	private string upgradeOfShieldHealthKey = "upgradeOfShieldHealth";
 	private SpriteRenderer spriteRendererOfTheShield;
@@ -36,6 +39,15 @@ public class ShieldHealth : MonoBehaviour {
 		if (shieldHealthBar.value <= 0) {
 			SceneManager.LoadScene ("Market");
 		}
+		if (contentionShieldIsHitted) {
+			contentionShieldHitted.SetActive (true);
+			timerForWhenIsHitted += Time.deltaTime;
+		}
+		if (timerForWhenIsHitted >= 0.3f) {
+			contentionShieldHitted.SetActive (false);
+			timerForWhenIsHitted = 0f;
+			contentionShieldIsHitted = false;
+		}
 		if (shieldHealthBar.value > 0 && shieldHealthBar.value <= initialLife/4) {
 			//spriteRendererOfTheShield.color = Color.red;
 			shieldAnimator.SetBool("FullHealth", false);
@@ -58,6 +70,7 @@ public class ShieldHealth : MonoBehaviour {
 
 	void OnCollisionEnter2D (Collision2D coll){
 		if (coll.gameObject.tag == "Tentacle") {
+			contentionShieldIsHitted = true;
 			shieldHealthBar.value -= damageReceived;
 		}
 	}

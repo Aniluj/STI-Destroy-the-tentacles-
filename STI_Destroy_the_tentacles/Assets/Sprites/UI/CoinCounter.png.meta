@@ -1,17 +1,15 @@
 fileFormatVersion: 2
-guid: 00ca9832b48dafd4ca7359bbb6685b98
-timeCreated: 1516092285
+guid: fb657dc04f93fd74c968ec431751560f
+timeCreated: 1516741995
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: VortexChicoSpritesheet_0
-    21300002: VortexChicoSpritesheet_2
-    21300004: VortexChicoSpritesheet_3
-    21300006: VortexChicoSpritesheet_4
-    21300008: VortexChicoSpritesheet_7
-    21300010: VortexChicoSpritesheet_11
-    21300012: VortexChicoSpritesheet_12
-    21300014: VortexChicoSpritesheet_13
+    21300000: CoinCounter_0
+    21300002: CoinCounter_1
+    21300004: CoinCounter_2
+    21300006: CoinCounter_3
+    21300008: CoinCounter_4
+    21300010: CoinCounter_5
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -149,13 +147,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: VortexChicoSpritesheet_0
+      name: CoinCounter_0
       rect:
         serializedVersion: 2
-        x: 72
-        y: 420
-        width: 344
-        height: 344
+        x: 48
+        y: 504
+        width: 144
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,13 +161,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: VortexChicoSpritesheet_2
+      name: CoinCounter_1
       rect:
         serializedVersion: 2
-        x: 443
-        y: 432
-        width: 321
-        height: 320
+        x: 212
+        y: 504
+        width: 144
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,13 +175,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: VortexChicoSpritesheet_3
+      name: CoinCounter_2
       rect:
         serializedVersion: 2
-        x: 804
-        y: 432
-        width: 320
-        height: 320
+        x: 48
+        y: 416
+        width: 144
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,13 +189,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: VortexChicoSpritesheet_4
+      name: CoinCounter_3
       rect:
         serializedVersion: 2
-        x: 1168
-        y: 432
-        width: 320
-        height: 320
+        x: 212
+        y: 416
+        width: 144
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,13 +203,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: VortexChicoSpritesheet_7
+      name: CoinCounter_4
       rect:
         serializedVersion: 2
-        x: 436
-        y: 64
-        width: 336
-        height: 336
+        x: 48
+        y: 332
+        width: 144
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,41 +217,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: VortexChicoSpritesheet_11
+      name: CoinCounter_5
       rect:
         serializedVersion: 2
-        x: 84
-        y: 72
-        width: 320
-        height: 320
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: VortexChicoSpritesheet_12
-      rect:
-        serializedVersion: 2
-        x: 796
-        y: 64
-        width: 336
-        height: 335
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: VortexChicoSpritesheet_13
-      rect:
-        serializedVersion: 2
-        x: 1156
-        y: 60
-        width: 344
-        height: 344
+        x: 212
+        y: 332
+        width: 144
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
