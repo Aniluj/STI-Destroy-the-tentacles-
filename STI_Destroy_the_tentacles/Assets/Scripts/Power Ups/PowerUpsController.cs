@@ -15,7 +15,7 @@ public class PowerUpsController : MonoBehaviour {
 	public TextMeshProUGUI keyToPress;
 	public string[] keycodes;
 	private ExplosionPowerUp explosionPowerUp;
-	private RecoverHealthPowerUp recoverHealtPowerUp;
+	private RecoveryHealthPowerUp recoverHealtPowerUp;
 	private SlowdownPowerUp slowdownPowerUp;
 	private int numberOfPositionOfTheKeyCode;
 	private KeyCode realKeyCode;
@@ -56,7 +56,7 @@ public class PowerUpsController : MonoBehaviour {
 			keyToPress.transform.position = powerUps [numberOfPowerUp].transform.position;
 			if (Input.GetKeyDown (realKeyCode)) {
 				
-				recoverHealtPowerUp = powerUps [numberOfPowerUp].GetComponent<RecoverHealthPowerUp> ();
+				recoverHealtPowerUp = powerUps [numberOfPowerUp].GetComponent<RecoveryHealthPowerUp> ();
 				if (recoverHealtPowerUp != null) {
 					recoverHealtPowerUp.isActive = true;
 				}

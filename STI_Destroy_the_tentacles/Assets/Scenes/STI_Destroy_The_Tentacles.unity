@@ -688,6 +688,7 @@ GameObject:
   - component: {fileID: 73843130}
   - component: {fileID: 73843132}
   - component: {fileID: 73843131}
+  - component: {fileID: 73843133}
   m_Layer: 5
   m_Name: Contention shield health bar
   m_TagString: Untagged
@@ -732,7 +733,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300018, guid: 2843e9d85e4b50e4aa92e926620d0345, type: 3}
+  m_Sprite: {fileID: 21300024, guid: 2843e9d85e4b50e4aa92e926620d0345, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -746,6 +747,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 73843129}
+--- !u!95 &73843133
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 73843129}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 16173b45f26225a4bbde1443532ec8bd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &77590767
 GameObject:
   m_ObjectHideFlags: 0
@@ -8345,10 +8363,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecb69b0a23795634985b9ed768bfb794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shieldHealthBar: {fileID: 1454074615}
-  damageReceived: 20
+  damageReceived: 1
   initialLife: 0
   contentionShieldHitted: {fileID: 410076885}
+  shieldOfTheHealthBarAnimator: {fileID: 1691464091}
+  contentionShieldHealthBarAnimator: {fileID: 73843133}
+  health: 0
 --- !u!95 &1575760311
 Animator:
   serializedVersion: 3
@@ -9690,9 +9710,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5998521de8927de458cc57d1f730b1a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 1454074615}
-  healthToIncrement: 20
+  spaceshipHealthScript: {fileID: 1189987821}
+  contentionShieldHealthScript: {fileID: 1575760310}
+  healthToIncrement: 2
   isActive: 0
+  isRecoveryForSpaceship: 0
+  isRecoveryForContentionShield: 1
 --- !u!61 &1878160524
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10043,9 +10066,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5998521de8927de458cc57d1f730b1a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 2030653836}
-  healthToIncrement: 25
+  spaceshipHealthScript: {fileID: 1189987821}
+  contentionShieldHealthScript: {fileID: 1575760310}
+  healthToIncrement: 2
   isActive: 0
+  isRecoveryForSpaceship: 1
+  isRecoveryForContentionShield: 0
 --- !u!61 &2030208613
 BoxCollider2D:
   m_ObjectHideFlags: 0

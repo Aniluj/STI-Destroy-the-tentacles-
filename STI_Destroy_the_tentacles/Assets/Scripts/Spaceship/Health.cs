@@ -51,11 +51,14 @@ public class Health : MonoBehaviour {
 	}
 	
 	void Update(){
+		spaceshipHealthBarAnimator.SetInteger ("HealthStatus", health);
 		if (spaceshipIsHitted) {
 			hittedSpaceship.SetActive (true);
 			timerForWhenIsHitted += Time.deltaTime;
-			spaceshipHealthBarAnimator.SetInteger ("HealthStatus", health);
 
+		}
+		if (health >= 5 && upgradeOfHealthIsActive != 1) {
+			health = 5;
 		}
 		if (timerForWhenIsHitted >= 0.2f) {
 			spaceshipIsHitted = false;

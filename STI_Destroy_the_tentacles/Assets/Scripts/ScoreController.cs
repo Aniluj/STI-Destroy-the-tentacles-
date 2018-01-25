@@ -30,7 +30,7 @@ public class ScoreController : MonoBehaviour {
 			timer = 0;
 			score += pointsObtainedByTime;
 		}
-		if (health.health <= 0 || shieldHealth.shieldHealthBar.value <= 0) {
+		if (health.health <= 0 || shieldHealth.health <= 0) {
 			PlayerPrefs.SetInt (accumulatedPointsKey, totalAccumulatedScore + score);
 		}
 	}
