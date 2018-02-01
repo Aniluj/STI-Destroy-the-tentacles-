@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Stop the Invasion SDF
   m_EditorClassIdentifier: 
   hashCode: 380885595
-  material: {fileID: 21388640038241264}
+  material: {fileID: 21813643110107706}
   materialHashCode: -602990608
   fontAssetType: 1
   m_fontInfo:
@@ -37,7 +37,7 @@ MonoBehaviour:
     Padding: 5
     AtlasWidth: 512
     AtlasHeight: 512
-  atlas: {fileID: 28441372152267014}
+  atlas: {fileID: 28441461717378824}
   m_glyphInfoList:
   - id: 32
     x: 6
@@ -653,7 +653,7 @@ MonoBehaviour:
   boldSpacing: 7
   italicStyle: 35
   tabSize: 10
---- !u!21 &21388640038241264
+--- !u!21 &21813643110107706
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -684,7 +684,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 28441372152267014}
+        m_Texture: {fileID: 28441461717378824}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OutlineTex:
@@ -752,7 +752,7 @@ Material:
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.5}
---- !u!28 &28441372152267014
+--- !u!28 &28441461717378824
 Texture2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}

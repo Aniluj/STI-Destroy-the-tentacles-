@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 3e5e3106d38fb5c47b6fbe754f837c9c
+timeCreated: 1517015504
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Stop the Invasion 3x3
+  fontNames:
+  - Stop the Invasion 3x3
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

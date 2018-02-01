@@ -9,11 +9,16 @@ public class PowerUpsController : MonoBehaviour {
 
 	public GameObject[] powerUps;
 	public Transform[] spawnPointsForPowerUps;
+	public Transform[] positionOfTheKeyToPress;
 	public float timeToSpawnAPowerUp;
 	public float velocity;
 	public float maxTimeInMovement;
 	public TextMeshProUGUI keyToPress;
 	public string[] keycodes;
+	private Color32 slowdownPowerUpColor = new Color(0.08f, 0.36f, 0.74f);
+	private Color32 explosionPowerUpColor = Color.red;
+	private Color32 recoverySpaceshipHealthPowerUpColor = new Color(0.96f, 0.94f, 0.30f);
+	private Color32 recoveryContentionShieldHealthPowerUpColor = new Color(0f, 0.92f, 0.88f);
 	private ExplosionPowerUp explosionPowerUp;
 	private RecoveryHealthPowerUp recoverHealtPowerUp;
 	private SlowdownPowerUp slowdownPowerUp;
@@ -30,6 +35,9 @@ public class PowerUpsController : MonoBehaviour {
 
 	void Start(){
 		movementActive = false;
+		//for (int i = 0; i < powerUps.Length; i++) {
+		//	positionOfTheKeyToPress[i] = powerUps [i].transform.GetChild (0).GetComponent<Transform> ();
+		//}
 	}
 
 	void Update () {
@@ -46,14 +54,25 @@ public class PowerUpsController : MonoBehaviour {
 			typeOfMovement = Random.Range (1, 3);
 			movementActive = true;
 			powerUps [numberOfPowerUp].transform.position = spawnPointsForPowerUps [numberOfSpawn].transform.position;
-			powerUps [numberOfPowerUp].transform.rotation = spawnPointsForPowerUps [numberOfSpawn].transform.rotation;
-			keyToPress.transform.position = powerUps [numberOfPowerUp].transform.position;
+			keyToPress.transform.position = positionOfTheKeyToPress [numberOfPowerUp].transform.position;
 			powerUps [numberOfPowerUp].SetActive (true);
 			keyToPress.gameObject.SetActive (true);
 		}
 		if (movementActive) {
 			timeInMovement += Time.deltaTime;
-			keyToPress.transform.position = powerUps [numberOfPowerUp].transform.position;
+			keyToPress.transform.position = positionOfTheKeyToPress [numberOfPowerUp].transform.position;
+			if (powerUps [numberOfPowerUp].name == "Recover spaceship health power up") {
+				keyToPress.color = recoverySpaceshipHealthPowerUpColor;
+			}
+			if (powerUps [numberOfPowerUp].name == "Recover shield health power up") {
+				keyToPress.color = recoveryContentionShieldHealthPowerUpColor;
+			}
+			if (powerUps [numberOfPowerUp].name == "Slowdown power up") {
+				keyToPress.color = slowdownPowerUpColor;
+			}
+			if (powerUps [numberOfPowerUp].name == "Explosion power up") {
+				keyToPress.color = explosionPowerUpColor;
+			}
 			if (Input.GetKeyDown (realKeyCode)) {
 				
 				recoverHealtPowerUp = powerUps [numberOfPowerUp].GetComponent<RecoveryHealthPowerUp> ();
@@ -78,10 +97,10 @@ public class PowerUpsController : MonoBehaviour {
 				powerUps [numberOfPowerUp].SetActive (false);
 			}
 			if (typeOfMovement == up) {
-				powerUps [numberOfPowerUp].transform.Translate (Vector3.up * velocity * Time.deltaTime);
+				powerUps [numberOfPowerUp].transform.Translate (spawnPointsForPowerUps [numberOfSpawn].up * velocity * Time.deltaTime);
 			}
 			if (typeOfMovement == right) {
-				powerUps [numberOfPowerUp].transform.Translate (Vector3.right * velocity * Time.deltaTime);
+				powerUps [numberOfPowerUp].transform.Translate (spawnPointsForPowerUps [numberOfSpawn].right * velocity * Time.deltaTime);
 			}
 		}
 	  }
