@@ -38,32 +38,35 @@ public class Health : MonoBehaviour {
 	void Start () {
 		upgradeOfHealthIsActive = PlayerPrefs.GetInt (upgradeOfHealthKey);
 		if (upgradeOfHealthIsActive == 1) {
-			//initialHealth = 175f;
-			health = 5;
+			initialHealth = 7;
 		} else {
-			//initialHealth = 100f;
 			initialHealth = 5;
 		}
 		damageWhenSpecialMovementIsActive = 0;
-		//healthBar.maxValue = initialHealth;
-		//healthBar.value = initialHealth;
 		health = initialHealth;
+		spaceshipHealthBarAnimator.SetInteger ("UpgradeStatus", upgradeOfHealthIsActive);
 	}
 	
 	void Update(){
 		spaceshipHealthBarAnimator.SetInteger ("HealthStatus", health);
-		if (spaceshipIsHitted) {
-			hittedSpaceship.SetActive (true);
-			timerForWhenIsHitted += Time.deltaTime;
-
+		if (health >= initialHealth) {
+			health = initialHealth;
 		}
-		if (health >= 5 && upgradeOfHealthIsActive != 1) {
-			health = 5;
+		if (spaceshipIsHitted) {
+			spriteRendererOfTheSpaceship.color = Color.grey;
+			timerForWhenIsHitted += Time.deltaTime;
 		}
 		if (timerForWhenIsHitted >= 0.2f) {
 			spaceshipIsHitted = false;
-			hittedSpaceship.SetActive (false);
+			spriteRendererOfTheSpaceship.color = Color.white;
 			timerForWhenIsHitted = 0;
+		}
+		if (health <= 5) {
+			spaceshipHealthBarAnimator.SetLayerWeight (0, 1);
+			spaceshipHealthBarAnimator.SetLayerWeight (1, 0);
+		} else if (health > 5) {
+			spaceshipHealthBarAnimator.SetLayerWeight (0, 0);
+			spaceshipHealthBarAnimator.SetLayerWeight (1, 1);
 		}
 		if (health <= 0) {
 			spaceshipAnimator.SetBool ("IsDead", true);

@@ -9,7 +9,7 @@ public class ShieldHealth : MonoBehaviour {
 
 	//public Slider shieldHealthBar;
 	public int damageReceived;
-	public int initialLife;
+	public int initialHealth;
 	public GameObject contentionShieldHitted;
 	public Animator shieldOfTheHealthBarAnimator;
 	public Animator contentionShieldHealthBarAnimator;
@@ -23,58 +23,57 @@ public class ShieldHealth : MonoBehaviour {
 
 	void Awake(){
 		shieldAnimator = GetComponent<Animator> ();
-		//spriteRendererOfTheShield = GetComponent<SpriteRenderer> ();
+		spriteRendererOfTheShield = GetComponent<SpriteRenderer> ();
 	}
 
 	void Start () {
 		upgradeHealthIsActive = PlayerPrefs.GetInt (upgradeOfShieldHealthKey);
-		Debug.Log (upgradeHealthIsActive);
 		if (upgradeHealthIsActive == 1) {
-			//initialLife = 175;
-			health = 5;
+			initialHealth = 7;
 		} else {
-			//initialLife = 100;
-			initialLife = 5;
+			initialHealth = 5;
 		}
-		//shieldHealthBar.maxValue = initialLife;
-		//shieldHealthBar.value = initialLife;
-		health = initialLife;
+		health = initialHealth;
+		contentionShieldHealthBarAnimator.SetInteger ("UpgradeStatus", upgradeHealthIsActive);
 	}
 	
 	void Update(){
 		contentionShieldHealthBarAnimator.SetInteger ("HealthStatus", health);
-		Debug.Log (health);
-		if (health >= 5 && upgradeHealthIsActive != 1) {
-			health = 5;
+		if (health > initialHealth) {
+			health = initialHealth;
+		} 
+		if (health > 5) {
+			contentionShieldHealthBarAnimator.SetLayerWeight (0, 0);
+			contentionShieldHealthBarAnimator.SetLayerWeight (1, 1);
+		} else if (health <= 5) {
+			contentionShieldHealthBarAnimator.SetLayerWeight (1, 0);
+			contentionShieldHealthBarAnimator.SetLayerWeight (0, 1);
 		}
 		if (health <= 0) {
 			SceneManager.LoadScene ("Market");
 		}
 		if (contentionShieldIsHitted) {
-			contentionShieldHitted.SetActive (true);
+			spriteRendererOfTheShield.color = Color.grey;
 			timerForWhenIsHitted += Time.deltaTime;
 		}
 		if (timerForWhenIsHitted >= 0.3f) {
-			contentionShieldHitted.SetActive (false);
+			spriteRendererOfTheShield.color = Color.white;
 			timerForWhenIsHitted = 0f;
 			contentionShieldIsHitted = false;
 		}
-		if (health > 0 && health <= initialLife/5) {
-			//spriteRendererOfTheShield.color = Color.red;
+		if (health > 0 && health <= 1) {
 			shieldAnimator.SetBool("FullHealth", false);
 			shieldAnimator.SetBool ("HalfHealth", false);
 			shieldAnimator.SetBool ("LowHealth", true);
 			shieldOfTheHealthBarAnimator.SetInteger ("HealthStatus", 3);
 		}
-		if (health > initialLife/5 && health <= initialLife/1.5f) {
-			//spriteRendererOfTheShield.color = Color.red;
+		if (health > 1 && health <= initialHealth/1.5f) {
 			shieldAnimator.SetBool("FullHealth", false);
 			shieldAnimator.SetBool ("LowHealth", false);
 			shieldAnimator.SetBool ("HalfHealth", true);
 			shieldOfTheHealthBarAnimator.SetInteger ("HealthStatus", 2);
 		}
-		if(health <= initialLife && health > initialLife/1.5f){
-			//spriteRendererOfTheShield.color = Color.white;
+		if(health <= initialHealth && health > initialHealth/1.5f){
 			shieldAnimator.SetBool ("LowHealth", false);
 			shieldAnimator.SetBool ("HalfHealth", false);
 			shieldAnimator.SetBool("FullHealth", true);

@@ -51,11 +51,7 @@ public class TentacleProperties : MonoBehaviour {
 		if (hitted) {
 			timer += Time.deltaTime;
 			//spriteRenderOfTheTentacle.color = colorWhileIsHitted;
-			if (!slowdownActivated) {
-				spriteRenderOfTheTentacle.color = Color.grey;
-			} else {
-				spriteRenderOfTheTentacle.color = obscureBlue;
-			}
+			spriteRenderOfTheTentacle.color = Color.grey;
 		}
 		if (!slowdownActivated && timer > durationOfTheChangeOfColorWhenIsHitted) {
 			timer = 0;
@@ -63,7 +59,8 @@ public class TentacleProperties : MonoBehaviour {
 			hitted = false;
 		} else if (slowdownActivated && timer > durationOfTheChangeOfColorWhenIsHitted) {
 			timer = 0;
-			spriteRenderOfTheTentacle.color = Color.blue;
+			tentacleAnimation.SetBool ("Frozen", true);
+			spriteRenderOfTheTentacle.color = baseColor;
 			hitted = false;
 		}
 		if (timesHitByBullets >= quantityOfHitsToDie) {
@@ -77,7 +74,7 @@ public class TentacleProperties : MonoBehaviour {
 		} else {
 			tentacleBoxCollider.enabled = true;
 		}
-		if ((tentacleAnimation.GetCurrentAnimatorStateInfo (0).normalizedTime >= 1f) && (tentacleAnimation.GetCurrentAnimatorStateInfo (0).IsName ("TentacleDeathAnimation"))) {
+		if ((tentacleAnimation.GetCurrentAnimatorStateInfo (0).normalizedTime >= 1f) && (tentacleAnimation.GetCurrentAnimatorStateInfo (0).IsName ("TentacleDeathAnimation") || tentacleAnimation.GetCurrentAnimatorStateInfo (0).IsName ("FrozenTentacleDeath"))) {
 			timesHitByBullets = 0;
 			tentacleIsDead = false;
 			if (typeOfSpawnWhereIsTheTentacle == "easy") {

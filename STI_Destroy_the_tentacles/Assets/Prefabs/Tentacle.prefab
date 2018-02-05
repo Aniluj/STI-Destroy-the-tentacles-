@@ -63,7 +63,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1387520792966134
 GameObject:
   m_ObjectHideFlags: 0
@@ -87,7 +87,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1040462204651414}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.14, y: 2.25, z: 0}
+  m_LocalPosition: {x: 0.14, y: 11.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4704107522824788}
@@ -113,7 +113,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1186244070163126}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -42.2, y: 4.14, z: 1}
+  m_LocalPosition: {x: -47.60309, y: 4.887781, z: 0.1171875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4267696430470476}
@@ -172,7 +172,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.75, y: 25.75}
-    newSize: {x: 2.09, y: 3.39}
+    newSize: {x: 2.75, y: 26}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -228,7 +228,7 @@ MonoBehaviour:
   numberOfSpawnWhereIsTheTentacle: 0
   tentacleSpawnController: {fileID: 0}
   activated: 1
-  movementAnimation: {fileID: 0}
+  tentacleAnimation: {fileID: 0}
   miniVortexOpenedAnimation: {fileID: 0}
   spriteRenderOfTheTentacle: {fileID: 0}
   quantityOfHitsToDie: 4
@@ -268,12 +268,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 9e8e8122c0251254ebccda853fde2398, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cdf944baef99d7045896dd1758091af3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.09, y: 3.39}
+  m_Size: {x: 2.75, y: 26}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
