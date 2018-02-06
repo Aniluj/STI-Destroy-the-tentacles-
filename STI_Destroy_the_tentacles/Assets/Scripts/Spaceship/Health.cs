@@ -15,11 +15,7 @@ public class Health : MonoBehaviour {
 	public int damage;
 	public int initialHealth;
 	public int health;
-	public GameObject inGameMenu;
-	public CameraShake cameraShakeScript;
-	public GameObject rightFire;
-	public GameObject leftFire;
-	public GameObject hittedSpaceship;
+	public DeathController deathControllerScript;
 	private bool spaceshipIsHitted;
 	private int upgradeOfHealthIsActive;
 	private string upgradeOfHealthKey = "upgradeOfHealth";
@@ -70,18 +66,8 @@ public class Health : MonoBehaviour {
 		}
 		if (health <= 0) {
 			spaceshipAnimator.SetBool ("IsDead", true);
-			rightFire.SetActive (false);
-			leftFire.SetActive (false);
 			overheatSlider.gameObject.SetActive (false);
-			spaceshipMovementScript.enabled = false;
-			timer += Time.deltaTime;
-			if (timer >= 0f && timer < 0.2f) {
-				cameraShakeScript.cameraShakeActivated = true;
-			}
-			if (timer >= 2f) {
-				inGameMenu.SetActive (true);
-				Time.timeScale = 0;
-			}
+			deathControllerScript.playerLost = true;
 		}
 		if (health > 0 && health <= initialHealth / 5f) {
 			spaceshipAnimator.SetFloat ("HealthStatus", 1f);

@@ -8,9 +8,9 @@ using TMPro;
 public class ShieldHealth : MonoBehaviour {
 
 	//public Slider shieldHealthBar;
+	public DeathController deathControllerScript;
 	public int damageReceived;
 	public int initialHealth;
-	public GameObject contentionShieldHitted;
 	public Animator shieldOfTheHealthBarAnimator;
 	public Animator contentionShieldHealthBarAnimator;
 	public int health;
@@ -50,7 +50,8 @@ public class ShieldHealth : MonoBehaviour {
 			contentionShieldHealthBarAnimator.SetLayerWeight (0, 1);
 		}
 		if (health <= 0) {
-			SceneManager.LoadScene ("Market");
+			shieldAnimator.SetInteger ("HealthStatus", 0);
+			deathControllerScript.playerLost = true;
 		}
 		if (contentionShieldIsHitted) {
 			spriteRendererOfTheShield.color = Color.grey;
