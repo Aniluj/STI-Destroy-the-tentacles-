@@ -24,11 +24,13 @@ public class Health : MonoBehaviour {
 	private float timer;
 	private float timerForWhenIsHitted;
 	private SpaceshipMovement spaceshipMovementScript;
+	private SpecialMovement specialMovementScript;
 
 	void Awake(){
 		spaceshipAnimator = GetComponent<Animator> ();
 		spriteRendererOfTheSpaceship = GetComponent<SpriteRenderer> ();
 		spaceshipMovementScript = GetComponent<SpaceshipMovement> ();
+		specialMovementScript = GetComponent<SpecialMovement> ();
 	}
 
 	void Start () {
@@ -48,7 +50,7 @@ public class Health : MonoBehaviour {
 		if (health >= initialHealth) {
 			health = initialHealth;
 		}
-		if (spaceshipIsHitted) {
+		if (spaceshipIsHitted && !specialMovementScript.specialMovementActivated) {
 			spriteRendererOfTheSpaceship.color = Color.grey;
 			timerForWhenIsHitted += Time.deltaTime;
 		}

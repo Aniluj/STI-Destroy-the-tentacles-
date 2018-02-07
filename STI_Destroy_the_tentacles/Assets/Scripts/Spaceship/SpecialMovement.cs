@@ -7,12 +7,12 @@ public class SpecialMovement : MonoBehaviour {
 	private SpaceshipMovement normalMovement;
 	private bool shiftEnabled;
 	private bool firstTimeUse;
-	private bool specialMovementActivated;
 	private float timer;
 	private Rigidbody2D spaceship;
 	private float horizontalAxis;
 	private float timeInMovement;
 	private Health healthSystem;
+	public bool specialMovementActivated;
 	public Transform objectToRotateAround;
 	public float cooldown;
 	public float specialVelocity;

@@ -3642,7 +3642,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &691359584
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5481,7 +5481,7 @@ GameObject:
   - component: {fileID: 1052400341}
   - component: {fileID: 1052400340}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Screen space canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6116,6 +6116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 536821999abda6b43a409f518093e34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  specialMovementActivated: 0
   objectToRotateAround: {fileID: 1868892490}
   cooldown: 0.4
   specialVelocity: 600
@@ -6189,11 +6190,6 @@ MonoBehaviour:
   damage: 0
   initialHealth: 0
   health: 0
-  inGameMenu: {fileID: 828209381}
-  cameraShakeScript: {fileID: 994352446}
-  rightFire: {fileID: 792933447}
-  leftFire: {fileID: 163646592}
-  hittedSpaceship: {fileID: 0}
   deathControllerScript: {fileID: 1342843162}
 --- !u!95 &1189987822
 Animator:
@@ -6554,6 +6550,15 @@ MonoBehaviour:
   pauseScript: {fileID: 403107915}
   leftFireOfSpaceship: {fileID: 163646592}
   rightFireOfSpaceship: {fileID: 792933447}
+  powerUpsAndController:
+  - {fileID: 1379974227}
+  - {fileID: 1878160522}
+  - {fileID: 2030208611}
+  - {fileID: 365563439}
+  - {fileID: 1288499354}
+  keyOfPowerUp: {fileID: 376808560}
+  spaceshipRenderer: {fileID: 1189987817}
+  contentionShieldRenderer: {fileID: 1575760307}
 --- !u!4 &1342843163
 Transform:
   m_ObjectHideFlags: 0
@@ -6561,7 +6566,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1342843161}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2, y: 65.6, z: 5.078125}
+  m_LocalPosition: {x: -10, y: 65.6, z: 5.078125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6612,6 +6617,78 @@ Transform:
   m_PrefabParentObject: {fileID: 4905766390722226, guid: ba87b68fb34ab42458da16cb2a9bc07f,
     type: 2}
   m_PrefabInternal: {fileID: 1822669856}
+--- !u!1 &1379974227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1379974229}
+  - component: {fileID: 1379974228}
+  m_Layer: 0
+  m_Name: Power up controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1379974228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1379974227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b2dc18d04207a94d811559decfc9a27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUps:
+  - {fileID: 1288499354}
+  - {fileID: 365563439}
+  - {fileID: 2030208611}
+  - {fileID: 1878160522}
+  spawnPointsForPowerUps:
+  - {fileID: 857686811}
+  - {fileID: 859384532}
+  - {fileID: 654902660}
+  - {fileID: 118215680}
+  positionOfTheKeyToPress:
+  - {fileID: 1580218093}
+  - {fileID: 738046522}
+  - {fileID: 1902502723}
+  - {fileID: 1963086811}
+  timeToSpawnAPowerUp: 18
+  velocity: 7
+  maxTimeInMovement: 13
+  keyToPress: {fileID: 376808560}
+  keycodes:
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - H
+  - J
+  - K
+  - L
+  - X
+  - C
+  - V
+--- !u!4 &1379974229
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1379974227}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.6966245, y: 33.95299, z: 5.03125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1383449557
 GameObject:
   m_ObjectHideFlags: 0
@@ -7238,7 +7315,7 @@ GameObject:
   - component: {fileID: 1467740824}
   - component: {fileID: 1467740823}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: World space canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9530,7 +9607,6 @@ GameObject:
   - component: {fileID: 1868892489}
   - component: {fileID: 1868892491}
   - component: {fileID: 1868892492}
-  - component: {fileID: 1868892494}
   - component: {fileID: 1868892495}
   - component: {fileID: 1868892493}
   - component: {fileID: 1868892497}
@@ -9683,49 +9759,6 @@ CircleCollider2D:
   m_Offset: {x: 0.2378807, y: 0.039648056}
   serializedVersion: 2
   m_Radius: 10.119362
---- !u!114 &1868892494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1868892488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b2dc18d04207a94d811559decfc9a27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  powerUps:
-  - {fileID: 1288499354}
-  - {fileID: 365563439}
-  - {fileID: 2030208611}
-  - {fileID: 1878160522}
-  spawnPointsForPowerUps:
-  - {fileID: 857686811}
-  - {fileID: 859384532}
-  - {fileID: 654902660}
-  - {fileID: 118215680}
-  positionOfTheKeyToPress:
-  - {fileID: 1580218093}
-  - {fileID: 738046522}
-  - {fileID: 1902502723}
-  - {fileID: 1963086811}
-  timeToSpawnAPowerUp: 18
-  velocity: 7
-  maxTimeInMovement: 13
-  keyToPress: {fileID: 376808560}
-  keycodes:
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - H
-  - J
-  - K
-  - L
-  - X
-  - C
-  - V
 --- !u!114 &1868892495
 MonoBehaviour:
   m_ObjectHideFlags: 0
