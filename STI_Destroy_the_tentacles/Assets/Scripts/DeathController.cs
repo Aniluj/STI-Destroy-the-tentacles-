@@ -19,6 +19,7 @@ public class DeathController : MonoBehaviour {
 	public TextMeshProUGUI keyOfPowerUp;
 	public SpriteRenderer spaceshipRenderer;
 	public SpriteRenderer contentionShieldRenderer;
+	public Shoot shootScript;
 	private bool activateTimer;
 	private TentacleProperties propertiesOfTheTentacle;
 	private float timer;
@@ -27,9 +28,9 @@ public class DeathController : MonoBehaviour {
 
 	void Update () {
 		if (playerLost) {
+			tentaclesOnScreen = GameObject.FindGameObjectsWithTag ("Tentacle's father");
 			spaceshipRenderer.color = Color.white;
 			contentionShieldRenderer.color = Color.white;
-			tentaclesOnScreen = GameObject.FindGameObjectsWithTag ("Tentacle's father");
 			for (int i = 0; i < tentaclesOnScreen.Length; i++) {
 				propertiesOfTheTentacle = tentaclesOnScreen [i].transform.GetChild (0).GetComponent<TentacleProperties> ();
 				propertiesOfTheTentacle.tentacleAnimation.SetFloat ("runMultiplier", 0f);
@@ -41,6 +42,7 @@ public class DeathController : MonoBehaviour {
 			playerLost = false;
 			activateTimer = true;
 			pauseScript.enabled = false;
+			shootScript.enabled = false;
 			contentionShieldHealthScript.enabled = false;
 			spaceshipHealthScript.enabled = false;
 			spaceshipSpecialMovementScript.enabled = false;
