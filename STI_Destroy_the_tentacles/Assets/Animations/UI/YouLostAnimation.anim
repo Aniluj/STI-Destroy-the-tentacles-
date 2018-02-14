@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: PressAnyKeyAnimation
+  m_Name: YouLostAnimation
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -19,13 +19,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 04f985a83124ecd4bb6cc1f77ea29f5d, type: 3}
+      value: {fileID: 21300004, guid: 89d3e53a83c8cac43b23108c173c16d0, type: 3}
     - time: 0.2
-      value: {fileID: 21300002, guid: 04f985a83124ecd4bb6cc1f77ea29f5d, type: 3}
+      value: {fileID: 21300002, guid: 89d3e53a83c8cac43b23108c173c16d0, type: 3}
     - time: 0.4
-      value: {fileID: 21300004, guid: 04f985a83124ecd4bb6cc1f77ea29f5d, type: 3}
+      value: {fileID: 21300000, guid: 89d3e53a83c8cac43b23108c173c16d0, type: 3}
     - time: 0.6
-      value: {fileID: 21300002, guid: 04f985a83124ecd4bb6cc1f77ea29f5d, type: 3}
+      value: {fileID: 21300002, guid: 89d3e53a83c8cac43b23108c173c16d0, type: 3}
     attribute: m_Sprite
     path: 
     classID: 114
@@ -45,10 +45,10 @@ AnimationClip:
       customType: 0
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 04f985a83124ecd4bb6cc1f77ea29f5d, type: 3}
-    - {fileID: 21300002, guid: 04f985a83124ecd4bb6cc1f77ea29f5d, type: 3}
-    - {fileID: 21300004, guid: 04f985a83124ecd4bb6cc1f77ea29f5d, type: 3}
-    - {fileID: 21300002, guid: 04f985a83124ecd4bb6cc1f77ea29f5d, type: 3}
+    - {fileID: 21300004, guid: 89d3e53a83c8cac43b23108c173c16d0, type: 3}
+    - {fileID: 21300002, guid: 89d3e53a83c8cac43b23108c173c16d0, type: 3}
+    - {fileID: 21300000, guid: 89d3e53a83c8cac43b23108c173c16d0, type: 3}
+    - {fileID: 21300002, guid: 89d3e53a83c8cac43b23108c173c16d0, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

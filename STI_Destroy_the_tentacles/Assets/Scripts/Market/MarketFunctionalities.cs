@@ -2,21 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class MarketFunctionalities : MonoBehaviour {
 
 	public int priceOfTheUpgrade;
-	public GameObject[] panels;
-	private Text priceText;
+	public CanvasGroup[] panels;
+	private TextMeshProUGUI priceText;
 	private string accumulatedPointsKey = "accumulatedPoints";
 	private int totalAccumulatedScore;
 	private string upgradeOfHealthKey = "upgradeOfHealth";
 	private string upgradeOfShieldHealthKey = "upgradeOfShieldHealth";
 	private string upgradeOfShotKey = "upgradeOfShot";
+	private GeneralFunctionalitiesForScenes generalFunctionalitiesScript;
 
 
 	void Awake(){
-		priceText = GetComponentInChildren<Text> ();
+		priceText = GetComponentInChildren<TextMeshProUGUI> ();
+		generalFunctionalitiesScript = GetComponent<GeneralFunctionalitiesForScenes> ();
 	}
 
 	void Start () {
@@ -26,26 +29,36 @@ public class MarketFunctionalities : MonoBehaviour {
 		totalAccumulatedScore = PlayerPrefs.GetInt (accumulatedPointsKey);
 	}
 
+	void Update(){
+		if (gameObject.tag == "Price") {
+			if (PlayerPrefs.GetInt (accumulatedPointsKey) >= priceOfTheUpgrade) {
+				generalFunctionalitiesScript.enableToChange = true;
+			} else {
+				generalFunctionalitiesScript.enableToChange = false;
+			}
+		}
+	}
+
 	public void buyUpgrade(){
 		if (PlayerPrefs.GetInt (accumulatedPointsKey) >= priceOfTheUpgrade) {
 			PlayerPrefs.SetInt (accumulatedPointsKey, totalAccumulatedScore - priceOfTheUpgrade);
 			if (transform.parent.name == "Upgrade of health") {
 				PlayerPrefs.SetInt (upgradeOfHealthKey, 1);
-			}
-			if (transform.parent.name == "Upgrade of shield health") {
+			}else if (transform.parent.name == "Upgrade of shield health") {
 				PlayerPrefs.SetInt (upgradeOfShieldHealthKey, 1);
-			}
-			if (transform.parent.name == "Upgrade of shot") {
+			}else if (transform.parent.name == "Upgrade of shot") {
 				PlayerPrefs.SetInt (upgradeOfShotKey, 1);
 			}
-			transform.parent.gameObject.SetActive (false);
+			//transform.parent.gameObject.SetActive (false);
 		}
 	}
 
 	public void resetPlayerprefs(){
 		PlayerPrefs.DeleteAll ();
 		for (int i = 0; i < panels.Length; i++) {
-			panels [i].SetActive (true);
+			panels [i].interactable = true;
+			panels [i].blocksRaycasts = true;
+			panels [i].alpha = 1;
 		}
 	}
 }

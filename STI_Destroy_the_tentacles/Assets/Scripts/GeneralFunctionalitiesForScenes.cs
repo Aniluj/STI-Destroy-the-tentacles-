@@ -8,6 +8,7 @@ public class GeneralFunctionalitiesForScenes : MonoBehaviour {
 
 	public string sceneName;
 	public bool detectAnyKey;
+	public bool enableToChange;
 	public CanvasGroup[] canvasGroupToDisable;
 	public CanvasGroup[] canvasGroupToEnable;
 	public float velocityOfDisableAndEnable;
@@ -31,11 +32,13 @@ public class GeneralFunctionalitiesForScenes : MonoBehaviour {
 	}
 
 	public void ChangeBetweenCanvasGroup(){
-		for (int i = 0; i < canvasGroupToDisable.Length; i++) {
-			canvasGroupToDisable [i].interactable = !canvasGroupToDisable [i].interactable;
-			canvasGroupToDisable [i].blocksRaycasts = !canvasGroupToDisable [i].blocksRaycasts;
+		if (enableToChange) {
+			for (int i = 0; i < canvasGroupToDisable.Length; i++) {
+				canvasGroupToDisable [i].interactable = !canvasGroupToDisable [i].interactable;
+				canvasGroupToDisable [i].blocksRaycasts = !canvasGroupToDisable [i].blocksRaycasts;
+			}
+			StartCoroutine (Fade (canvasGroupToDisable, canvasGroupToEnable, velocityOfDisableAndEnable));
 		}
-		StartCoroutine (Fade (canvasGroupToDisable, canvasGroupToEnable, velocityOfDisableAndEnable));
 	}
 
 	private IEnumerator Fade(CanvasGroup[] canvasGroupToDisable, CanvasGroup[] canvasGroupToEnable, float velocityOfDisableOrEnable){
@@ -45,15 +48,17 @@ public class GeneralFunctionalitiesForScenes : MonoBehaviour {
 			}
 			yield return null;
 		}
-		while (canvasGroupToEnable [canvasGroupToEnable.Length - 1].alpha < 1f) {
+		while (canvasGroupToEnable != null && canvasGroupToEnable [canvasGroupToEnable.Length - 1].alpha < 1f) {
 			for (int i = 0; i < canvasGroupToEnable.Length; i++) {
 				canvasGroupToEnable [i].alpha += velocityOfDisableOrEnable;
 			}
 			yield return null;
 		}
-		for (int i = 0; i < canvasGroupToEnable.Length; i++) {
-			canvasGroupToEnable [i].interactable = !canvasGroupToEnable [i].interactable;
-			canvasGroupToEnable [i].blocksRaycasts = !canvasGroupToEnable [i].blocksRaycasts;
+		if (canvasGroupToEnable != null) {
+			for (int i = 0; i < canvasGroupToEnable.Length; i++) {
+				canvasGroupToEnable [i].interactable = !canvasGroupToEnable [i].interactable;
+				canvasGroupToEnable [i].blocksRaycasts = !canvasGroupToEnable [i].blocksRaycasts;
+			}
 		}
 	}
 }

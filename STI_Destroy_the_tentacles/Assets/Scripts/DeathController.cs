@@ -12,6 +12,7 @@ public class DeathController : MonoBehaviour {
 	public Health spaceshipHealthScript;
 	public bool playerLost;
 	public GameObject inGameMenu;
+	public GameObject youLostImage;
 	public InGamePause pauseScript;
 	public GameObject leftFireOfSpaceship;
 	public GameObject rightFireOfSpaceship;
@@ -56,6 +57,7 @@ public class DeathController : MonoBehaviour {
 		}
 		if (timer >= 2f) {
 			inGameMenu.SetActive (true);
+			youLostImage.SetActive (true);
 			Time.timeScale = 0;
 		}
 	}
