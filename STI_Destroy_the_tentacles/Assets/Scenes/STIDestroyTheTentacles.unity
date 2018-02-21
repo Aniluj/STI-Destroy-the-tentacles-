@@ -2935,6 +2935,8 @@ GameObject:
   m_Component:
   - component: {fileID: 403107916}
   - component: {fileID: 403107915}
+  - component: {fileID: 403107917}
+  - component: {fileID: 403107918}
   m_Layer: 0
   m_Name: Pause controller
   m_TagString: Untagged
@@ -2953,8 +2955,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 520541ee52775c5449e039bc26c2d7ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseSFX: {fileID: 403107918}
+  ambientSFX: {fileID: 403107917}
   InGameMenu: {fileID: 828209381}
   InGameMusic: {fileID: 994352444}
+  spaceshipMovementScriptOfTheSpaceship: {fileID: 1189987814}
+  loadingScreenScript: {fileID: 879442496}
+  spaceshipAnimator: {fileID: 1189987822}
 --- !u!4 &403107916
 Transform:
   m_ObjectHideFlags: 0
@@ -2968,6 +2975,166 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &403107917
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 403107914}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7f68b386841dc584cb61cbe3de7abae0, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!82 &403107918
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 403107914}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b640b141c4b4d794f93e8589c28c500a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1001 &405152487
 Prefab:
   m_ObjectHideFlags: 0
@@ -3355,7 +3522,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 491966782}
-        m_MethodName: ChangeOfScene
+        m_MethodName: ActivateFadeInOfLoadingScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 491966782}
+        m_MethodName: ChangeBetweenCanvasGroup
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3413,10 +3591,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: STIDestroyTheTentacles
   detectAnyKey: 0
-  enableToChange: 0
-  canvasGroupToDisable: []
+  enableToChange: 1
+  canvasGroupToDisable:
+  - {fileID: 828209385}
   canvasGroupToEnable: []
+  generalFunctionalitiesScriptOfLoadinScreen: {fileID: 879442498}
   velocityOfDisableAndEnable: 0
+  scriptToActivateFade: {fileID: 879442496}
 --- !u!1001 &537592382
 Prefab:
   m_ObjectHideFlags: 0
@@ -4511,6 +4692,7 @@ GameObject:
   - component: {fileID: 828209382}
   - component: {fileID: 828209384}
   - component: {fileID: 828209383}
+  - component: {fileID: 828209385}
   m_Layer: 5
   m_Name: In-Game menu
   m_TagString: Untagged
@@ -4572,6 +4754,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 828209381}
+--- !u!225 &828209385
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 828209381}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 1
 --- !u!1 &834838489
 GameObject:
   m_ObjectHideFlags: 0
@@ -4925,6 +5118,122 @@ GameObject:
   m_PrefabParentObject: {fileID: 1460314529972278, guid: ba87b68fb34ab42458da16cb2a9bc07f,
     type: 2}
   m_PrefabInternal: {fileID: 867395379}
+--- !u!1 &879442492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 879442493}
+  - component: {fileID: 879442495}
+  - component: {fileID: 879442494}
+  - component: {fileID: 879442497}
+  - component: {fileID: 879442496}
+  - component: {fileID: 879442498}
+  m_Layer: 5
+  m_Name: Black panel for when is loading scene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &879442493
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 879442492}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1052400343}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &879442494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 879442492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &879442495
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 879442492}
+--- !u!114 &879442496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 879442492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be26e514e5a73cc488f3d2256de42957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateFadeIn: 0
+  canvasGroupToDisable:
+  - {fileID: 828209385}
+  inGamePauseScript: {fileID: 403107915}
+--- !u!225 &879442497
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 879442492}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &879442498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 879442492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2851c782d2507514cb6a5fb8ba659072, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: 
+  detectAnyKey: 0
+  enableToChange: 0
+  canvasGroupToDisable: []
+  canvasGroupToEnable: []
+  generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
+  velocityOfDisableAndEnable: 0.04
+  scriptToActivateFade: {fileID: 0}
 --- !u!1 &896717211
 GameObject:
   m_ObjectHideFlags: 0
@@ -5300,8 +5609,8 @@ GameObject:
   - component: {fileID: 994352440}
   - component: {fileID: 994352439}
   - component: {fileID: 994352438}
-  - component: {fileID: 994352443}
   - component: {fileID: 994352444}
+  - component: {fileID: 994352443}
   - component: {fileID: 994352445}
   - component: {fileID: 994352446}
   m_Layer: 0
@@ -5737,6 +6046,7 @@ RectTransform:
   - {fileID: 73843130}
   - {fileID: 1691464088}
   - {fileID: 1978765940}
+  - {fileID: 879442493}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6152,6 +6462,7 @@ GameObject:
   - component: {fileID: 1189987820}
   - component: {fileID: 1189987823}
   - component: {fileID: 1189987822}
+  - component: {fileID: 1189987824}
   m_Layer: 0
   m_Name: Spaceship
   m_TagString: Untagged
@@ -6189,7 +6500,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.25, y: 3.75}
-    newSize: {x: 2.25, y: 3.75}
+    newSize: {x: 4.5, y: 4.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -6256,7 +6567,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.25, y: 3.75}
+  m_Size: {x: 4.5, y: 4.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -6366,6 +6677,9 @@ MonoBehaviour:
   initialHealth: 0
   health: 0
   deathControllerScript: {fileID: 1342843162}
+  explosionOfDeathSFX: {fileID: 1189987824}
+  inGameMusic: {fileID: 994352444}
+  ambientSFX: {fileID: 403107917}
 --- !u!95 &1189987822
 Animator:
   serializedVersion: 3
@@ -6398,6 +6712,86 @@ MonoBehaviour:
   overheatSlider: {fileID: 1161439082}
   incrementPerShot: 0.7
   decrementPerTime: 0.03
+--- !u!82 &1189987824
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1189987813}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 2e8bf71e2ee819e4d9cace8ac84974b7, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &1189987825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7030,10 +7424,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: Market
   detectAnyKey: 0
-  enableToChange: 0
-  canvasGroupToDisable: []
+  enableToChange: 1
+  canvasGroupToDisable:
+  - {fileID: 828209385}
   canvasGroupToEnable: []
+  generalFunctionalitiesScriptOfLoadinScreen: {fileID: 879442498}
   velocityOfDisableAndEnable: 0
+  scriptToActivateFade: {fileID: 879442496}
 --- !u!114 &1398956884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7075,7 +7472,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1398956883}
-        m_MethodName: ChangeOfScene
+        m_MethodName: ActivateFadeInOfLoadingScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1398956883}
+        m_MethodName: ChangeBetweenCanvasGroup
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8021,6 +8429,7 @@ GameObject:
   - component: {fileID: 1575760310}
   - component: {fileID: 1575760306}
   - component: {fileID: 1575760311}
+  - component: {fileID: 1575760312}
   m_Layer: 0
   m_Name: Contention shield
   m_TagString: Shield
@@ -8754,6 +9163,9 @@ MonoBehaviour:
   initialHealth: 0
   shieldOfTheHealthBarAnimator: {fileID: 1691464091}
   contentionShieldHealthBarAnimator: {fileID: 73843133}
+  ambientSFX: {fileID: 403107917}
+  shieldExplosionSFX: {fileID: 1575760312}
+  inGameMusic: {fileID: 994352444}
   health: 0
 --- !u!95 &1575760311
 Animator:
@@ -8772,6 +9184,86 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!82 &1575760312
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1575760305}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7ebbf1281eba51948acfed9df8147e23, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &1580218092
 GameObject:
   m_ObjectHideFlags: 0
@@ -10857,7 +11349,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2069410105}
-        m_MethodName: ChangeOfScene
+        m_MethodName: ActivateFadeInOfLoadingScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2069410105}
+        m_MethodName: ChangeBetweenCanvasGroup
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10915,10 +11418,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: Menu
   detectAnyKey: 0
-  enableToChange: 0
-  canvasGroupToDisable: []
+  enableToChange: 1
+  canvasGroupToDisable:
+  - {fileID: 828209385}
   canvasGroupToEnable: []
+  generalFunctionalitiesScriptOfLoadinScreen: {fileID: 879442498}
   velocityOfDisableAndEnable: 0
+  scriptToActivateFade: {fileID: 879442496}
 --- !u!1 &2086054858
 GameObject:
   m_ObjectHideFlags: 0

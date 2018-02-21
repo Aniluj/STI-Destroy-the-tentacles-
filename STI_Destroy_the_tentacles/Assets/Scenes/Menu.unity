@@ -378,7 +378,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1150301985}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.16441667, y: 0.22525}
   m_AnchorMax: {x: 0.83541673, y: 0.9186876}
@@ -555,13 +555,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: 
   detectAnyKey: 0
-  enableToChange: 0
+  enableToChange: 1
   canvasGroupToDisable:
   - {fileID: 1251299233}
   - {fileID: 1075679050}
   canvasGroupToEnable:
   - {fileID: 1450918820}
+  generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
+  scriptToActivateFade: {fileID: 0}
 --- !u!1 &248536092
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,10 +689,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: Market
   detectAnyKey: 0
-  enableToChange: 0
-  canvasGroupToDisable: []
+  enableToChange: 1
+  canvasGroupToDisable:
+  - {fileID: 1075679050}
   canvasGroupToEnable: []
+  generalFunctionalitiesScriptOfLoadinScreen: {fileID: 1268341819}
   velocityOfDisableAndEnable: 0
+  scriptToActivateFade: {fileID: 1268341820}
 --- !u!114 &284672517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -732,7 +737,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 284672516}
-        m_MethodName: ChangeOfScene
+        m_MethodName: ActivateFadeInOfLoadingScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 284672516}
+        m_MethodName: ChangeBetweenCanvasGroup
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1141,6 +1157,7 @@ RectTransform:
   - {fileID: 1450918817}
   - {fileID: 1150301985}
   - {fileID: 1128199524}
+  - {fileID: 1268341818}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1654,7 +1671,9 @@ MonoBehaviour:
   - {fileID: 969216982}
   canvasGroupToEnable:
   - {fileID: 1075679050}
+  generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
+  scriptToActivateFade: {fileID: 0}
 --- !u!225 &969216982
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1697,7 +1716,7 @@ RectTransform:
   m_Children:
   - {fileID: 1236048148}
   m_Father: {fileID: 1150301985}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.386, y: 0.043875016}
   m_AnchorMax: {x: 0.615, y: 0.15}
@@ -1717,13 +1736,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: 
   detectAnyKey: 0
-  enableToChange: 0
+  enableToChange: 1
   canvasGroupToDisable:
   - {fileID: 1150301986}
   canvasGroupToEnable:
   - {fileID: 1251299233}
   - {fileID: 1075679050}
+  generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
+  scriptToActivateFade: {fileID: 0}
 --- !u!114 &1012191539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2152,8 +2173,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 187304878}
   - {fileID: 1012191537}
+  - {fileID: 187304878}
   m_Father: {fileID: 593478100}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2534,6 +2555,122 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1256358286}
+--- !u!1 &1268341817
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1268341818}
+  - component: {fileID: 1268341822}
+  - component: {fileID: 1268341821}
+  - component: {fileID: 1268341820}
+  - component: {fileID: 1268341819}
+  - component: {fileID: 1268341823}
+  m_Layer: 5
+  m_Name: Black panel for when is loading scene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1268341818
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268341817}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 593478100}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1268341819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268341817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2851c782d2507514cb6a5fb8ba659072, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: 
+  detectAnyKey: 0
+  enableToChange: 0
+  canvasGroupToDisable: []
+  canvasGroupToEnable: []
+  generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
+  velocityOfDisableAndEnable: 0.04
+  scriptToActivateFade: {fileID: 0}
+--- !u!114 &1268341820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268341817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be26e514e5a73cc488f3d2256de42957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateFadeIn: 0
+  canvasGroupToDisable:
+  - {fileID: 1075679050}
+  inGamePauseScript: {fileID: 0}
+--- !u!114 &1268341821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268341817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1268341822
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268341817}
+--- !u!225 &1268341823
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268341817}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1408043387
 GameObject:
   m_ObjectHideFlags: 0
@@ -2745,13 +2882,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: Menu
   detectAnyKey: 0
-  enableToChange: 0
+  enableToChange: 1
   canvasGroupToDisable:
   - {fileID: 1450918820}
   canvasGroupToEnable:
   - {fileID: 1251299233}
   - {fileID: 1075679050}
+  generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
+  scriptToActivateFade: {fileID: 0}
 --- !u!1 &1450918816
 GameObject:
   m_ObjectHideFlags: 0
@@ -3491,13 +3630,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: 
   detectAnyKey: 0
-  enableToChange: 0
+  enableToChange: 1
   canvasGroupToDisable:
   - {fileID: 1075679050}
   - {fileID: 1251299233}
   canvasGroupToEnable:
   - {fileID: 1150301986}
+  generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
+  scriptToActivateFade: {fileID: 0}
 --- !u!114 &1858642414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3771,10 +3912,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: STIDestroyTheTentacles
   detectAnyKey: 0
-  enableToChange: 0
-  canvasGroupToDisable: []
+  enableToChange: 1
+  canvasGroupToDisable:
+  - {fileID: 1075679050}
   canvasGroupToEnable: []
+  generalFunctionalitiesScriptOfLoadinScreen: {fileID: 1268341819}
   velocityOfDisableAndEnable: 0
+  scriptToActivateFade: {fileID: 1268341820}
 --- !u!114 &2063656847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3816,7 +3960,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2063656846}
-        m_MethodName: ChangeOfScene
+        m_MethodName: ActivateFadeInOfLoadingScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2063656846}
+        m_MethodName: ChangeBetweenCanvasGroup
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

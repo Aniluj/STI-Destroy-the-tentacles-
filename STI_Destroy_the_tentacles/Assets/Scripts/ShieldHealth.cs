@@ -13,6 +13,9 @@ public class ShieldHealth : MonoBehaviour {
 	public int initialHealth;
 	public Animator shieldOfTheHealthBarAnimator;
 	public Animator contentionShieldHealthBarAnimator;
+	public AudioSource ambientSFX;
+	public AudioSource shieldExplosionSFX;
+	public AudioSource inGameMusic;
 	public int health;
 	private bool contentionShieldIsHitted;
 	private float timerForWhenIsHitted;
@@ -52,6 +55,11 @@ public class ShieldHealth : MonoBehaviour {
 		if (health <= 0) {
 			shieldAnimator.SetInteger ("HealthStatus", 0);
 			deathControllerScript.playerLost = true;
+			inGameMusic.Stop ();
+			ambientSFX.Stop ();
+			ambientSFX.Play ();
+			shieldExplosionSFX.time = 0.5f;
+			shieldExplosionSFX.Play ();
 		}
 		if (contentionShieldIsHitted) {
 			spriteRendererOfTheShield.color = Color.grey;

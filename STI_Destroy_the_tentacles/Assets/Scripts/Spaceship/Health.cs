@@ -16,6 +16,9 @@ public class Health : MonoBehaviour {
 	public int initialHealth;
 	public int health;
 	public DeathController deathControllerScript;
+	public AudioSource explosionOfDeathSFX;
+	public AudioSource inGameMusic;
+	public AudioSource ambientSFX;
 	private bool spaceshipIsHitted;
 	private int upgradeOfHealthIsActive;
 	private string upgradeOfHealthKey = "upgradeOfHealth";
@@ -70,6 +73,11 @@ public class Health : MonoBehaviour {
 			spaceshipAnimator.SetBool ("IsDead", true);
 			overheatSlider.gameObject.SetActive (false);
 			deathControllerScript.playerLost = true;
+			inGameMusic.Stop ();
+			explosionOfDeathSFX.time = 0.65f;
+			explosionOfDeathSFX.Play ();
+			ambientSFX.Stop ();
+			ambientSFX.Play ();
 		}
 		if (health > 0 && health <= initialHealth / 5f) {
 			spaceshipAnimator.SetFloat ("HealthStatus", 1f);
