@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: f8332a3af63cdf0489d4077460314691
-timeCreated: 1516743854
+guid: 66744b02e62fe144cade7426d4bf880f
+timeCreated: 1519211230
 licenseType: Free
 TrueTypeFontImporter:
   externalObjects: {}
@@ -13,7 +13,8 @@ TrueTypeFontImporter:
   fontName: Stop The Invasion
   fontNames:
   - Stop The Invasion
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: f8332a3af63cdf0489d4077460314691, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

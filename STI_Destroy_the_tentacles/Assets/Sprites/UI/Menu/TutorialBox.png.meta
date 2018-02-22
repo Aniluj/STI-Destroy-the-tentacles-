@@ -1,17 +1,9 @@
 fileFormatVersion: 2
-guid: c8f3041da6a21784e924043c100f7973
-timeCreated: 1518056773
+guid: 6145dc78f709ade40a2bdd2fd0d5095c
+timeCreated: 1519209170
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: TentaclesOfTitleSpritesheet2_0
-    21300002: TentaclesOfTitleSpritesheet2_1
-    21300004: TentaclesOfTitleSpritesheet2_2
-    21300006: TentaclesOfTitleSpritesheet2_3
-    21300008: TentaclesOfTitleSpritesheet2_4
-    21300010: TentaclesOfTitleSpritesheet2_5
-    21300012: TentaclesOfTitleSpritesheet2_6
-    21300014: TentaclesOfTitleSpritesheet2_7
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -48,12 +40,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 2, y: 5, z: 2, w: 5}
   spritePixelsToUnits: 16
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -147,119 +139,7 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: TentaclesOfTitleSpritesheet2_0
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 448
-        width: 316
-        height: 304
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: TentaclesOfTitleSpritesheet2_1
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 448
-        width: 316
-        height: 304
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: TentaclesOfTitleSpritesheet2_2
-      rect:
-        serializedVersion: 2
-        x: 780
-        y: 448
-        width: 316
-        height: 304
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: TentaclesOfTitleSpritesheet2_3
-      rect:
-        serializedVersion: 2
-        x: 1120
-        y: 448
-        width: 316
-        height: 304
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: TentaclesOfTitleSpritesheet2_4
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 72
-        width: 316
-        height: 304
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: TentaclesOfTitleSpritesheet2_5
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 72
-        width: 316
-        height: 304
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: TentaclesOfTitleSpritesheet2_6
-      rect:
-        serializedVersion: 2
-        x: 780
-        y: 72
-        width: 316
-        height: 304
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: TentaclesOfTitleSpritesheet2_7
-      rect:
-        serializedVersion: 2
-        x: 1112
-        y: 72
-        width: 316
-        height: 304
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
+    sprites: []
     outline: []
     physicsShape: []
   spritePackingTag: 
