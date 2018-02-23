@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 66744b02e62fe144cade7426d4bf880f
+timeCreated: 1519211230
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Stop The Invasion
+  fontNames:
+  - Stop The Invasion
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: f8332a3af63cdf0489d4077460314691, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

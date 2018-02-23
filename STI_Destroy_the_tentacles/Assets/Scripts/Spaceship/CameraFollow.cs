@@ -15,7 +15,7 @@ public class CameraFollow : MonoBehaviour {
 	void Update () {
 		transform.position = target.position + posDiff;
 		if (transform.position.y <= maxMovementInY) {
-			transform.position = new Vector3 (target.position.x + posDiff.x,-3.472773f,target.position.z + posDiff.z);
+			transform.position = new Vector3 (target.position.x + posDiff.x, maxMovementInY,target.position.z + posDiff.z);
 		}
 	}
 }

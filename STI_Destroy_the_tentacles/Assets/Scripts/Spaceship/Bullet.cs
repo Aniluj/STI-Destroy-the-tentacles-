@@ -18,7 +18,7 @@ public class Bullet : MonoBehaviour {
 	}
 
 	void Update () {
-		bullet.AddRelativeForce (Vector2.right * velocity);
+		bullet.AddRelativeForce (Vector2.up * velocity * -1);
 	}
 
 	void FixedUpdate (){

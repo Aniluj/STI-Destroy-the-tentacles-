@@ -9,31 +9,27 @@ public class OverheatController : MonoBehaviour {
 	public Slider overheatSlider;
 	public float incrementPerShot;
 	public float decrementPerTime;
-	private Shoot[] shooting;
+	private Shoot shooting;
 
 
 	void Awake(){
-		shooting = GetComponents<Shoot>();
+		shooting = GetComponent<Shoot>();
 	}
 		
 	void Update () {
 		overheatSlider.transform.rotation = neededPositionForTheSlider.rotation;
 		overheatSlider.transform.position = neededPositionForTheSlider.position;
 
-		if (shooting [0].shooting == true || shooting [1].shooting == true) {
+		if (shooting.shooting == true) {
 			overheatSlider.value += incrementPerShot;
 		} 
-		if(shooting[0].shooting == false || shooting[1].shooting == false){
+		if(shooting.shooting == false){
 			overheatSlider.value -= decrementPerTime;
 		}
 		if (overheatSlider.value >= overheatSlider.maxValue) {
-			shooting [0].isOverHeated = true;
-			shooting [1].isOverHeated = true;
-			shooting [2].isOverHeated = true;
+			shooting.isOverHeated = true;
 		} else if(overheatSlider.value <= overheatSlider.maxValue - 1){
-			shooting [0].isOverHeated = false;
-			shooting [1].isOverHeated = false;
-			shooting [2].isOverHeated = false;
+			shooting.isOverHeated = false;
 		}
 	}
 }
