@@ -3272,7 +3272,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &452218446
 Prefab:
@@ -6652,7 +6652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   specialMovementActivated: 0
   objectToRotateAround: {fileID: 1868892490}
-  cooldown: 0.4
+  cooldown: 0.7
   specialVelocity: 600
   limitOfTimeInMovement: 0.1
 --- !u!114 &1189987820
@@ -6952,7 +6952,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1286772444
 Prefab:
@@ -10541,7 +10541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2ebe912a9540247a152bdc9c070076, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  necessaryTimeToObtainPoints: 0.5
+  necessaryTimeToObtainPoints: 1.7
   pointsObtainedByTime: 1
   health: {fileID: 1189987821}
   shieldHealth: {fileID: 1575760310}
