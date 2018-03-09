@@ -1,6 +1,6 @@
 # Stop the invasion: Destroy the tentacles!
 
-Proyecto final para la materia Desarrollo de Videojuegos 2.
+En STI: ¡Destroy the tentacles!, conduces una nave espacial que debe evitar que los peligrosos tentáculos que brotan de un vórtice intergaláctico, escapen de la zona de contención en la que yacen, para así mantener a la Tierra a salvo de la amenaza extraterrestre.
 
 [Trello](https://trello.com/b/00l19Nm5/sti-destroy-the-tentacles)
 
