@@ -12,6 +12,10 @@ __Autores:__
 
 [Seguimiento del proyecto en Trello](https://trello.com/b/00l19Nm5/sti-destroy-the-tentacles)
 
+## Itch.io
+
+[Juego en Itch.io](https://aniluj.itch.io/stop-the-invasion-destroy-the-tentacles)
+
 ## Screenshots
 
 ![stop the invasion destroy the tentacles 1](https://user-images.githubusercontent.com/21962457/37191677-ece8dc7e-233f-11e8-815b-ce4fd30dade7.png)
