@@ -1,4 +1,4 @@
-# Stop the invasion: Destroy the tentacles!
+# Stop The Invasion: Destroy the tentacles!
 
 __Descripción:__ En STI: ¡Destroy the tentacles!, conduces una nave espacial que debe evitar que los peligrosos tentáculos que brotan de un vórtice intergaláctico, escapen de la zona de contención en la que yacen, para así mantener a la Tierra a salvo de la amenaza extraterrestre.
 
