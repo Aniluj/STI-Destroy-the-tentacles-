@@ -23,6 +23,7 @@ public class LoadingScreenFadeInOut : MonoBehaviour {
 	void Update () {
 		if (activateFadeOut) {
 			activateFadeOut = false;
+			Time.timeScale = 1;
 			StartCoroutine (generalFunctionalitiesForUseTheFade.Fade (loadingScreenToFade, null, generalFunctionalitiesForUseTheFade.velocityOfDisableAndEnable));
 		} else if (activateFadeIn) {
 			if (inGamePauseScript != null) {
