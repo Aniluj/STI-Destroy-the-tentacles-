@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Security.Cryptography;
+using UnityEngine;
 
 public class SpaceshipMovement : MonoBehaviour {
 
@@ -9,17 +10,34 @@ public class SpaceshipMovement : MonoBehaviour {
 	public float velocity;
 	public Transform objectToRotateAround;
 
+	private FloatingJoystick touchJoystick;
+
 	void Awake (){
 		spaceshipAnimator = GetComponent<Animator> ();
 		spaceship = GetComponent<Rigidbody2D> ();
 	}
 
-	void Start () {
-		
+	void Start ()
+	{
+		touchJoystick = GameObject.FindGameObjectWithTag("TouchJoystick").GetComponent<FloatingJoystick>();
 	}
 
 	void Update () {
+		
 		horizontalAxis = Input.GetAxisRaw ("Horizontal") * -1f;
+		//TouchMovement
+		if (touchJoystick != null)
+		{
+			if (touchJoystick.Horizontal > 0.0f)
+			{
+				horizontalAxis = 1.0f * -1.0f;
+			}else if (touchJoystick.Horizontal < 0.0f)
+			{
+				horizontalAxis = -1.0f * -1.0f;				
+			}
+		}
+		//TouchMovement
+		
 		spaceshipAnimator.SetFloat ("LeftOrRight", horizontalAxis);
 		if (horizontalAxis == 0f) {
 			spaceshipAnimator.SetInteger ("Idle", 0);
