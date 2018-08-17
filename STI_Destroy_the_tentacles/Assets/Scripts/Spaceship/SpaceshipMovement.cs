@@ -22,6 +22,11 @@ public class SpaceshipMovement : MonoBehaviour {
 		touchJoystick = GameObject.FindGameObjectWithTag("TouchJoystick").GetComponent<FloatingJoystick>();
 	}
 
+	public float HorizontalAxis()
+	{
+		return horizontalAxis;
+	}
+
 	void Update () {
 		
 		horizontalAxis = Input.GetAxisRaw ("Horizontal") * -1f;

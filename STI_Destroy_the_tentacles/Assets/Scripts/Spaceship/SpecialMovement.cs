@@ -32,8 +32,8 @@ public class SpecialMovement : MonoBehaviour {
 
 	void Update () {
 		timer += Time.deltaTime;
-		horizontalAxis = Input.GetAxisRaw ("Horizontal") * -1f;
-
+		//horizontalAxis = Input.GetAxisRaw ("Horizontal") * -1f;
+		horizontalAxis = normalMovement.HorizontalAxis();
 		if (timer > cooldown || firstTimeUse) {
 			shiftEnabled = true;
 			firstTimeUse = false;
