@@ -1418,7 +1418,7 @@ Prefab:
     - target: {fileID: 224162125889739670, guid: cdd5474b97f1a9d40bea678ca8dec2bb,
         type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 224162125889739670, guid: cdd5474b97f1a9d40bea678ca8dec2bb,
         type: 2}
@@ -2562,6 +2562,8 @@ GameObject:
   - component: {fileID: 365563444}
   - component: {fileID: 365563440}
   - component: {fileID: 365563441}
+  - component: {fileID: 365563445}
+  - component: {fileID: 365563446}
   m_Layer: 0
   m_Name: Slowdown power up
   m_TagString: Untagged
@@ -2662,6 +2664,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 0
+--- !u!114 &365563445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 365563439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a4ceef37f7e0fd449c0234c4b808fb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PowerUpsController: {fileID: 1379974228}
+--- !u!61 &365563446
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 365563439}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.5, y: 3.5}
+    newSize: {x: 4, y: 4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.5, y: 3.5}
+  m_EdgeRadius: 0
 --- !u!1001 &366724443
 Prefab:
   m_ObjectHideFlags: 0
@@ -4707,7 +4746,7 @@ RectTransform:
   m_LocalScale: {x: 1.0000117, y: 1.0000117, z: 1.0000117}
   m_Children: []
   m_Father: {fileID: 1052400343}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.92216665, y: 0.3232229}
   m_AnchorMax: {x: 1, y: 0.46022293}
@@ -5497,7 +5536,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &879442493
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5509,11 +5548,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1052400343}
-  m_RootOrder: 9
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2403.5037, y: 1802.6278}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &879442494
@@ -6414,7 +6453,7 @@ RectTransform:
   m_GameObject: {fileID: 1052400339}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.28541666, y: 0.28541666, z: 0.28541666}
+  m_LocalScale: {x: 0.43385416, y: 0.43385416, z: 0.43385416}
   m_Children:
   - {fileID: 235259247}
   - {fileID: 828209382}
@@ -6425,16 +6464,16 @@ RectTransform:
   - {fileID: 73843130}
   - {fileID: 1691464088}
   - {fileID: 1978765940}
-  - {fileID: 879442493}
   - {fileID: 1737302860}
   - {fileID: 1926450145}
   - {fileID: 795112203}
+  - {fileID: 879442493}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 274, y: 205.5}
+  m_AnchoredPosition: {x: 416.5, y: 312.5}
   m_SizeDelta: {x: 1920, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1052400344
@@ -7470,6 +7509,8 @@ GameObject:
   - component: {fileID: 1288499359}
   - component: {fileID: 1288499356}
   - component: {fileID: 1288499355}
+  - component: {fileID: 1288499360}
+  - component: {fileID: 1288499361}
   m_Layer: 0
   m_Name: Explosion power up
   m_TagString: Untagged
@@ -7570,6 +7611,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 0
+--- !u!114 &1288499360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1288499354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a4ceef37f7e0fd449c0234c4b808fb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PowerUpsController: {fileID: 1379974228}
+--- !u!61 &1288499361
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1288499354}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.5, y: 3.5}
+    newSize: {x: 5, y: 5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.5, y: 3.5}
+  m_EdgeRadius: 0
 --- !u!1 &1342843161
 GameObject:
   m_ObjectHideFlags: 0
@@ -11047,6 +11125,8 @@ GameObject:
   - component: {fileID: 1878160523}
   - component: {fileID: 1878160526}
   - component: {fileID: 1878160524}
+  - component: {fileID: 1878160528}
+  - component: {fileID: 1878160529}
   m_Layer: 0
   m_Name: Recover shield health power up
   m_TagString: Untagged
@@ -11152,6 +11232,43 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1878160528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1878160522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a4ceef37f7e0fd449c0234c4b808fb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PowerUpsController: {fileID: 1379974228}
+--- !u!61 &1878160529
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1878160522}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.5, y: 3.5}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.5, y: 3.5}
+  m_EdgeRadius: 0
 --- !u!1 &1878939405
 GameObject:
   m_ObjectHideFlags: 0
@@ -11271,7 +11388,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1052400343}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.81700003, y: 0.17}
   m_AnchorMax: {x: 0.90129167, y: 0.3232229}
@@ -11527,6 +11644,8 @@ GameObject:
   - component: {fileID: 2030208612}
   - component: {fileID: 2030208615}
   - component: {fileID: 2030208613}
+  - component: {fileID: 2030208617}
+  - component: {fileID: 2030208618}
   m_Layer: 0
   m_Name: Recover spaceship health power up
   m_TagString: Untagged
@@ -11632,6 +11751,43 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2030208617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2030208611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a4ceef37f7e0fd449c0234c4b808fb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PowerUpsController: {fileID: 1379974228}
+--- !u!61 &2030208618
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2030208611}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.5, y: 3.5}
+    newSize: {x: 5.12, y: 5.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.5, y: 3.5}
+  m_EdgeRadius: 0
 --- !u!1 &2030653834
 GameObject:
   m_ObjectHideFlags: 0

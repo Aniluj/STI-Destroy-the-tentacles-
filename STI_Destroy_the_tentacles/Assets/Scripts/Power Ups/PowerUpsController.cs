@@ -32,6 +32,7 @@ public class PowerUpsController : MonoBehaviour {
 	private int up = 1;
 	private int right = 2;
 	private float timeInMovement;
+	private bool _powerUpWasTouched = false;
 
 	void Start(){
 		movementActive = false;
@@ -46,7 +47,11 @@ public class PowerUpsController : MonoBehaviour {
 		if (timer >= timeToSpawnAPowerUp) {
 			numberOfPositionOfTheKeyCode = Random.Range (0, keycodes.Length);
 			realKeyCode = (KeyCode) Enum.Parse (typeof(KeyCode), keycodes [numberOfPositionOfTheKeyCode]);
-			keyToPress.text = keycodes [numberOfPositionOfTheKeyCode];
+			string text = keycodes [numberOfPositionOfTheKeyCode];
+			#if UNITY_ANDROID
+			text = "";
+			#endif
+			keyToPress.text = text;
 			timer = 0;
 			timeInMovement = 0;
 			numberOfPowerUp = Random.Range (0, 4);
@@ -73,7 +78,8 @@ public class PowerUpsController : MonoBehaviour {
 			if (powerUps [numberOfPowerUp].name == "Explosion power up") {
 				keyToPress.color = explosionPowerUpColor;
 			}
-			if (Input.GetKeyDown (realKeyCode)) {
+			if (Input.GetKeyDown (realKeyCode) || _powerUpWasTouched) {
+				_powerUpWasTouched = false;
 				
 				recoverHealtPowerUp = powerUps [numberOfPowerUp].GetComponent<RecoveryHealthPowerUp> ();
 				if (recoverHealtPowerUp != null) {
@@ -104,4 +110,10 @@ public class PowerUpsController : MonoBehaviour {
 			}
 		}
 	  }
+
+	public void NotifyPowerUpTouch()
+	{
+		_powerUpWasTouched = true;
+	}
+	
    }
