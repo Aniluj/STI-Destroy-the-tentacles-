@@ -11,6 +11,7 @@ TagManager:
   - Spawn
   - Tentacle's father
   - Price
+  - TouchJoystick
   layers:
   - Default
   - TransparentFX
