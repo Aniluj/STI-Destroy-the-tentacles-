@@ -17,6 +17,7 @@ public class SpecialMovement : MonoBehaviour {
 	public float cooldown;
 	public float specialVelocity;
 	public float limitOfTimeInMovement;
+	public JoystickButton movementJoystickButton;
 
 
 	void Awake (){
@@ -31,8 +32,8 @@ public class SpecialMovement : MonoBehaviour {
 
 	void Update () {
 		timer += Time.deltaTime;
-		horizontalAxis = Input.GetAxisRaw ("Horizontal") * -1f;
-
+		//horizontalAxis = Input.GetAxisRaw ("Horizontal") * -1f;
+		horizontalAxis = normalMovement.HorizontalAxis();
 		if (timer > cooldown || firstTimeUse) {
 			shiftEnabled = true;
 			firstTimeUse = false;
@@ -48,7 +49,10 @@ public class SpecialMovement : MonoBehaviour {
 			healthSystem.damage = healthSystem.damageReceived;
 		}
 
-		if (shiftEnabled && Input.GetKeyDown (KeyCode.LeftShift)) {
+		bool isButtonPressed =
+			(Input.GetKeyDown(KeyCode.LeftShift) || movementJoystickButton.IsButtonDown) ? true : false;
+
+		if (shiftEnabled && isButtonPressed) {
 			shiftEnabled = false;
 			specialMovementActivated = true;
 			timer = 0;

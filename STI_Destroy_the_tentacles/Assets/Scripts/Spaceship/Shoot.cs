@@ -17,6 +17,7 @@ public class Shoot : MonoBehaviour {
 	public Transform shootingPointOfTheUpgrade2;
 	public Transform shootingPointOfTheUpgrade3;
 	public bool shooting;
+	public JoystickButton joystickButton;
 
 
 
@@ -32,8 +33,9 @@ public class Shoot : MonoBehaviour {
 
 	void Update () {
 		timer += Time.deltaTime;
+		bool isButtonPressed = (Input.GetButton("Fire") || joystickButton.IsPressed) ? true : false;
 
-		if (Input.GetButton ("Fire") && (firstShot || timer > cooldown) && isOverHeated == false && Time.timeScale == 1) {
+		if (isButtonPressed && (firstShot || timer > cooldown) && isOverHeated == false && Time.timeScale == 1) {
 			timer = 0;
 			firstShot = false;
 			for (int j = 0; j < 3; j++) {

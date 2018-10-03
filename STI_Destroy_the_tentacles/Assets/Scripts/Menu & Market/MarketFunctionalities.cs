@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class MarketFunctionalities : MonoBehaviour {
+public class MarketFunctionalities : MonoBehaviour
+{
 
 	public int priceOfTheUpgrade;
 	public CanvasGroup[] panels;
@@ -17,11 +18,12 @@ public class MarketFunctionalities : MonoBehaviour {
 	private string upgradeOfShieldHealthKey = "upgradeOfShieldHealth";
 	private string upgradeOfShotKey = "upgradeOfShot";
 	private GeneralFunctionalitiesForScenes generalFunctionalitiesScript;
-
+	private AudioSource _audioSource;
 
 	void Awake(){
 		priceText = GetComponentInChildren<TextMeshProUGUI> ();
 		generalFunctionalitiesScript = GetComponent<GeneralFunctionalitiesForScenes> ();
+		_audioSource = GetComponent<AudioSource>();
 	}
 
 	void Start () {
@@ -43,6 +45,7 @@ public class MarketFunctionalities : MonoBehaviour {
 
 	public void buyUpgrade(){
 		if (PlayerPrefs.GetInt (accumulatedPointsKey) >= priceOfTheUpgrade) {
+			_audioSource.Play();
 			PlayerPrefs.SetInt (accumulatedPointsKey, totalAccumulatedScore - priceOfTheUpgrade);
 			if (transform.parent.name == "Upgrade of health") {
 				PlayerPrefs.SetInt (upgradeOfHealthKey, 1);
