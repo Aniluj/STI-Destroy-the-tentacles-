@@ -1,9 +1,14 @@
 fileFormatVersion: 2
 guid: dadb47283e0e3e9439af89f0c9bf5283
-timeCreated: 1538555154
+timeCreated: 1538649127
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: TutorialExplanation_MB_0
+    21300002: TutorialExplanation_MB_1
+    21300004: TutorialExplanation_MB_2
+    21300006: TutorialExplanation_MB_3
+    21300008: TutorialExplanation_MB_4
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -139,7 +144,77 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: TutorialExplanation_MB_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 427
+        width: 604
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialExplanation_MB_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 327
+        width: 603
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialExplanation_MB_2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 227
+        width: 590
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialExplanation_MB_3
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 127
+        width: 560
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialExplanation_MB_4
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 27
+        width: 627
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 

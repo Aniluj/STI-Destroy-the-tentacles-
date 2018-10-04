@@ -1,9 +1,41 @@
 fileFormatVersion: 2
 guid: a58f2cc8a37dcf84fb83520242797f3f
-timeCreated: 1538555150
+timeCreated: 1538644177
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: TutorialSpritesheet_MB_0
+    21300002: TutorialSpritesheet_MB_1
+    21300004: TutorialSpritesheet_MB_2
+    21300006: TutorialSpritesheet_MB_3
+    21300008: TutorialSpritesheet_MB_4
+    21300010: TutorialSpritesheet_MB_5
+    21300012: TutorialSpritesheet_MB_6
+    21300014: TutorialSpritesheet_MB_7
+    21300016: TutorialSpritesheet_MB_8
+    21300018: TutorialSpritesheet_MB_9
+    21300020: TutorialSpritesheet_MB_10
+    21300022: TutorialSpritesheet_MB_11
+    21300024: TutorialSpritesheet_MB_12
+    21300026: TutorialSpritesheet_MB_13
+    21300028: TutorialSpritesheet_MB_14
+    21300030: TutorialSpritesheet_MB_15
+    21300032: TutorialSpritesheet_MB_16
+    21300034: TutorialSpritesheet_MB_17
+    21300036: TutorialSpritesheet_MB_18
+    21300038: TutorialSpritesheet_MB_19
+    21300040: TutorialSpritesheet_MB_20
+    21300042: TutorialSpritesheet_MB_21
+    21300044: TutorialSpritesheet_MB_22
+    21300046: TutorialSpritesheet_MB_23
+    21300048: TutorialSpritesheet_MB_24
+    21300050: TutorialSpritesheet_MB_25
+    21300052: TutorialSpritesheet_MB_26
+    21300054: TutorialSpritesheet_MB_27
+    21300056: TutorialSpritesheet_MB_28
+    21300058: TutorialSpritesheet_MB_29
+    21300060: TutorialSpritesheet_MB_30
+    21300062: TutorialSpritesheet_MB_31
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -139,7 +171,455 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_0
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 880
+        width: 256
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_1
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 880
+        width: 256
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_2
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 880
+        width: 256
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_3
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 880
+        width: 256
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_4
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 780
+        width: 268
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_5
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 780
+        width: 268
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_6
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 780
+        width: 268
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_7
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 780
+        width: 268
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_8
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 328
+        width: 256
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_9
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 328
+        width: 256
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_10
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 328
+        width: 256
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_11
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 328
+        width: 256
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_12
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 228
+        width: 268
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_13
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 228
+        width: 268
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_14
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 228
+        width: 268
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_15
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 228
+        width: 268
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_16
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 680
+        width: 228
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_17
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 680
+        width: 228
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_18
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 680
+        width: 228
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_19
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 128
+        width: 228
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_20
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 128
+        width: 228
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_21
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 128
+        width: 228
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_22
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 128
+        width: 228
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_23
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 604
+        width: 244
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_24
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 604
+        width: 244
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_25
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 604
+        width: 244
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_26
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 604
+        width: 244
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_27
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 680
+        width: 228
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_28
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 52
+        width: 244
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_29
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 52
+        width: 244
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_30
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 52
+        width: 244
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TutorialSpritesheet_MB_31
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 52
+        width: 244
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 
