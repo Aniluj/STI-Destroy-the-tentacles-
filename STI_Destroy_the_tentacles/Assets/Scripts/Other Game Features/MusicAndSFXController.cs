@@ -12,9 +12,9 @@ public class MusicAndSFXController : MonoBehaviour {
 	public AudioSource[] music;
 	public AudioSource[] sFX;
 
-	void Start () {
-		enablingDisablingMusic = PlayerPrefs.GetInt (enablingDisablingMusicKey);
-		enablingDisablingSFXValue = PlayerPrefs.GetInt (enablingDisablingSFXKeY);
+    void Start () {
+        enablingDisablingMusic = PlayerPrefs.GetInt(enablingDisablingMusicKey, 1);
+        enablingDisablingSFXValue = PlayerPrefs.GetInt(enablingDisablingSFXKeY, 1); ;
 		if (enablingDisablingMusic == 1 && music != null) {
 			for (int i = 0; i < music.Length; i++) {
 				music [i].volume = 1f;
@@ -37,9 +37,9 @@ public class MusicAndSFXController : MonoBehaviour {
 
 	void Update() {
 		if (checkInUpdate) {
-			enablingDisablingMusic = PlayerPrefs.GetInt (enablingDisablingMusicKey);
-			enablingDisablingSFXValue = PlayerPrefs.GetInt (enablingDisablingSFXKeY);
-			if (enablingDisablingMusic == 1 && music != null) {
+            enablingDisablingMusic = PlayerPrefs.GetInt(enablingDisablingMusicKey, 1);
+            enablingDisablingSFXValue = PlayerPrefs.GetInt(enablingDisablingSFXKeY, 1);
+            if (enablingDisablingMusic == 1 && music != null) {
 				for (int i = 0; i < music.Length; i++) {
 					music [i].volume = 1f;
 				}

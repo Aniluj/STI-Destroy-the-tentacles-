@@ -60,8 +60,8 @@ public class MarketFunctionalities : MonoBehaviour
 
 	public void resetPlayerprefs(){
 		PlayerPrefs.DeleteAll ();
-		PlayerPrefs.SetInt (enablingDisablingSFXKeY, 1);
-		PlayerPrefs.SetInt (enablingDisablingMusicKey, 1);
+		//PlayerPrefs.SetInt (enablingDisablingSFXKeY, 1);
+		//PlayerPrefs.SetInt (enablingDisablingMusicKey, 1);
 		for (int i = 0; i < panels.Length; i++) {
 			panels [i].interactable = true;
 			panels [i].blocksRaycasts = true;

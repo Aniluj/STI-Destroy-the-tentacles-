@@ -3553,7 +3553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c180d2766e38884783ee15ad82ba465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkInUpdate: 0
+  checkInUpdate: 1
   music:
   - {fileID: 994352444}
   sFX:
@@ -3940,11 +3940,14 @@ MonoBehaviour:
   sceneName: STIDestroyTheTentacles
   detectAnyKey: 0
   enableToChange: 1
+  titleTransform: {fileID: 0}
+  positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable:
   - {fileID: 828209385}
   canvasGroupToEnable: []
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 879442498}
   velocityOfDisableAndEnable: 0
+  velocityOfElevation: 0
   scriptToActivateFade: {fileID: 879442496}
 --- !u!1001 &537592382
 Prefab:
@@ -5769,10 +5772,13 @@ MonoBehaviour:
   sceneName: 
   detectAnyKey: 0
   enableToChange: 0
+  titleTransform: {fileID: 0}
+  positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable: []
   canvasGroupToEnable: []
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.04
+  velocityOfElevation: 0
   scriptToActivateFade: {fileID: 0}
 --- !u!1 &896717211
 GameObject:
@@ -6594,7 +6600,7 @@ RectTransform:
   m_GameObject: {fileID: 1052400339}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.46875, y: 0.46875, z: 0.46875}
   m_Children:
   - {fileID: 235259247}
   - {fileID: 828209382}
@@ -6614,7 +6620,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 480, y: 320}
+  m_AnchoredPosition: {x: 450, y: 300}
   m_SizeDelta: {x: 1920, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1052400344
@@ -8127,11 +8133,14 @@ MonoBehaviour:
   sceneName: Market
   detectAnyKey: 0
   enableToChange: 1
+  titleTransform: {fileID: 0}
+  positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable:
   - {fileID: 828209385}
   canvasGroupToEnable: []
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 879442498}
   velocityOfDisableAndEnable: 0
+  velocityOfElevation: 0
   scriptToActivateFade: {fileID: 879442496}
 --- !u!114 &1398956884
 MonoBehaviour:
@@ -12287,11 +12296,14 @@ MonoBehaviour:
   sceneName: Menu
   detectAnyKey: 0
   enableToChange: 1
+  titleTransform: {fileID: 0}
+  positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable:
   - {fileID: 828209385}
   canvasGroupToEnable: []
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 879442498}
   velocityOfDisableAndEnable: 0
+  velocityOfElevation: 0
   scriptToActivateFade: {fileID: 879442496}
 --- !u!1 &2086054858
 GameObject:
