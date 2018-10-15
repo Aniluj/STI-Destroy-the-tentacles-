@@ -613,6 +613,8 @@ MonoBehaviour:
   sceneName: 
   detectAnyKey: 0
   enableToChange: 1
+  titleTransform: {fileID: 0}
+  positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable:
   - {fileID: 1251299233}
   - {fileID: 1075679050}
@@ -620,6 +622,7 @@ MonoBehaviour:
   - {fileID: 1450918820}
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
+  velocityOfElevation: 0
   scriptToActivateFade: {fileID: 0}
 --- !u!1 &248536092
 GameObject:
@@ -747,11 +750,14 @@ MonoBehaviour:
   sceneName: Market
   detectAnyKey: 0
   enableToChange: 1
+  titleTransform: {fileID: 0}
+  positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable:
   - {fileID: 1075679050}
   canvasGroupToEnable: []
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 1268341819}
   velocityOfDisableAndEnable: 0
+  velocityOfElevation: 0
   scriptToActivateFade: {fileID: 1268341820}
 --- !u!114 &284672517
 MonoBehaviour:
@@ -1264,8 +1270,8 @@ RectTransform:
   m_Father: {fileID: 1251299236}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5445625, y: 0.25663003}
-  m_AnchorMax: {x: 0.95400006, y: 0.79800004}
+  m_AnchorMin: {x: 0.5445625, y: 0}
+  m_AnchorMax: {x: 0.95400006, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1419,7 +1425,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 593478100}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &593478096
 GameObject:
@@ -1506,8 +1512,9 @@ RectTransform:
   m_GameObject: {fileID: 593478096}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.46875, y: 0.46875, z: 0.46875}
   m_Children:
+  - {fileID: 2082744751}
   - {fileID: 522674380}
   - {fileID: 958812884}
   - {fileID: 2133086934}
@@ -1525,7 +1532,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 480, y: 320}
+  m_AnchoredPosition: {x: 450, y: 300}
   m_SizeDelta: {x: 1920, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &593478101
@@ -1821,12 +1828,15 @@ MonoBehaviour:
   sceneName: 
   detectAnyKey: 0
   enableToChange: 1
+  titleTransform: {fileID: 0}
+  positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable:
   - {fileID: 187304881}
   canvasGroupToEnable:
   - {fileID: 1760748519}
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
+  velocityOfElevation: 0
   scriptToActivateFade: {fileID: 0}
 --- !u!114 &752615993
 MonoBehaviour:
@@ -2034,6 +2044,8 @@ MonoBehaviour:
   sceneName: 
   detectAnyKey: 0
   enableToChange: 1
+  titleTransform: {fileID: 0}
+  positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable:
   - {fileID: 1251299233}
   - {fileID: 1075679050}
@@ -2041,6 +2053,7 @@ MonoBehaviour:
   - {fileID: 1450918820}
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
+  velocityOfElevation: 0
   scriptToActivateFade: {fileID: 0}
 --- !u!114 &826972032
 MonoBehaviour:
@@ -2296,7 +2309,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 593478100}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &969216976
 GameObject:
@@ -2329,7 +2342,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 593478100}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.35200003, y: 0.15200001}
   m_AnchorMax: {x: 0.648, y: 0.18344396}
@@ -2400,12 +2413,15 @@ MonoBehaviour:
   sceneName: 
   detectAnyKey: 1
   enableToChange: 1
+  titleTransform: {fileID: 1251299236}
+  positionOfTheTitleToReach: {fileID: 2082744751}
   canvasGroupToDisable:
   - {fileID: 969216982}
   canvasGroupToEnable:
   - {fileID: 1075679050}
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
-  velocityOfDisableAndEnable: 0.05
+  velocityOfDisableAndEnable: 0.03
+  velocityOfElevation: 1.5
   scriptToActivateFade: {fileID: 0}
 --- !u!225 &969216982
 CanvasGroup:
@@ -2470,6 +2486,8 @@ MonoBehaviour:
   sceneName: 
   detectAnyKey: 0
   enableToChange: 1
+  titleTransform: {fileID: 0}
+  positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable:
   - {fileID: 1150301986}
   canvasGroupToEnable:
@@ -2477,6 +2495,7 @@ MonoBehaviour:
   - {fileID: 1075679050}
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
+  velocityOfElevation: 0
   scriptToActivateFade: {fileID: 0}
 --- !u!114 &1012191539
 MonoBehaviour:
@@ -2599,7 +2618,7 @@ RectTransform:
   - {fileID: 188352936}
   - {fileID: 826972030}
   m_Father: {fileID: 593478100}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.13847917, y: 0.05959192}
   m_AnchorMax: {x: 0.84400004, y: 0.35840806}
@@ -2742,7 +2761,7 @@ RectTransform:
   m_Children:
   - {fileID: 824689207}
   m_Father: {fileID: 593478100}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.9148958, y: 0.008}
   m_AnchorMax: {x: 1, y: 0.07025783}
@@ -2912,7 +2931,7 @@ RectTransform:
   - {fileID: 187304878}
   - {fileID: 1760748518}
   m_Father: {fileID: 593478100}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3272,10 +3291,10 @@ RectTransform:
   - {fileID: 1561305663}
   - {fileID: 493055418}
   m_Father: {fileID: 593478100}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0.22159193}
+  m_AnchorMax: {x: 1, y: 0.7628521}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3398,7 +3417,7 @@ RectTransform:
   - {fileID: 1857909186}
   - {fileID: 1719856909}
   m_Father: {fileID: 593478100}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3468,7 +3487,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1268341818
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3480,7 +3499,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 593478100}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3501,10 +3520,13 @@ MonoBehaviour:
   sceneName: 
   detectAnyKey: 0
   enableToChange: 0
+  titleTransform: {fileID: 0}
+  positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable: []
   canvasGroupToEnable: []
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.04
+  velocityOfElevation: 0
   scriptToActivateFade: {fileID: 0}
 --- !u!114 &1268341820
 MonoBehaviour:
@@ -3777,6 +3799,8 @@ MonoBehaviour:
   sceneName: Menu
   detectAnyKey: 0
   enableToChange: 1
+  titleTransform: {fileID: 0}
+  positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable:
   - {fileID: 1450918820}
   canvasGroupToEnable:
@@ -3784,6 +3808,7 @@ MonoBehaviour:
   - {fileID: 1075679050}
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
+  velocityOfElevation: 0
   scriptToActivateFade: {fileID: 0}
 --- !u!1 &1450918816
 GameObject:
@@ -3825,7 +3850,7 @@ RectTransform:
   - {fileID: 366806131}
   - {fileID: 1683622098}
   m_Father: {fileID: 593478100}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3907,8 +3932,8 @@ RectTransform:
   m_Father: {fileID: 1251299236}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.25663003}
-  m_AnchorMax: {x: 1, y: 0.73622197}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4260,12 +4285,15 @@ MonoBehaviour:
   sceneName: 
   detectAnyKey: 0
   enableToChange: 1
+  titleTransform: {fileID: 0}
+  positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable:
   - {fileID: 1760748519}
   canvasGroupToEnable:
   - {fileID: 187304881}
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
+  velocityOfElevation: 0
   scriptToActivateFade: {fileID: 0}
 --- !u!114 &1712537519
 MonoBehaviour:
@@ -4404,6 +4432,8 @@ MonoBehaviour:
   sceneName: 
   detectAnyKey: 0
   enableToChange: 1
+  titleTransform: {fileID: 0}
+  positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable:
   - {fileID: 1261519411}
   canvasGroupToEnable:
@@ -4411,6 +4441,7 @@ MonoBehaviour:
   - {fileID: 1251299233}
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
+  velocityOfElevation: 0
   scriptToActivateFade: {fileID: 0}
 --- !u!114 &1719856911
 MonoBehaviour:
@@ -4933,6 +4964,8 @@ MonoBehaviour:
   sceneName: 
   detectAnyKey: 0
   enableToChange: 1
+  titleTransform: {fileID: 0}
+  positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable:
   - {fileID: 1075679050}
   - {fileID: 1251299233}
@@ -4940,6 +4973,7 @@ MonoBehaviour:
   - {fileID: 1261519411}
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
+  velocityOfElevation: 0
   scriptToActivateFade: {fileID: 0}
 --- !u!1 &1811003735
 GameObject:
@@ -4970,7 +5004,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 593478100}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5231,6 +5265,8 @@ MonoBehaviour:
   sceneName: 
   detectAnyKey: 0
   enableToChange: 1
+  titleTransform: {fileID: 0}
+  positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable:
   - {fileID: 1075679050}
   - {fileID: 1251299233}
@@ -5238,6 +5274,7 @@ MonoBehaviour:
   - {fileID: 1150301986}
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
+  velocityOfElevation: 0
   scriptToActivateFade: {fileID: 0}
 --- !u!114 &1858642414
 MonoBehaviour:
@@ -5605,11 +5642,14 @@ MonoBehaviour:
   sceneName: STIDestroyTheTentacles
   detectAnyKey: 0
   enableToChange: 1
+  titleTransform: {fileID: 0}
+  positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable:
   - {fileID: 1075679050}
   canvasGroupToEnable: []
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 1268341819}
   velocityOfDisableAndEnable: 0
+  velocityOfElevation: 0
   scriptToActivateFade: {fileID: 1268341820}
 --- !u!114 &2063656847
 MonoBehaviour:
@@ -5708,6 +5748,46 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2063656844}
+--- !u!1 &2082744750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2082744751}
+  - component: {fileID: 2082744752}
+  m_Layer: 5
+  m_Name: "Positi\xF3n of the title to reach"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2082744751
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2082744750}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 593478100}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.683222}
+  m_AnchorMax: {x: 0.5, y: 0.683222}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2082744752
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2082744750}
 --- !u!1 &2133086933
 GameObject:
   m_ObjectHideFlags: 0
@@ -5736,7 +5816,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 593478100}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
