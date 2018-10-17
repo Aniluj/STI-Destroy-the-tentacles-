@@ -12,6 +12,8 @@ public class MarketFunctionalities : MonoBehaviour
 	private TextMeshProUGUI priceText;
 	private string accumulatedPointsKey = "accumulatedPoints";
 	private int totalAccumulatedScore;
+	private string enablingDisablingSFXKeY = "enablingDisablingSFX";
+	private string enablingDisablingMusicKey = "enablingDisablingMusic";
 	private string upgradeOfHealthKey = "upgradeOfHealth";
 	private string upgradeOfShieldHealthKey = "upgradeOfShieldHealth";
 	private string upgradeOfShotKey = "upgradeOfShot";
@@ -58,6 +60,8 @@ public class MarketFunctionalities : MonoBehaviour
 
 	public void resetPlayerprefs(){
 		PlayerPrefs.DeleteAll ();
+		//PlayerPrefs.SetInt (enablingDisablingSFXKeY, 1);
+		//PlayerPrefs.SetInt (enablingDisablingMusicKey, 1);
 		for (int i = 0; i < panels.Length; i++) {
 			panels [i].interactable = true;
 			panels [i].blocksRaycasts = true;

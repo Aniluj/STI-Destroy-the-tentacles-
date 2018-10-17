@@ -498,11 +498,14 @@ MonoBehaviour:
   sceneName: 
   detectAnyKey: 0
   enableToChange: 1
+  titleTransform: {fileID: 0}
+  positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable:
   - {fileID: 817667594}
   canvasGroupToEnable: []
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
+  velocityOfElevation: 0
   scriptToActivateFade: {fileID: 0}
 --- !u!114 &148823441
 MonoBehaviour:
@@ -649,6 +652,8 @@ MonoBehaviour:
   sceneName: STIDestroyTheTentacles
   detectAnyKey: 0
   enableToChange: 1
+  titleTransform: {fileID: 0}
+  positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable:
   - {fileID: 317724925}
   - {fileID: 817667594}
@@ -657,6 +662,7 @@ MonoBehaviour:
   canvasGroupToEnable: []
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 570096005}
   velocityOfDisableAndEnable: 0.04
+  velocityOfElevation: 0
   scriptToActivateFade: {fileID: 570096006}
 --- !u!114 &192297707
 MonoBehaviour:
@@ -1105,10 +1111,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c180d2766e38884783ee15ad82ba465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkInUpdate: 0
+  checkInUpdate: 1
   music:
   - {fileID: 542301296}
-  sFX: []
+  sFX:
+  - {fileID: 1603532990}
+  - {fileID: 1050195291}
+  - {fileID: 148823442}
 --- !u!4 &434143733
 Transform:
   m_ObjectHideFlags: 0
@@ -1599,10 +1608,13 @@ MonoBehaviour:
   sceneName: 
   detectAnyKey: 0
   enableToChange: 0
+  titleTransform: {fileID: 0}
+  positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable: []
   canvasGroupToEnable: []
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.04
+  velocityOfElevation: 0
   scriptToActivateFade: {fileID: 0}
 --- !u!114 &570096006
 MonoBehaviour:
@@ -1912,12 +1924,15 @@ MonoBehaviour:
   sceneName: 
   detectAnyKey: 0
   enableToChange: 0
+  titleTransform: {fileID: 0}
+  positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable:
   - {fileID: 757445885}
   canvasGroupToEnable:
   - {fileID: 148823436}
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.07
+  velocityOfElevation: 0
   scriptToActivateFade: {fileID: 0}
 --- !u!1 &817667589
 GameObject:
@@ -2422,11 +2437,14 @@ MonoBehaviour:
   sceneName: 
   detectAnyKey: 0
   enableToChange: 1
+  titleTransform: {fileID: 0}
+  positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable:
   - {fileID: 1205554176}
   canvasGroupToEnable: []
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
+  velocityOfElevation: 0
   scriptToActivateFade: {fileID: 0}
 --- !u!114 &1050195290
 MonoBehaviour:
@@ -2856,12 +2874,15 @@ MonoBehaviour:
   sceneName: 
   detectAnyKey: 0
   enableToChange: 0
+  titleTransform: {fileID: 0}
+  positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable:
   - {fileID: 1094970416}
   canvasGroupToEnable:
   - {fileID: 1603532984}
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.07
+  velocityOfElevation: 0
   scriptToActivateFade: {fileID: 0}
 --- !u!1 &1205554172
 GameObject:
@@ -3401,12 +3422,15 @@ MonoBehaviour:
   sceneName: 
   detectAnyKey: 0
   enableToChange: 0
+  titleTransform: {fileID: 0}
+  positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable:
   - {fileID: 1419650303}
   canvasGroupToEnable:
   - {fileID: 1050195285}
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.07
+  velocityOfElevation: 0
   scriptToActivateFade: {fileID: 0}
 --- !u!1 &1600931513
 GameObject:
@@ -3460,6 +3484,8 @@ MonoBehaviour:
   sceneName: Menu
   detectAnyKey: 0
   enableToChange: 1
+  titleTransform: {fileID: 0}
+  positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable:
   - {fileID: 317724925}
   - {fileID: 817667594}
@@ -3468,6 +3494,7 @@ MonoBehaviour:
   canvasGroupToEnable: []
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 570096005}
   velocityOfDisableAndEnable: 0.04
+  velocityOfElevation: 0
   scriptToActivateFade: {fileID: 570096006}
 --- !u!114 &1600931516
 MonoBehaviour:
@@ -3741,11 +3768,14 @@ MonoBehaviour:
   sceneName: 
   detectAnyKey: 0
   enableToChange: 1
+  titleTransform: {fileID: 0}
+  positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable:
   - {fileID: 1867485993}
   canvasGroupToEnable: []
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
+  velocityOfElevation: 0
   scriptToActivateFade: {fileID: 0}
 --- !u!82 &1603532990
 AudioSource:
@@ -3911,7 +3941,7 @@ RectTransform:
   m_GameObject: {fileID: 1678329184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.353125, y: 0.353125, z: 0.353125}
+  m_LocalScale: {x: 0.46875, y: 0.46875, z: 0.46875}
   m_Children:
   - {fileID: 644210850}
   - {fileID: 1769850742}
@@ -3929,7 +3959,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 339, y: 226}
+  m_AnchoredPosition: {x: 450, y: 300}
   m_SizeDelta: {x: 1920, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1678329189

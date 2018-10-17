@@ -6,42 +6,51 @@ using UnityEngine.UI;
 
 public class GeneralFunctionalitiesForScenes : MonoBehaviour {
 
-	public string sceneName;
-	public bool detectAnyKey;
-	public bool enableToChange;
-	public CanvasGroup[] canvasGroupToDisable;
-	public CanvasGroup[] canvasGroupToEnable;
-	public GeneralFunctionalitiesForScenes generalFunctionalitiesScriptOfLoadinScreen;
-	public float velocityOfDisableAndEnable;
-	public LoadingScreenFadeInOut scriptToActivateFade;
-	private Button buttonToChangeTheSprite;
+    public string sceneName;
+    public bool detectAnyKey;
+    public bool enableToChange;
+    public RectTransform titleTransform;
+    public RectTransform positionOfTheTitleToReach;
+    public CanvasGroup[] canvasGroupToDisable;
+    public CanvasGroup[] canvasGroupToEnable;
+    public GeneralFunctionalitiesForScenes generalFunctionalitiesScriptOfLoadinScreen;
+    public float velocityOfDisableAndEnable;
+    public float velocityOfElevation;
+    public LoadingScreenFadeInOut scriptToActivateFade;
+    private Button buttonToChangeTheSprite;
 
-	void Awake(){
-		buttonToChangeTheSprite = GetComponent<Button> ();
-	}
+    void Awake() {
+        buttonToChangeTheSprite = GetComponent<Button>();
+    }
 
-	void Update(){
-		if (detectAnyKey) {
-			if (Input.anyKeyDown) {
-				detectAnyKey = false;
-				ChangeBetweenCanvasGroup ();
-			}
-		}
-	}
+    void Update() {
+        if(detectAnyKey) {
+            if(Input.anyKeyDown) {
+                detectAnyKey = false;
+                UpdateTitlePosition();
+                ChangeBetweenCanvasGroup();
+            }
+        }
+    }
 
-	public void ActivateFadeInOfLoadingScreen(){
-		generalFunctionalitiesScriptOfLoadinScreen.sceneName = sceneName;
-		scriptToActivateFade.activateFadeIn = true;
-	}
+    public void ActivateFadeInOfLoadingScreen() {
+        generalFunctionalitiesScriptOfLoadinScreen.sceneName = sceneName;
+        scriptToActivateFade.activateFadeIn = true;
+    }
 
-	public void ChangeOfScene(){
-		Time.timeScale = 1;
-		SceneManager.LoadScene (sceneName);
-	}
+    public void ChangeOfScene() {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(sceneName);
+    }
 
-	public void Exit(){
-		Application.Quit ();
-	}
+    public void Exit() {
+        Application.Quit();
+    }
+
+    public void UpdateTitlePosition() 
+    {
+        StartCoroutine(Elevate(positionOfTheTitleToReach, titleTransform));
+    }
 
 	public void ChangeBetweenCanvasGroup(){
 		if (enableToChange) {
@@ -52,6 +61,16 @@ public class GeneralFunctionalitiesForScenes : MonoBehaviour {
 			StartCoroutine (Fade (canvasGroupToDisable, canvasGroupToEnable, velocityOfDisableAndEnable));
 		}
 	}
+
+    public IEnumerator Elevate(RectTransform positionOfTheTitleToReach, RectTransform titleTransform)
+    {
+        while(titleTransform.position.y < positionOfTheTitleToReach.position.y)
+        {
+            titleTransform.position += new Vector3(0, velocityOfElevation, 0);
+            Debug.Log(titleTransform.position.y);
+            yield return null;
+        }
+    }
 
 	public IEnumerator Fade(CanvasGroup[] canvasGroupToDisable, CanvasGroup[] canvasGroupToEnable, float velocityOfDisableOrEnable){
 		if (canvasGroupToDisable != null) {

@@ -42,7 +42,7 @@ public class ActivateAndDeactivateAllSounds : MonoBehaviour {
 	void Start () {
 		enablingDisablingSFXValue = PlayerPrefs.GetInt (enablingDisablingSFXKeY, 1);
 		enablingDisablingMusic = PlayerPrefs.GetInt (enablingDisablingMusicKey, 1);
-		musicOn.disabledSprite = disableSpriteMusicOn;
+        musicOn.disabledSprite = disableSpriteMusicOn;
 		musicOn.pressedSprite = pressedSpriteMusicOn;
 		musicOn.highlightedSprite = highLightedSpriteMusicOn;
 		musicOff.disabledSprite = disableSpriteMusicOff;
@@ -58,19 +58,30 @@ public class ActivateAndDeactivateAllSounds : MonoBehaviour {
 	
 
 	void Update () {
-		if (checkForMusicState) {
-			if (enablingDisablingMusic == 0) {
+		if (checkForMusicState)
+        {
+            enablingDisablingMusic = PlayerPrefs.GetInt(enablingDisablingMusicKey, 1);
+
+            if (enablingDisablingMusic == 0)
+            {
 				buttonImage.sprite = musicOff.disabledSprite;
 				buttonToChangeSprites.spriteState = musicOff;
-			} else if (enablingDisablingMusic == 1){
+			} else if (enablingDisablingMusic == 1)
+            {
 				buttonImage.sprite = musicOn.disabledSprite;
 				buttonToChangeSprites.spriteState = musicOn;
 			}
-		} else if (checkForSFXState) {
-			if (enablingDisablingSFXValue == 0) {
+		}
+        if (checkForSFXState)
+        {
+            enablingDisablingSFXValue = PlayerPrefs.GetInt(enablingDisablingSFXKeY, 1);
+
+            if (enablingDisablingSFXValue == 0)
+            {
 				buttonImage.sprite = sFXOff.disabledSprite;
 				buttonToChangeSprites.spriteState = sFXOff;
-			} else if (enablingDisablingSFXValue == 1) {
+			} else if (enablingDisablingSFXValue == 1)
+            {
 				buttonImage.sprite = sFXOn.disabledSprite;
 				buttonToChangeSprites.spriteState = sFXOn;
 			}
@@ -80,22 +91,22 @@ public class ActivateAndDeactivateAllSounds : MonoBehaviour {
 	public void ActivateDeactivateSFX(){
 		if (enablingDisablingSFXValue == 1) {
 			PlayerPrefs.SetInt (enablingDisablingSFXKeY, 0);
-			enablingDisablingSFXValue = PlayerPrefs.GetInt (enablingDisablingSFXKeY);
-			buttonToChangeSprites.spriteState = sFXOff;
+            enablingDisablingSFXValue = PlayerPrefs.GetInt(enablingDisablingSFXKeY, 1);
+            buttonToChangeSprites.spriteState = sFXOff;
 		} else if (enablingDisablingSFXValue == 0) {
 			PlayerPrefs.SetInt (enablingDisablingSFXKeY, 1);
-			enablingDisablingSFXValue = PlayerPrefs.GetInt (enablingDisablingSFXKeY);
-			buttonToChangeSprites.spriteState = sFXOn;
+            enablingDisablingSFXValue = PlayerPrefs.GetInt(enablingDisablingSFXKeY, 1);
+            buttonToChangeSprites.spriteState = sFXOn;
 		}
 	}
 
 	public void ActivateDeactivateMusic(){
 		if (enablingDisablingMusic == 1) {
 			PlayerPrefs.SetInt (enablingDisablingMusicKey, 0);
-			enablingDisablingMusic = PlayerPrefs.GetInt (enablingDisablingMusicKey);
-		} else if (enablingDisablingMusic == 0) {
+            enablingDisablingMusic = PlayerPrefs.GetInt(enablingDisablingMusicKey, 1);
+        } else if (enablingDisablingMusic == 0) {
 			PlayerPrefs.SetInt (enablingDisablingMusicKey, 1);
-			enablingDisablingMusic = PlayerPrefs.GetInt (enablingDisablingMusicKey);
-		}
+            enablingDisablingMusic = PlayerPrefs.GetInt(enablingDisablingMusicKey, 1);
+        }
 	}
 }
