@@ -14,15 +14,16 @@ public class InGamePause : MonoBehaviour {
 	public LoadingScreenFadeInOut loadingScreenScript;
 	public Animator spaceshipAnimator;
 
+    public JoystickButton pauseJoystickButton;
 
-	void Start () {
-		
-	}
+    void Start () {
+       
+    }
 	
 
 	void Update () {
 		
-		if (Input.GetButtonDown ("Pause") && !paused && !loadingScreenScript.activateFadeIn) {
+		if ((Input.GetButtonDown ("Pause") || pauseJoystickButton.IsButtonDown) && !paused && !loadingScreenScript.activateFadeIn) {
 			InGameMenu.SetActive (true);
 			InGameMusic.Pause ();
 			pauseSFX.Play ();
