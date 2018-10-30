@@ -5,12 +5,15 @@ __Descripción:__ En STI: ¡Destroy the tentacles!, conduces una nave espacial q
 __Desarrollo y Game Design:__
 
 * Julián Rodrigo Volonterio
+
 __Visuales y Diseño Gráficos:__
 
 * Julián Chab
+
 __Desarrollo del Port a Mobile:__
 
 * Sebastián Avena
+
 __Música y SFX:__
 
 * Guido Cichillitti
