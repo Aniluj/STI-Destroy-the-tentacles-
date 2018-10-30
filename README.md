@@ -2,9 +2,13 @@
 
 __Descripción:__ En STI: ¡Destroy the tentacles!, conduces una nave espacial que debe evitar que los peligrosos tentáculos que brotan de un vórtice intergaláctico, escapen de la zona de contención en la que yacen, para así mantener a la Tierra a salvo de la amenaza extraterrestre.
 
-__Autores:__
+__Desarrollo y Game Design:__
 * Julián Rodrigo Volonterio
+__Visuales y Diseño Gráficos:__
 * Julián Chab
+__Desarrollo del Port a Mobile:__
+* Sebastián Avena
+__Música y SFX:__
 * Guido Cichillitti
 * Felipe Castillo
 
