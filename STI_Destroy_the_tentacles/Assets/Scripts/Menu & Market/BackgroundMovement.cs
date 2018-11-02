@@ -1,23 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class BackgroundMovement : MonoBehaviour {
+    public float Speed;
 
-	public Transform transformOfBackground1;
-	public Transform transformOfBackground2;
-	public Transform position1;
-	public Transform position2;
-	public float velocity;
+    private Image image;
+    private Vector2 offset;
+	void Awake () {
+        image = GetComponent<Image>();
+    }
+    void Start()
+    {
+        image.mainTexture.wrapModeU = TextureWrapMode.Repeat;
+        image.material = new Material(Shader.Find("Unlit/Texture"));
+        image.material.mainTexture = image.sprite.texture;
+        offset.y = image.material.mainTextureOffset.y;
+    }
 
-
-	void Update () {
-		transformOfBackground1.Translate (Vector3.right * velocity * Time.deltaTime);
-		transformOfBackground2.Translate (Vector3.right * velocity * Time.deltaTime);
-		if (transformOfBackground1.position.x >= position1.position.x) {
-			transformOfBackground1.localPosition = position2.localPosition;
-		} else if (transformOfBackground2.position.x >= position1.position.x) {
-			transformOfBackground2.localPosition = position2.localPosition;
-		}
-	}
+    void Update () {
+        offset.x += Time.deltaTime * Speed;
+        image.material.mainTextureOffset = offset;
+    }
 }
