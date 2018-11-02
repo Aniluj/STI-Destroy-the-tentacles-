@@ -17,6 +17,7 @@ public class SpecialMovement : MonoBehaviour {
 	public float cooldown;
 	public float specialVelocity;
 	public float limitOfTimeInMovement;
+
 	public JoystickButton movementJoystickButton;
 
 

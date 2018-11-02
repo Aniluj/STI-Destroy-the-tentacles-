@@ -13,7 +13,9 @@ public class DeathController : MonoBehaviour {
 	public bool playerLost;
 	public GameObject inGameMenu;
 	public GameObject youLostImage;
-	public InGamePause pauseScript;
+    public GameObject darkPanelForPause;
+    public GameObject pauseButton;
+    public InGamePause pauseScript;
 	public GameObject leftFireOfSpaceship;
 	public GameObject rightFireOfSpaceship;
 	public GameObject[] powerUpsAndController;
@@ -56,8 +58,10 @@ public class DeathController : MonoBehaviour {
 			timer += Time.deltaTime;
 		}
 		if (timer >= 2f) {
+            pauseButton.SetActive(false);
 			inGameMenu.SetActive (true);
 			youLostImage.SetActive (true);
+            darkPanelForPause.SetActive(true);
 			Time.timeScale = 0;
 		}
 	}

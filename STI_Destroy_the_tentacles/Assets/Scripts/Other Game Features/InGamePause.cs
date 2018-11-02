@@ -13,17 +13,20 @@ public class InGamePause : MonoBehaviour {
 	public SpaceshipMovement spaceshipMovementScriptOfTheSpaceship;
 	public LoadingScreenFadeInOut loadingScreenScript;
 	public Animator spaceshipAnimator;
+    public GameObject darkPanelForPause;
 
+    public JoystickButton pauseJoystickButton;
 
-	void Start () {
-		
-	}
+    void Start () {
+       
+    }
 	
 
 	void Update () {
 		
-		if (Input.GetButtonDown ("Pause") && !paused && !loadingScreenScript.activateFadeIn) {
+		if ((Input.GetButtonDown ("Pause") || pauseJoystickButton.IsButtonDown) && !paused && !loadingScreenScript.activateFadeIn) {
 			InGameMenu.SetActive (true);
+            darkPanelForPause.SetActive(true);
 			InGameMusic.Pause ();
 			pauseSFX.Play ();
 			ambientSFX.Play ();
@@ -31,9 +34,10 @@ public class InGamePause : MonoBehaviour {
 			spaceshipAnimator.enabled = false;
 			spaceshipMovementScriptOfTheSpaceship.enabled = false;
 			Time.timeScale = 0;
-		} else if (Input.GetButtonDown ("Pause") && paused && !loadingScreenScript.activateFadeIn) {
+		} else if ((Input.GetButtonDown("Pause") || pauseJoystickButton.IsButtonDown) && paused && !loadingScreenScript.activateFadeIn) {
 			InGameMenu.SetActive (false);
-			InGameMusic.Play ();
+            darkPanelForPause.SetActive(false);
+            InGameMusic.Play ();
 			pauseSFX.Stop ();
 			ambientSFX.Pause ();
 			paused = false;
