@@ -13,13 +13,11 @@ public class BackgroundMovement : MonoBehaviour {
     void Start()
     {
         image.mainTexture.wrapModeU = TextureWrapMode.Repeat;
-        image.material = new Material(Shader.Find("Unlit/Texture"));
-        image.material.mainTexture = image.sprite.texture;
         offset.y = image.material.mainTextureOffset.y;
     }
 
     void Update () {
-        offset.x += Time.deltaTime * Speed;
+        offset.x -= Time.deltaTime * Speed;
         image.material.mainTextureOffset = offset;
     }
 }
