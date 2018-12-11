@@ -2198,7 +2198,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1052400343}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4, y: 0.75}
   m_AnchorMax: {x: 0.6, y: 0.85}
@@ -2370,7 +2370,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1052400343}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3598,6 +3598,7 @@ GameObject:
   - component: {fileID: 419792437}
   - component: {fileID: 419792436}
   - component: {fileID: 419792439}
+  - component: {fileID: 419792440}
   m_Layer: 5
   m_Name: PauseFixedButton
   m_TagString: Untagged
@@ -3712,6 +3713,17 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!225 &419792440
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 419792434}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &424548713 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1460314529972278, guid: ba87b68fb34ab42458da16cb2a9bc07f,
@@ -4140,6 +4152,7 @@ MonoBehaviour:
   positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable:
   - {fileID: 828209385}
+  - {fileID: 419792440}
   canvasGroupToEnable: []
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 879442498}
   velocityOfDisableAndEnable: 0
@@ -5474,7 +5487,7 @@ RectTransform:
   - {fileID: 1398956882}
   - {fileID: 2069410101}
   m_Father: {fileID: 1052400343}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.35, y: 0.22}
   m_AnchorMax: {x: 0.65, y: 0.72}
@@ -5931,12 +5944,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1052400343}
-  m_RootOrder: 10
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -0.000061035156}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &879442494
 MonoBehaviour:
@@ -5985,6 +5998,7 @@ MonoBehaviour:
   activateFadeIn: 0
   canvasGroupToDisable:
   - {fileID: 828209385}
+  - {fileID: 419792440}
   inGamePauseScript: {fileID: 403107915}
 --- !u!225 &879442497
 CanvasGroup:
@@ -6839,7 +6853,7 @@ RectTransform:
   m_GameObject: {fileID: 1052400339}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.509375, y: 0.509375, z: 0.509375}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 2030653835}
   - {fileID: 1454074614}
@@ -6851,18 +6865,18 @@ RectTransform:
   - {fileID: 1737302860}
   - {fileID: 1926450145}
   - {fileID: 795112203}
-  - {fileID: 879442493}
   - {fileID: 268001017}
   - {fileID: 828209382}
   - {fileID: 235259247}
+  - {fileID: 879442493}
   - {fileID: 419792435}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 489, y: 222}
-  m_SizeDelta: {x: 1920.0001, y: 0}
+  m_AnchoredPosition: {x: 480, y: 320}
+  m_SizeDelta: {x: 1920, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1052400344
 MonoBehaviour:
@@ -8380,6 +8394,7 @@ MonoBehaviour:
   positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable:
   - {fileID: 828209385}
+  - {fileID: 419792440}
   canvasGroupToEnable: []
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 879442498}
   velocityOfDisableAndEnable: 0
@@ -12586,6 +12601,7 @@ MonoBehaviour:
   positionOfTheTitleToReach: {fileID: 0}
   canvasGroupToDisable:
   - {fileID: 828209385}
+  - {fileID: 419792440}
   canvasGroupToEnable: []
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 879442498}
   velocityOfDisableAndEnable: 0
