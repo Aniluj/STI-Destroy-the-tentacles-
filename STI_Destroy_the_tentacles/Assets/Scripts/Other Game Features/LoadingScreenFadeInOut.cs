@@ -28,11 +28,12 @@ public class LoadingScreenFadeInOut : MonoBehaviour {
 		} else if (activateFadeIn) {
 			if (inGamePauseScript != null) {
 				inGamePauseScript.enabled = false;
-			}
+                generalFunctionalitiesForUseTheFade.DeactivatePauseButton();
+            }
 			activateFadeIn = false;
 			StartCoroutine (generalFunctionalitiesForUseTheFade.Fade (null, loadingScreenToFade, generalFunctionalitiesForUseTheFade.velocityOfDisableAndEnable));
 		} else if (loadingScreenToFade [loadingScreenToFade.Length - 1].alpha >= 1 && generalFunctionalitiesForUseTheFade.sceneName != "") {
-			generalFunctionalitiesForUseTheFade.ChangeOfScene ();
+            generalFunctionalitiesForUseTheFade.ChangeOfScene ();
 		}
 	}
 }

@@ -16,6 +16,7 @@ public class GeneralFunctionalitiesForScenes : MonoBehaviour {
     public GeneralFunctionalitiesForScenes generalFunctionalitiesScriptOfLoadinScreen;
     public float velocityOfDisableAndEnable;
     public float velocityOfElevation;
+    public GameObject pauseButton;
     public LoadingScreenFadeInOut scriptToActivateFade;
     private Button buttonToChangeTheSprite;
 
@@ -61,6 +62,14 @@ public class GeneralFunctionalitiesForScenes : MonoBehaviour {
 			StartCoroutine (Fade (canvasGroupToDisable, canvasGroupToEnable, velocityOfDisableAndEnable));
 		}
 	}
+
+    public void DeactivatePauseButton()
+    {
+        if(pauseButton != null)
+        {
+            pauseButton.SetActive(false);
+        }
+    }
 
     public IEnumerator Elevate(RectTransform positionOfTheTitleToReach, RectTransform titleTransform)
     {
