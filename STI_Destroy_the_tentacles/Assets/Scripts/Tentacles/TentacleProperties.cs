@@ -13,7 +13,7 @@ public class TentacleProperties : MonoBehaviour {
 	public int quantityOfHitsToDie;
 	public string typeOfSpawnWhereIsTheTentacle;
 	public bool slowdownActivated = false;
-	private int timesHitByBullets = 0;
+	public int timesHitted = 0;
 	private int isTheSpriteRendererFliped;
 	private Color obscureBlue = new Color(0.25f,0.25f,1f,1f);
 	private Color colorWhileIsHitted;
@@ -63,7 +63,7 @@ public class TentacleProperties : MonoBehaviour {
 			spriteRenderOfTheTentacle.color = baseColor;
 			hitted = false;
 		}
-		if (timesHitByBullets >= quantityOfHitsToDie) {
+		if (timesHitted >= quantityOfHitsToDie) {
 			tentacleIsDead = true;
 			miniVortexOpenedAnimation.SetBool ("miniVortexOpened", false);
 		}
@@ -75,7 +75,7 @@ public class TentacleProperties : MonoBehaviour {
 			tentacleBoxCollider.enabled = true;
 		}
 		if ((tentacleAnimation.GetCurrentAnimatorStateInfo (0).normalizedTime >= 1f) && (tentacleAnimation.GetCurrentAnimatorStateInfo (0).IsName ("TentacleDeathAnimation") || tentacleAnimation.GetCurrentAnimatorStateInfo (0).IsName ("FrozenTentacleDeath"))) {
-			timesHitByBullets = 0;
+			timesHitted = 0;
 			tentacleIsDead = false;
 			if (typeOfSpawnWhereIsTheTentacle == "easy") {
 				tentacleSpawnController.areEasySpawnPointsActive [numberOfSpawnWhereIsTheTentacle] = true;
@@ -97,7 +97,7 @@ public class TentacleProperties : MonoBehaviour {
 			tentacleIsDead = true;
 		}
 		if (coll.gameObject.tag == "Bullet") {
-			timesHitByBullets += 1;
+			timesHitted += 1;
 			hitted = true;
 		}
 	}

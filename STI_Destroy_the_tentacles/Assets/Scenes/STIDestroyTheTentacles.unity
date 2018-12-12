@@ -7551,8 +7551,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neededPositionForTheSlider: {fileID: 838180852}
   overheatSlider: {fileID: 1161439082}
-  incrementPerShot: 0.8
-  decrementPerTime: 0.016
+  incrementPerShot: 0.62
+  decrementPerTime: 0.019
 --- !u!82 &1189987824
 AudioSource:
   m_ObjectHideFlags: 0
