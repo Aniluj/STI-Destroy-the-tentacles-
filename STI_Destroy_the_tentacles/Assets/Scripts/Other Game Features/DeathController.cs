@@ -58,10 +58,13 @@ public class DeathController : MonoBehaviour {
 			timer += Time.deltaTime;
 		}
 		if (timer >= 2f) {
+            activateTimer = false;
+            timer = 0.0f;
             pauseButton.SetActive(false);
 			inGameMenu.SetActive (true);
 			youLostImage.SetActive (true);
             darkPanelForPause.SetActive(true);
+            AdController.instance.ShowVideoAd();
 			Time.timeScale = 0;
 		}
 	}

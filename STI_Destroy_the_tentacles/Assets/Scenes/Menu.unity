@@ -623,6 +623,7 @@ MonoBehaviour:
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
   velocityOfElevation: 0
+  pauseButton: {fileID: 0}
   scriptToActivateFade: {fileID: 0}
 --- !u!1 &248536092
 GameObject:
@@ -758,6 +759,7 @@ MonoBehaviour:
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 1268341819}
   velocityOfDisableAndEnable: 0
   velocityOfElevation: 0
+  pauseButton: {fileID: 0}
   scriptToActivateFade: {fileID: 1268341820}
 --- !u!114 &284672517
 MonoBehaviour:
@@ -1484,7 +1486,7 @@ RectTransform:
   m_GameObject: {fileID: 593478096}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.37604168, y: 0.37604168, z: 0.37604168}
+  m_LocalScale: {x: 0.36979166, y: 0.36979166, z: 0.36979166}
   m_Children:
   - {fileID: 2082744751}
   - {fileID: 1811003736}
@@ -1501,8 +1503,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 361, y: 240.5}
-  m_SizeDelta: {x: 1919.9999, y: 0}
+  m_AnchoredPosition: {x: 355, y: 222}
+  m_SizeDelta: {x: 1920, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &593478101
 AudioSource:
@@ -1806,6 +1808,7 @@ MonoBehaviour:
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
   velocityOfElevation: 0
+  pauseButton: {fileID: 0}
   scriptToActivateFade: {fileID: 0}
 --- !u!114 &752615993
 MonoBehaviour:
@@ -2023,6 +2026,7 @@ MonoBehaviour:
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
   velocityOfElevation: 0
+  pauseButton: {fileID: 0}
   scriptToActivateFade: {fileID: 0}
 --- !u!114 &826972032
 MonoBehaviour:
@@ -2363,6 +2367,7 @@ MonoBehaviour:
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.02
   velocityOfElevation: 1.5
+  pauseButton: {fileID: 0}
   scriptToActivateFade: {fileID: 0}
 --- !u!225 &969216982
 CanvasGroup:
@@ -2437,6 +2442,7 @@ MonoBehaviour:
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
   velocityOfElevation: 0
+  pauseButton: {fileID: 0}
   scriptToActivateFade: {fileID: 0}
 --- !u!114 &1012191539
 MonoBehaviour:
@@ -3468,6 +3474,7 @@ MonoBehaviour:
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.04
   velocityOfElevation: 0
+  pauseButton: {fileID: 0}
   scriptToActivateFade: {fileID: 0}
 --- !u!114 &1268341820
 MonoBehaviour:
@@ -3750,6 +3757,7 @@ MonoBehaviour:
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
   velocityOfElevation: 0
+  pauseButton: {fileID: 0}
   scriptToActivateFade: {fileID: 0}
 --- !u!1 &1450918816
 GameObject:
@@ -4235,6 +4243,7 @@ MonoBehaviour:
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
   velocityOfElevation: 0
+  pauseButton: {fileID: 0}
   scriptToActivateFade: {fileID: 0}
 --- !u!114 &1712537519
 MonoBehaviour:
@@ -4383,6 +4392,7 @@ MonoBehaviour:
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
   velocityOfElevation: 0
+  pauseButton: {fileID: 0}
   scriptToActivateFade: {fileID: 0}
 --- !u!114 &1719856911
 MonoBehaviour:
@@ -4915,6 +4925,7 @@ MonoBehaviour:
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
   velocityOfElevation: 0
+  pauseButton: {fileID: 0}
   scriptToActivateFade: {fileID: 0}
 --- !u!1 &1811003735
 GameObject:
@@ -5212,6 +5223,7 @@ MonoBehaviour:
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
   velocityOfElevation: 0
+  pauseButton: {fileID: 0}
   scriptToActivateFade: {fileID: 0}
 --- !u!114 &1858642414
 MonoBehaviour:
@@ -5587,6 +5599,7 @@ MonoBehaviour:
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 1268341819}
   velocityOfDisableAndEnable: 0
   velocityOfElevation: 0
+  pauseButton: {fileID: 0}
   scriptToActivateFade: {fileID: 1268341820}
 --- !u!114 &2063656847
 MonoBehaviour:
