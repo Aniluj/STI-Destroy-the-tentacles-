@@ -235,8 +235,9 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: D:/Image Campus/Segundo anio/Desarrollo de Videojuegos 2/Stop
+    The Invasion Destroy the Tentacles/STI-Destroy-the-tentacles-/STI_Destroy_the_tentacles/STI_Destroy_the_tentacles_Key.keystore
+  AndroidKeyaliasName: 'sti: destroy the tentacles! - key'
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
   AndroidEnableTango: 0
