@@ -32,7 +32,7 @@ public class AdController : MonoBehaviour {
     {
         while (!Monetization.IsReady(placementVideoId))
         {
-            yield return new WaitForSeconds(0.25f);
+            yield return new WaitForSecondsRealtime(0.25f);
         }
 
         ShowAdPlacementContent ad = null;

@@ -506,6 +506,7 @@ MonoBehaviour:
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
   velocityOfElevation: 0
+  pauseButton: {fileID: 0}
   scriptToActivateFade: {fileID: 0}
 --- !u!114 &148823441
 MonoBehaviour:
@@ -663,6 +664,7 @@ MonoBehaviour:
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 570096005}
   velocityOfDisableAndEnable: 0.04
   velocityOfElevation: 0
+  pauseButton: {fileID: 0}
   scriptToActivateFade: {fileID: 570096006}
 --- !u!114 &192297707
 MonoBehaviour:
@@ -1563,8 +1565,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0}
-  m_SizeDelta: {x: 159.2, y: 89.4}
+  m_AnchoredPosition: {x: 6.9, y: -3.9}
+  m_SizeDelta: {x: 821.4, y: 461.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &570096005
 MonoBehaviour:
@@ -1587,6 +1589,7 @@ MonoBehaviour:
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.04
   velocityOfElevation: 0
+  pauseButton: {fileID: 0}
   scriptToActivateFade: {fileID: 0}
 --- !u!114 &570096006
 MonoBehaviour:
@@ -1837,6 +1840,7 @@ MonoBehaviour:
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.07
   velocityOfElevation: 0
+  pauseButton: {fileID: 0}
   scriptToActivateFade: {fileID: 0}
 --- !u!1 &817667589
 GameObject:
@@ -2349,6 +2353,7 @@ MonoBehaviour:
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
   velocityOfElevation: 0
+  pauseButton: {fileID: 0}
   scriptToActivateFade: {fileID: 0}
 --- !u!114 &1050195290
 MonoBehaviour:
@@ -2787,6 +2792,7 @@ MonoBehaviour:
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.07
   velocityOfElevation: 0
+  pauseButton: {fileID: 0}
   scriptToActivateFade: {fileID: 0}
 --- !u!1 &1205554172
 GameObject:
@@ -3307,6 +3313,7 @@ MonoBehaviour:
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.07
   velocityOfElevation: 0
+  pauseButton: {fileID: 0}
   scriptToActivateFade: {fileID: 0}
 --- !u!1 &1600931513
 GameObject:
@@ -3371,6 +3378,7 @@ MonoBehaviour:
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 570096005}
   velocityOfDisableAndEnable: 0.04
   velocityOfElevation: 0
+  pauseButton: {fileID: 0}
   scriptToActivateFade: {fileID: 570096006}
 --- !u!114 &1600931516
 MonoBehaviour:
@@ -3652,6 +3660,7 @@ MonoBehaviour:
   generalFunctionalitiesScriptOfLoadinScreen: {fileID: 0}
   velocityOfDisableAndEnable: 0.05
   velocityOfElevation: 0
+  pauseButton: {fileID: 0}
   scriptToActivateFade: {fileID: 0}
 --- !u!82 &1603532990
 AudioSource:
@@ -3817,7 +3826,7 @@ RectTransform:
   m_GameObject: {fileID: 1678329184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.41111112, y: 0.41111112, z: 0.41111112}
+  m_LocalScale: {x: 0.36979166, y: 0.36979166, z: 0.36979166}
   m_Children:
   - {fileID: 1769850742}
   - {fileID: 317724924}
@@ -3832,8 +3841,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 489, y: 222}
-  m_SizeDelta: {x: 2378.919, y: 0}
+  m_AnchoredPosition: {x: 355, y: 222}
+  m_SizeDelta: {x: 1920, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1678329189
 MonoBehaviour:
