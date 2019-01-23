@@ -154,7 +154,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.Aniluj.STI_Destroy_The_Tentacles
   buildNumber: {}
-  AndroidBundleVersionCode: 1
+  AndroidBundleVersionCode: 1001
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 0
@@ -235,8 +235,8 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: STI_Destroy_the_tentacles_Key.keystore
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: C:/Unity Projects/STI-Destroy-the-tentacles-/STI_Destroy_the_tentacles/STI_Destroy_the_tentacles_Key.keystore
+  AndroidKeyaliasName: 'sti: destroy the tentacles! - key'
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
   AndroidEnableTango: 0
