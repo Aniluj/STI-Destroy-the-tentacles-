@@ -53,7 +53,8 @@ public class GeneralFunctionalitiesForScenes : MonoBehaviour {
         StartCoroutine(Elevate(positionOfTheTitleToReach, titleTransform));
     }
 
-	public void ChangeBetweenCanvasGroup(){
+	public void ChangeBetweenCanvasGroup()
+    {
 		if (enableToChange) {
 			for (int i = 0; i < canvasGroupToDisable.Length; i++) {
 				canvasGroupToDisable [i].interactable = !canvasGroupToDisable [i].interactable;
@@ -62,6 +63,11 @@ public class GeneralFunctionalitiesForScenes : MonoBehaviour {
 			StartCoroutine (Fade (canvasGroupToDisable, canvasGroupToEnable, velocityOfDisableAndEnable));
 		}
 	}
+
+    public void OpenPrivacyPolicy()
+    {
+        Application.OpenURL("https://sites.google.com/view/sti-destroy-the-tentacles/home");
+    }
 
     public void DeactivatePauseButton()
     {

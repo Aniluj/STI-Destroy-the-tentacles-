@@ -8,6 +8,7 @@ public class AdController : MonoBehaviour {
     public static AdController instance;
     private string store_id = "2994503";
     private string placementVideoId = "video";
+
     private void Awake()
     {
         if (AdController.instance != null)
