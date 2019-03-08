@@ -27,6 +27,10 @@ __Música y SFX:__
 
 [Juego en Itch.io](https://aniluj.itch.io/stop-the-invasion-destroy-the-tentacles)
 
+## Play Store
+
+[Juego en el Play Store](https://play.google.com/store/apps/details?id=com.Aniluj.STI_Destroy_The_Tentacles)
+
 ## Screenshots
 
 ![stop the invasion destroy the tentacles 1](https://user-images.githubusercontent.com/21962457/37191677-ece8dc7e-233f-11e8-815b-ce4fd30dade7.png)
