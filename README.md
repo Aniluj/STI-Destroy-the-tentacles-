@@ -1,35 +1,35 @@
 # Stop The Invasion: Destroy the tentacles!
 
-__Descripción:__ En STI: ¡Destroy the tentacles!, conduces una nave espacial que debe evitar que los peligrosos tentáculos que brotan de un vórtice intergaláctico, escapen de la zona de contención en la que yacen, para así mantener a la Tierra a salvo de la amenaza extraterrestre.
+__Description:__ In Stop The Invasion: Destroy the tentacles !, you drive a spaceship that must prevent the dangerous tentacles that sprout from an intergalactic vortex, escape from the containment zone in which they lie, in order to keep the Earth safe from the alien threat.
 
-__Desarrollo y Game Design:__
+__Development and Game Design:__
 
 * Julián Rodrigo Volonterio
 
-__Visuales y Diseño Gráficos:__
+__Visuals and Graphic Design:__
 
 * Julián Chab
 
-__Desarrollo del Port a Mobile:__
+__Mobile Port Development:__
 
 * Sebastián Avena
 
-__Música y SFX:__
+__Music and Sound FX:__
 
 * Guido Cichillitti
 * Felipe Castillo
 
 ## Trello
 
-[Seguimiento del proyecto en Trello](https://trello.com/b/00l19Nm5/sti-destroy-the-tentacles)
+[Track of the porject in Trello](https://trello.com/b/00l19Nm5/sti-destroy-the-tentacles)
 
 ## Itch.io
 
-[Juego en Itch.io](https://aniluj.itch.io/stop-the-invasion-destroy-the-tentacles)
+[Game on Itch.io](https://aniluj.itch.io/stop-the-invasion-destroy-the-tentacles)
 
 ## Play Store
 
-[Juego en el Play Store](https://play.google.com/store/apps/details?id=com.Aniluj.STI_Destroy_The_Tentacles)
+[Game on Play Store](https://play.google.com/store/apps/details?id=com.Aniluj.STI_Destroy_The_Tentacles)
 
 ## Screenshots
 
