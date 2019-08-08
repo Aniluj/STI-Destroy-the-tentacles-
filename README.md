@@ -21,7 +21,7 @@ __Music and Sound FX:__
 
 ## Trello
 
-[Track of the porject in Trello](https://trello.com/b/00l19Nm5/sti-destroy-the-tentacles)
+[Track of the project on Trello](https://trello.com/b/00l19Nm5/sti-destroy-the-tentacles)
 
 ## Itch.io
 
