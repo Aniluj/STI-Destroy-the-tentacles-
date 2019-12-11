@@ -12,51 +12,72 @@ public class MusicAndSFXController : MonoBehaviour {
 	public AudioSource[] music;
 	public AudioSource[] sFX;
 
-	void Start () {
-		enablingDisablingMusic = PlayerPrefs.GetInt (enablingDisablingMusicKey);
-		enablingDisablingSFXValue = PlayerPrefs.GetInt (enablingDisablingSFXKeY);
-		if (enablingDisablingMusic == 1 && music != null) {
-			for (int i = 0; i < music.Length; i++) {
-				music [i].volume = 1f;
-			}
-		} else if (enablingDisablingMusic == 0 && music != null) {
-			for (int i = 0; i < music.Length; i++) {
-				music [i].volume = 0f;
-			}
-		}
-		if (enablingDisablingSFXValue == 1 && sFX != null) {
-			for (int i = 0; i < sFX.Length; i++) {
-				sFX [i].volume = 1f;
-			}
-		} else if (enablingDisablingSFXValue == 0 && sFX != null) {
-			for (int i = 0; i < sFX.Length; i++) {
-				sFX [i].volume = 0f;
-			}
-		}
-	}
+    void Start() {
+        enablingDisablingMusic = PlayerPrefs.GetInt(enablingDisablingMusicKey, 1);
+        enablingDisablingSFXValue = PlayerPrefs.GetInt(enablingDisablingSFXKeY, 1); ;
+        if(enablingDisablingMusic == 1 && music != null)
+        {
+            for(int i = 0; i < music.Length; i++)
+            {
+                music[i].volume = 1f;
+            }
+        }
+        else if(enablingDisablingMusic == 0 && music != null)
+        {
+            for(int i = 0; i < music.Length; i++)
+            {
+                music[i].volume = 0f;
+            }
+        }
+        if(enablingDisablingSFXValue == 1 && sFX != null)
+        {
+            for(int i = 0; i < sFX.Length; i++)
+            {
+                sFX[i].volume = 1f;
+            }
+        }
+        else if(enablingDisablingSFXValue == 0 && sFX != null)
+        {
+            for(int i = 0; i < sFX.Length; i++)
+            {
+                sFX[i].volume = 0f;
+            }
+        }
+    }
 
-	void Update() {
-		if (checkInUpdate) {
-			enablingDisablingMusic = PlayerPrefs.GetInt (enablingDisablingMusicKey);
-			enablingDisablingSFXValue = PlayerPrefs.GetInt (enablingDisablingSFXKeY);
-			if (enablingDisablingMusic == 1 && music != null) {
-				for (int i = 0; i < music.Length; i++) {
-					music [i].volume = 1f;
-				}
-			} else if (enablingDisablingMusic == 0 && music != null) {
-				for (int i = 0; i < music.Length; i++) {
-					music [i].volume = 0f;
-				}
-			}
-			if (enablingDisablingSFXValue == 1 && sFX != null) {
-				for (int i = 0; i < sFX.Length; i++) {
-					sFX [i].volume = 1f;
-				}
-			} else if (enablingDisablingSFXValue == 0 && sFX != null) {
-				for (int i = 0; i < sFX.Length; i++) {
-					sFX [i].volume = 0f;
-				}
-			}
-		}
-	}
+    void Update() {
+        if(checkInUpdate)
+        {
+            enablingDisablingMusic = PlayerPrefs.GetInt(enablingDisablingMusicKey, 1);
+            enablingDisablingSFXValue = PlayerPrefs.GetInt(enablingDisablingSFXKeY, 1);
+            if(enablingDisablingMusic == 1 && music != null)
+            {
+                for(int i = 0; i < music.Length; i++)
+                {
+                    music[i].volume = 1f;
+                }
+            }
+            else if(enablingDisablingMusic == 0 && music != null)
+            {
+                for(int i = 0; i < music.Length; i++)
+                {
+                    music[i].volume = 0f;
+                }
+            }
+            if(enablingDisablingSFXValue == 1 && sFX != null)
+            {
+                for(int i = 0; i < sFX.Length; i++)
+                {
+                    sFX[i].volume = 1f;
+                }
+            }
+            else if(enablingDisablingSFXValue == 0 && sFX != null)
+            {
+                for(int i = 0; i < sFX.Length; i++)
+                {
+                    sFX[i].volume = 0f;
+                }
+            }
+        }
+    }
 }
