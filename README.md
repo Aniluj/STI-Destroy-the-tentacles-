@@ -19,10 +19,6 @@ __Music and Sound FX:__
 * Guido Cichillitti
 * Felipe Castillo
 
-## Trello
-
-[Track of the project on Trello](https://trello.com/b/00l19Nm5/sti-destroy-the-tentacles)
-
 ## Itch.io
 
 [Game on Itch.io](https://aniluj.itch.io/stop-the-invasion-destroy-the-tentacles)
